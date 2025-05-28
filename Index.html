@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C.S. Courses with Tony - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #111827; /* Dark Gray */
+            color: #e5e7eb; /* Light Gray */
+        }
+        h1, h2, h3, nav a {
+            font-family: 'Orbitron', sans-serif;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.8)), url('https://placehold.co/1600x800/000022/FFFFFF?text=Digital+Universe&font=orbitron') no-repeat center center;
+            background-size: cover;
+        }
+        .card {
+            background-color: #1f2937; /* Darker Gray for cards */
+            border-left: 4px solid #3b82f6; /* Blue accent */
+        }
+        .card-icon {
+            font-size: 2.5rem; /* Increased icon size */
+            color: #3b82f6; /* Blue */
+        }
+        nav a:hover, .menu-button:hover {
+            background-color: #3b82f6; /* Blue */
+            color: #ffffff; /* White */
+        }
+        .menu-button {
+            background-color: #374151; /* Gray */
+        }
+        .grid-section-title {
+            color: #60a5fa; /* Lighter Blue for titles */
+        }
+        .link-item {
+            transition: transform 0.2s ease-in-out;
+        }
+        .link-item:hover {
+            transform: translateY(-3px);
+        }
+        .footer {
+            background-color: #000000; /* Black footer */
+        }
+        /* Mobile Menu Styles */
+        #mobile-menu {
+            display: none; /* Hidden by default */
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="bg-gray-900 p-4 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">C.S. Courses <span class="text-blue-500">with Tony</span></a>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <i class="fas fa-bars fa-lg"></i>
+                </button>
+            </div>
+            <div class="hidden md:flex space-x-4">
+                <a href="#courses" class="px-3 py-2 rounded text-gray-300">Courses</a>
+                <a href="#student-info" class="px-3 py-2 rounded text-gray-300">Student Info</a>
+                <a href="#college-info" class="px-3 py-2 rounded text-gray-300">College Info</a>
+                <a href="#photo-gallery" class="px-3 py-2 rounded text-gray-300">Photo Gallery</a>
+                <a href="#video-gallery" class="px-3 py-2 rounded text-gray-300">Video Gallery</a>
+                <a href="#contact" class="px-3 py-2 rounded text-gray-300">Contact ProfT</a>
+                <a href="#misc" class="px-3 py-2 rounded text-gray-300">Misc</a>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden mt-3 space-y-2">
+            <a href="#courses" class="block px-3 py-2 rounded text-gray-300 hover:bg-blue-500 hover:text-white">Courses</a>
+            <a href="#student-info" class="block px-3 py-2 rounded text-gray-300 hover:bg-blue-500 hover:text-white">Student Info</a>
+            <a href="#college-info" class="block px-3 py-2 rounded text-gray-300 hover:bg-blue-500 hover:text-white">College Info</a>
+            <a href="#photo-gallery" class="block px-3 py-2 rounded text-gray-300 hover:bg-blue-500 hover:text-white">Photo Gallery</a>
+            <a href="#video-gallery" class="block px-3 py-2 rounded text-gray-300 hover:bg-blue-500 hover:text-white">Video Gallery</a>
+            <a href="#contact" class="block px-3 py-2 rounded text-gray-300 hover:bg-blue-500 hover:text-white">Contact ProfT</a>
+            <a href="#misc" class="block px-3 py-2 rounded text-gray-300 hover:bg-blue-500 hover:text-white">Misc</a>
+        </div>
+    </nav>
+
+    <header class="hero-section text-white py-20 md:py-32">
+        <div class="container mx-auto text-center px-6">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Welcome to the World of Code & Technology!</h1>
+            <p class="text-xl md:text-2xl mb-8">Your journey into Computer Science starts here with Professor Tony. Explore, learn, and innovate!</p>
+            <a href="#courses" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300">Explore Courses <i class="fas fa-arrow-right ml-2"></i></a>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-6 md:p-12">
+
+        <section id="courses" class="mb-16 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 grid-section-title">Featured Courses <i class="fas fa-laptop-code ml-2"></i></h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card p-6 rounded-lg shadow-xl transform hover:scale-105 transition duration-300">
+                    <img src="https://placehold.co/600x400/1E40AF/FFFFFF?text=CS101&font=orbitron" alt="Intro to Programming" class="rounded-md mb-4 w-full h-48 object-cover">
+                    <h3 class="text-2xl font-semibold mb-2 text-white">CS101: Intro to Programming</h3>
+                    <p class="text-gray-400 mb-4">Master the fundamentals of coding and problem-solving. No prior experience needed!</p>
+                    <a href="#syllabus-links" class="text-blue-400 hover:text-blue-300 font-semibold">View Syllabus &raquo;</a>
+                </div>
+                <div class="card p-6 rounded-lg shadow-xl transform hover:scale-105 transition duration-300">
+                    <img src="https://placehold.co/600x400/166534/FFFFFF?text=WebDev&font=orbitron" alt="Web Development" class="rounded-md mb-4 w-full h-48 object-cover">
+                    <h3 class="text-2xl font-semibold mb-2 text-white">CS250: Web Development Basics</h3>
+                    <p class="text-gray-400 mb-4">Learn to build interactive and responsive websites using HTML, CSS, and JavaScript.</p>
+                    <a href="#syllabus-links" class="text-blue-400 hover:text-blue-300 font-semibold">View Syllabus &raquo;</a>
+                </div>
+                <div class="card p-6 rounded-lg shadow-xl transform hover:scale-105 transition duration-300">
+                    <img src="https://placehold.co/600x400/7E22CE/FFFFFF?text=DataStr&font=orbitron" alt="Data Structures" class="rounded-md mb-4 w-full h-48 object-cover">
+                    <h3 class="text-2xl font-semibold mb-2 text-white">CS300: Data Structures & Algorithms</h3>
+                    <p class="text-gray-400 mb-4">Dive deep into essential data structures and algorithmic thinking for efficient software.</p>
+                    <a href="#syllabus-links" class="text-blue-400 hover:text-blue-300 font-semibold">View Syllabus &raquo;</a>
+                </div>
+            </div>
+            <a href="#" class="mt-8 inline-block bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">View All Courses</a>
+        </section>
+
+        <hr class="border-gray-700 my-12">
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <section id="student-info" class="card p-6 rounded-lg shadow-xl">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-user-graduate card-icon mr-4"></i>
+                    <h2 class="text-2xl font-bold grid-section-title">Student Information</h2>
+                </div>
+                <ul class="space-y-2">
+                    <li class="link-item"><a href="#" class="text-gray-300 hover:text-blue-400"><i class="fas fa-book-open mr-2"></i> Academic Resources</a></li>
+                    <li class="link-item"><a href="#" class="text-gray-300 hover:text-blue-400"><i class="fas fa-question-circle mr-2"></i> FAQ for Students</a></li>
+                    <li class="link-item"><a href="#" class="text-gray-300 hover:text-blue-400"><i class="fas fa-concierge-bell mr-2"></i> Support Services</a></li>
+                </ul>
+            </section>
+
+            <section id="college-info" class="card p-6 rounded-lg shadow-xl">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-university card-icon mr-4"></i>
+                    <h2 class="text-2xl font-bold grid-section-title">College Information</h2>
+                </div>
+                <ul class="space-y-2">
+                    <li class="link-item"><a href="#" class="text-gray-300 hover:text-blue-400"><i class="fas fa-map-marked-alt mr-2"></i> Campus Map & Directions</a></li>
+                    <li class="link-item"><a href="#" class="text-gray-300 hover:text-blue-400"><i class="fas fa-calendar-alt mr-2"></i> Academic Calendar</a></li>
+                    <li class="link-item"><a href="[College Website URL]" class="text-gray-300 hover:text-blue-400" target="_blank"><i class="fas fa-external-link-alt mr-2"></i> Official College Website</a></li>
+                </ul>
+            </section>
+
+            <section id="important-links" class="card p-6 rounded-lg shadow-xl">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-link card-icon mr-4"></i>
+                    <h2 class="text-2xl font-bold grid-section-title">Important Links</h2>
+                </div>
+                <ul class="space-y-2">
+                    <li class="link-item"><a href="[LMS URL]" class="text-gray-300 hover:text-blue-400" target="_blank"><i class="fas fa-chalkboard-teacher mr-2"></i> Learning Management System (LMS)</a></li>
+                    <li class="link-item"><a href="[Library URL]" class="text-gray-300 hover:text-blue-400" target="_blank"><i class="fas fa-book-reader mr-2"></i> College Library</a></li>
+                    <li class="link-item"><a href="[Coding Resources URL]" class="text-gray-300 hover:text-blue-400" target="_blank"><i class="fas fa-code mr-2"></i> Online Coding Resources</a></li>
+                </ul>
+            </section>
+        </div>
+
+        <hr class="border-gray-700 my-12">
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <section id="photo-gallery" class="card p-6 rounded-lg shadow-xl text-center">
+                 <i class="fas fa-camera-retro card-icon mb-4 inline-block"></i>
+                <h2 class="text-2xl font-bold mb-4 grid-section-title">Photo Links</h2>
+                <p class="text-gray-400 mb-4">Explore moments from past projects, events, and tech showcases.</p>
+                <a href="#" class="menu-button text-white font-semibold py-2 px-4 rounded-lg inline-block hover:bg-blue-500 transition duration-300">View Photo Gallery <i class="fas fa-images ml-1"></i></a>
+                <img src="https://placehold.co/600x300/374151/9CA3AF?text=Cool+Tech+Photos&font=roboto" alt="Tech Photos Teaser" class="mt-4 rounded-lg w-full h-32 object-cover">
+            </section>
+
+            <section id="video-gallery" class="card p-6 rounded-lg shadow-xl text-center">
+                 <i class="fas fa-video card-icon mb-4 inline-block"></i>
+                <h2 class="text-2xl font-bold mb-4 grid-section-title">Video Links</h2>
+                <p class="text-gray-400 mb-4">Access tutorial recordings, guest lectures, and interesting tech talks.</p>
+                <a href="#" class="menu-button text-white font-semibold py-2 px-4 rounded-lg inline-block hover:bg-blue-500 transition duration-300">Watch Videos <i class="fab fa-youtube ml-1"></i></a>
+                 <img src="https://placehold.co/600x300/374151/9CA3AF?text=Tutorials+%26+Talks&font=roboto" alt="Video Links Teaser" class="mt-4 rounded-lg w-full h-32 object-cover">
+            </section>
+
+            <section id="syllabus-links" class="card p-6 rounded-lg shadow-xl text-center">
+                <i class="fas fa-file-alt card-icon mb-4 inline-block"></i>
+                <h2 class="text-2xl font-bold mb-4 grid-section-title">Syllabus Links</h2>
+                <p class="text-gray-400 mb-4">Find detailed information and schedules for all current courses.</p>
+                <a href="#" class="menu-button text-white font-semibold py-2 px-4 rounded-lg inline-block hover:bg-blue-500 transition duration-300">Access Syllabi <i class="fas fa-download ml-1"></i></a>
+                 <img src="https://placehold.co/600x300/374151/9CA3AF?text=Course+Outlines&font=roboto" alt="Syllabus Links Teaser" class="mt-4 rounded-lg w-full h-32 object-cover">
+            </section>
+        </div>
+
+        <hr class="border-gray-700 my-12">
+
+        <div class="grid md:grid-cols-2 gap-8 mb-16">
+             <section id="contact" class="card p-8 rounded-lg shadow-xl">
+                 <div class="flex items-center mb-4">
+                    <i class="fas fa-envelope-open-text card-icon mr-4"></i>
+                    <h2 class="text-2xl font-bold grid-section-title">Contact Prof. Tony</h2>
+                </div>
+                <p class="text-gray-400 mb-2"><i class="fas fa-envelope mr-2 text-blue-400"></i> Email: <a href="mailto:tony@example.com" class="hover:text-blue-300">tony@example.com</a></p>
+                <p class="text-gray-400 mb-2"><i class="fas fa-map-marker-alt mr-2 text-blue-400"></i> Office: [Your Office Number]</p>
+                <p class="text-gray-400 mb-4"><i class="fas fa-calendar-check mr-2 text-blue-400"></i> Office Hours: [Your Office Hours]</p>
+                <a href="#" class="menu-button text-white font-semibold py-2 px-4 rounded-lg inline-block hover:bg-blue-500 transition duration-300">Send a Message <i class="fas fa-paper-plane ml-1"></i></a>
+            </section>
+
+            <section id="misc" class="card p-8 rounded-lg shadow-xl">
+                 <div class="flex items-center mb-4">
+                    <i class="fas fa-asterisk card-icon mr-4"></i>
+                    <h2 class="text-2xl font-bold grid-section-title">Miscellaneous</h2>
+                </div>
+                <p class="text-gray-400 mb-4">Interesting articles, upcoming tech events, or fun coding challenges will be posted here.</p>
+                <ul class="space-y-2">
+                    <li class="link-item"><a href="#" class="text-gray-300 hover:text-blue-400"><i class="fas fa-newspaper mr-2"></i> Latest Tech News</a></li>
+                    <li class="link-item"><a href="#" class="text-gray-300 hover:text-blue-400"><i class="fas fa-puzzle-piece mr-2"></i> Coding Puzzles</a></li>
+                </ul>
+            </section>
+        </div>
+
+    </main>
+
+    <footer class="footer text-white text-center p-8">
+        <p>&copy; <span id="currentYear"></span> C.S. Courses with Tony. All Rights Reserved.</p>
+        <p class="text-sm text-gray-500 mt-2">Proudly educating future innovators at [Your College Name]</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
+        });
+
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
