@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus- CSW 38: Basic Web Design </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Orbitron', sans-serif;
+        }
+        .centered-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .hero-banner {
+            /* Updated background image URL to a simple dark blue color */
+            background-image: url('https://placehold.co/1200x400/000033');
+            background-size: cover;
+            background-position: top;
+        }
+        .section-icon {
+            width: 50px;
+            height: 50px;
+            margin-right: 1rem;
+        }
+        .card {
+            background-color: #f0f4f8; /* Light blue-gray */
+            border-left: 5px solid #3b82f6; /* Blue accent */
+        }
+        .policy-icon {
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
+        }
+        caption {
+            text-align: center;
+            font-size: 20px;
+        }
+        th, td {
+            padding: 0.75rem;
+        }
+        th {
+            text-align: left;
+        }
+    </style>
+    
+</head>
+<body class="bg-gray-900 text-gray-100 antialiased">
+
+    <header class="hero-banner text-white py-16 sm:py-10 shadow-xl">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 flex items-center justify-center">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Falcon_Northwest_PC_Lineup_Summer_2022.jpg" alt="PC Lineup" class="h-10 sm:h-12 md:h-16 mr-2 sm:mr-3 md:mr-4 rounded shadow-md object-contain">
+                Syllabus- CSW 38: Basic Web Design
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Falcon_Northwest_PC_Lineup_Summer_2022.jpg" alt="PC Lineup" class="h-10 sm:h-12 md:h-16 ml-2 sm:ml-3 md:ml-4 rounded shadow-md object-contain">
+            </h1>
+            <p class="text-xl sm:text-2xl">Unlock Your Inner I.S. Superpowers!</p>
+        </div>
+    </header>
+
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-18">
+
+        <section id="professor" class="mb-12 p-6 bg-gray-800 rounded-lg shadow-lg card">
+            <div class="flex items-center mb-4">
+                <img src="https://placehold.co/80x80/3b82f6/FFFFFF?text=Prof&font=orbitron" alt="Professor Icon" class="rounded-full section-icon border-2 border-blue-400">
+                <h2 class="text-3xl font-bold text-blue-400">Meet Your Guide: Professor Information</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <p><strong>Professor:</strong> Tony Pacheco</p>
+                    <p><strong>Office:</strong> SCMA 137</p>
+                    <p><strong>Office Hours:</strong> M/W 8am-8:45, T/Th 8am-9:15, & M-Th 12pm-12:45, or by appointment. 🗓️ Contact via Canvas message or email.</p>
+                </div>
+                <div>
+                    <p><strong>Email:</strong> <a href="mailto:ProfessorTony77@gmail.com" class="text-blue-400 hover:text-blue-300">ProfessorTony77@gmail.com</a> 📧</p>
+                    <p><strong>Preferred Contact Method:</strong> Email is usually best for quick questions!</p>
+                    <p><strong>Fun Fact:</strong> Hey future tech wizards! I'm excited to help you start your C.S. adventure. When I'm not teaching, you can find me on the track, running/training, or online finding some good tech videos or movies! 🤖🎮⛰️</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="course" class="mb-12 p-6 bg-gray-800 rounded-lg shadow-lg card">
+            <div class="flex items-center mb-4">
+                <img src="https://placehold.co/80x80/F6CE3C/000000?text=CS11&font=orbitron" alt="Course Icon" class="rounded-full section-icon border-2 border-yellow-400">
+                <h2 class="text-3xl font-bold text-yellow-400">Course: Information</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <p><strong>Course:</strong> Syllabus- CSW 38: Basic Web Design: 3 Units</p>
+                    <p><strong>Term:</strong> Fall 2025, In-Person Course</p>
+                    <p><strong>Hosted via Canvas at:</strong> <a href="http://sjdc.instructure.com" target="_blank" class="text-blue-400 hover:text-blue-300">sjdc.instructure.com 💡</a></p>
+                </div>
+                <div>
+                    <p><strong>Final Exam:</strong> MON 12/8/25 12:00pm-1:50pm SHIM 109 📚</p>
+                    <p><strong>Preferred Contact Method:</strong> Canvas email is the best form of immediate contact as phone messages are not checked often.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="description" class="mb-12 p-6 bg-gray-800 rounded-lg shadow-lg card">
+            <div class="flex items-center mb-4">
+                <img src="https://placehold.co/80x80/2dd4bf/000000?text=INFO&font=orbitron" alt="Course Info Icon" class="rounded-lg section-icon">
+                <h2 class="text-3xl font-bold text-teal-400">💻 Course Description: Your Mission, Should You Choose to Accept It...</h2>
+            </div>
+            <p class="text-lg leading-relaxed">
+                 WELCOME! Ready to make your websites truly unforgettable? This course is your gateway to a world beyond static pages. We'll dive into the powerful HTML Canvas and JavaScript to bring your ideas to life. Master the art of creating dynamic visuals, interactive graphics, and captivating soundscapes. From simple movements to complex interactive games, you'll gain the skills to build engaging, animated web experiences that will impress future employers and users alike.. 
+            </p>
+            <p></p>
+            <p style="font-size:24px;"><b> Official- Course Description:</b></p>   
+            <p class="text-lg leading-relaxed">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This course is designed to provide the student with an understanding of incorporating animation, sound, graphics, and interactivity into Web pages using the HTML Canvas tag. The student explores the ins and outs of Canvas' capabilities to create and manipulate web page animation and interactivity using Javascript. (HBCU, CSU)
+            </p>
+        </section>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <section id="objectives" class="p-6 bg-gray-800 rounded-lg shadow-lg card">
+                <div class="flex items-center mb-4">
+                     <img src="https://placehold.co/80x80/f97316/FFFFFF?text=AIM&font=orbitron" alt="Objectives Icon" class="rounded-lg section-icon">
+                    <h2 class="text-3xl font-bold text-orange-400">🎯 Course Objectives</h2>
+                </div>
+                <p style="font-size:20px;">Upon successful completion of this course, the student will be able to:</p>
+                <ul class="list-disc list-inside space-y-2 text-lg">
+                    <li>Understand the HTML DOM model.</li>
+                    <li>Create and work with the HTML Canvas element.</li>
+                    <li>Use Canvas's capability to draw and animate images.</li>
+                    <li>Understand and apply Web safe color issues.</li>
+                    <li>Use the HTML5 Canvas Text API.</li>
+                    <li>Load and use external images into HTML5 Canvas.</li>
+                    <li>Be able to mix Video with HTML5 Canvas.</li>
+                    <li>Use math and physics with animation.</li>
+                    <li>Incorporate and control sound in web animation.</li>
+                    <li>Apply interactivity with actions and event handlers</li>
+                </ul>
+            </section>
+
+            <section id="outcomes" class="p-6 bg-gray-800 rounded-lg shadow-lg card">
+                <div class="flex items-center mb-4">
+                    <img src="https://placehold.co/80x80/ec4899/FFFFFF?text=SKILL&font=orbitron" alt="Outcomes Icon" class="rounded-lg section-icon">
+                    <h2 class="text-3xl font-bold text-pink-400">💡 Learning Outcomes</h2>
+                </div>
+                
+                <p style="font-size:20px;">Upon successful completion of this course, the student will be able to:</p>
+                <ul class="list-disc list-inside space-y-2 text-lg">
+                    <li>Design and produce visually attractive, usable, and accessible Web content using the HTML5 Canvas element</li>    
+                </ul>
+                    <img src="https://professortony.github.io/images/Outcomes.png" style="margin-top: 20px;" alt="Outcomes" class="centered-image">
+            </section>
+        </div>
+
+        <section id="key-dates" class="mb-12 p-6 bg-gray-800 rounded-lg shadow-lg card">
+            <div class="flex items-center mb-4">
+                <img src="https://placehold.co/80x80/8b5cf6/FFFFFF?text=CAL&font=orbitron" alt="Calendar Icon" class="rounded-lg section-icon">
+                <h2 class="text-3xl font-bold text-purple-400">🗓️ Key Dates - Mark Your Calendars!</h2>
+            </div>
+            <p style="font-size 18px;"><strong>FALL SESSION 2025 DATES. (Download PDF for all Fall sessions/dates)-</strong> <a href="https://professortony.github.io/files_docs/Fall2025_Key_Dates_sjdc_term_sessions.pdf" target="_blank" class="text-blue-400 hover:text-blue-300">CLICK HERE! 💡</a></p>
+            <ul class="list-disc list-inside space-y-2 text-lg">
+                <li><strong>Start Date (Aug. 15):</strong> First Day of Fall Semester. - Let the Adventure Begin! 🚀</li>
+                <li><strong>Drop w/Refund (Aug. 29):</strong> Last day to Drop with Full Refund! 💵</li>
+                <li><strong>Drop w/No'W' (Sept. 1):</strong> Last day to Drop with NO 'W' AND last day to Add. 📝</li>
+                <li><strong>Drop w/'W' (Oct. 13):</strong> Last day to Drop with a 'W' 🎃</li>
+                <li><strong>Finals Week (Dec. 8):</strong> Final Exams Week thru Dec.12 - The Grand Finale! 🎉</li>
+                <li><em>(Always check Canvas Course dashboard and Online Calendar for other important dates and holidays)</em></li>
+            </ul>
+        </section>
+
+        <section id="required-items" class="mb-12 p-6 bg-gray-800 rounded-lg shadow-lg card">
+            <div class="flex items-center mb-4">
+                <img src="https://placehold.co/80x80/10b981/FFFFFF?text=GEAR&font=orbitron" alt="Gear Icon" class="rounded-lg section-icon">
+                <h2 class="text-3xl font-bold text-emerald-400">📚 REQUIRED Text & Items - Your Toolkit!  **IMPORTANT**</h2>
+            </div>
+            <ul class="list-disc list-inside space-y-3 text-lg">
+                <li><strong>Textbook (Online, E-Text and Access):</strong> Cengage MindTap Web Design & Development for Carey’s New Perspectives HTML5 and CSS3: Comprehensive (c 2021) ISBN: 9780357107188 (1 term Instant Access).
+                    <br><em class="text-sm text-gray-400">Note: We’ll be using this extensively. You can find it at the campus bookstore. Obtain this ASAP. Assignments due, use the online content!</em>
+                </li>
+                <li><strong>Software / Other Online Access:</strong> LinkedIn Learning. Office 365. And others, as may be noted in Camvas.
+                    <br><em class="text-sm text-gray-400">Good news! This software is free and we'll walk through how to install it.</em>
+                </li>
+                <li><strong>Hardware: *Important*</strong>
+                    <ul class="list-disc list-inside ml-6">
+                        <li>A reliable computer (Windows, Mac, or Linux) with internet access. 💻</li>
+                        <li>A USB flash drive for backing up your work <strong>(HIGHLY recommended!).</strong>💾</li>
+                    </ul>
+                </li>
+                <li><strong>Other:</strong> Access to the college's Learning Management System (LMS) – Canvas! All announcements, assignments, links, and grades will be posted there! 🌐</li>
+            </ul>
+        </section>
+
+        <section id="policies" class="mb-12 p-6 bg-gray-800 rounded-lg shadow-lg card">
+            <div class="flex items-center mb-4">
+                 <img src="https://placehold.co/80x80/eab308/000000?text=RULES&font=orbitron" alt="Rules Icon" class="rounded-lg section-icon">
+                <h2 class="text-3xl font-bold text-yellow-400">📜 Course Policies & Procedures - The Game Rules!</h2>
+            </div>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-semibold text-yellow-300 mb-1"><span class="policy-icon">🚶</span>Attendance & Participation: Your Journey, Your Presence!</h3>
+                    <p>Course attendance every week is IMPORTANT, **your presence is crucial!** Lectures, discussions, and activities are designed to help you succeed. Think of it like leveling up in a game – you can't get experience points if you're not playing! Active participation will also count towards your grade. Course assignments, discussions, labs, and tests are how your grade is determined. **It is your responsibility** to get all the work done! If you have any questions, PLEASE ASK. I am here to facilitate your success. Check Canvas often, participate, read announcements, and do the assignments. You can do it! <strong>&nbsp;&nbsp; **During the first week of the course there will be 3 check-in assignments due! ** CRUCIAL to avoid being DROPPED!</strong></p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-yellow-300 mb-1"><span class="policy-icon">⏰</span>Late Work: Beat the Clock!</h3>
+                    <p>Assignments have due dates for a reason – they help you stay on track and build knowledge sequentially. Assignments submitted late will have a penalty. Again, you are responsible for doing the work and doing it on time! Late penalty will be 7% of assignment score. (Depending on lateness, higher penalty may apply, up to 15% maximum). <em>Pro Tip: Aim to finish early! You'll thank yourself later.</em></p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-yellow-300 mb-1"><span class="policy-icon">🚑</span>Make-Up Exams & Emergency Policy: Life Happens!</h3>
+                    <p>Make-up exams will only be granted for **verifiable, documented emergencies** (e.g., serious illness with a doctor's note, family emergency). You must contact me **as soon as possible**, preferably before the exam, to discuss arrangements. The same applies to extensions for major assignments under emergency circumstances.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-yellow-300 mb-1"><span class="policy-icon">🛡️</span>Academic Integrity: Code with Honor!</h3>
+                    <p>This is a big one! All work submitted in this course must be **your own original work**, unless explicitly stated otherwise. **What's Okay:** Discussing concepts, getting help understanding errors. **What's NOT Okay:** Copying written work or code, sharing completed assignments, having someone else do your work. Any instance of academic dishonesty will result in a **zero for the assignment/exam**, and may be reported to the college. Let's keep it honest! Tools such as Turnitin may be used to check for similarities.</p>
+                </div>
+                 <div>
+                    <h3 class="text-xl font-semibold text-yellow-300 mb-1"><span class="policy-icon">🤝</span>Classroom/Online Conduct, Tutors, and Individual Assistance: Respect is Key!</h3>
+                    <p>Our classroom, Online or In Person, is a learning community. Be respectful. Conduct should fit a classroom/learning environment. Be considerate of others. Do not argue, though questioning and presenting of ideas with supportive reasoning is encouraged. In the classroom, silence cell phones. Laptops for notes/exercises only. Ask questions! If you have questions about tutoring, check Delta Online Tutoring/NetTutor at this online link <a href="https://www.deltacollege.edu/academics/tutoring-and-academic-computing-lab/online-tutoring" target="_blank" class="text-blue-400 hover:text-blue-300">CLICK HERE! 💡</a></p>
+                    <p>You may also consider working with a study group or post a question in the Cnavas course discussion board. Post general questions, comments, requests to form study groups, links to interesting articles or websites, or any course related information. Posts that are deemed inappropriate by the professor will be deleted and may result in student discipline. Other students are often quite helpful and will generally provide a lot of support. And, of course, you can always ask the Professor- in an online Canvas message!</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-yellow-300 mb-1"><span class="policy-icon">📬</span>Communication: Stay Connected!</h3>
+                    <p>Always Check Canvas for announcements. *Your professor may not have time to respond to all individual communications. If there are areas of general misunderstanding or errors, the problem may be addressed as an Announcement item or other mass communication method. Please understand that there are over 200 students enrolled in courses taught by your professor, which places a very heavy demand on your professor and as a result there may be little flexibility in handling of individual requests. Canvas email for private communications will be checked on a regular basis and is the best form of direct, private communication with your professor. *Office hours are best for detailed help!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Student-info" class="mb-12 p-6 bg-gray-800 rounded-lg shadow-lg card">
+            <div class="flex items-center mb-4">
+                <img src="https://placehold.co/80x80/8b5cf6/FFFFFF?text=INF&font=orbitron" alt="Information Icon" class="rounded-lg section-icon">
+                <h2 class="text-3xl font-bold text-purple-400">🔍 Assistance and Other Important Online Student Information!</h2>
+            </div>
+            <p style="font-size 18px;"><strong>Delta maintains a College Website with Links to important student information including the current Student Handbook. </strong><a href="https://www.deltacollege.edu/student-services/delta-college-online-tools" target="_blank" class="text-blue-400 hover:text-blue-300">CLICK HERE! 💡</a></p>
+            <br>
+            <ul class="list-disc list-inside space-y-2 text-lg">
+                <li><strong>Need Assistance?</strong> Students requiring accommodations for a certified disability that may affect class performance are requested to contact me during the first week of the semester. You can also meet with a staff member at Disability Support Programs and Services (DSPS) so that appropriate arrangements can be made. DSPS is located in the DeRicco Building, 2nd floor. The phone number is (209) 954-5151 x6272 </li>
+                <li><strong>Student Services:</strong> Extensive online page with Student services, programs, financial aid information, and other resources for all students! <a href="https://www.deltacollege.edu/student-services" target="_blank" class="text-blue-400 hover:text-blue-300">CLICK HERE! </a></li>
+                <li><strong>CANVAS Access:</strong> To access your classes, course, online resources, L.M.S., and Fully Online courses you need to log into the college online learning tool CANVAS, through your MyDelta Dashboard. For, How to Login to CANVAS?, <a href="https://www.deltacollege.edu/academics/online-regional-education/students-how-login-canvas" target="_blank" class="text-blue-400 hover:text-blue-300">CLICK HERE! 🏫</a></li>
+                <li><strong>Drops?</strong> "DROPS" ARE THE RESPONSIBILITY OF THE STUDENT. 📝 Except for the first 2 weeks of the term. Students may be dropped for non-attendance. The professor reserves the right to make any adjustments in the operation of this course that in professional judgment are warranted to better meet the needs of the students and the objectives of the course.</li>
+            </ul>
+        </section>
+        
+        <section id="grading" class="mb-10 p-5 bg-gray-800 rounded-lg shadow-lg card">
+            <div class="flex items-center mb-4">
+                <img src="https://placehold.co/80x80/6366f1/FFFFFF?text=GRADE&font=orbitron" alt="Grading Icon" class="rounded-lg section-icon">
+                <h2 class="text-3xl font-bold text-indigo-400">📊 Grading Policy - How You'll Level Up!</h2>
+            </div>
+                    <p>Students will be evaluated by a final examination and, at the professor's discretion, one or more of the following: midterms, quizzes, homework, computer programs, discussions, and/or class activities.</p>
+                    <br>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-xl font-semibold text-indigo-300 mb-2">Grade Breakdown:</h3>
+                    <ul class="list-disc list-inside space-y-1 text-lg">
+                        <li>Assignments (Questions, Labs & Problems): 40%</li>
+                        <li>Quizzes (In-class or Online): 15%</li>
+                        <li>Midterm Exam: 20%</li>
+                        <li>Final Exam (Cumulative): 20%</li>
+                        <li>Participation & In-Class Activities: 5%</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-indigo-300 mb-2">Grading Scale:</h3>
+                    <ul class="list-none space-y-1 text-lg">
+                        <li><strong>A:</strong> 90-100%</li>
+                        <li><strong>B:</strong> 80-89%</li>
+                        <li><strong>C:</strong> 70-79%</li>
+                        <li><strong>D:</strong> 60-69%</li>
+                        <li><strong>F:</strong> Below 60%</li>
+                    </ul>
+                </div>
+            </div>
+             <img src="https://placehold.co/600x85/1f2937/4f46e5?text=Level+Up+Your+Skills!&font=orbitron" alt="Level Up Graphic" class="mt-6 rounded-lg shadow-md mx-auto">
+        </section>
+
+        <section id="schedule" class="mb-12 p-6 bg-gray-800 rounded-lg shadow-lg card">
+            <div class="flex items-center mb-4"><img class="rounded-lg section-icon" src="https://placehold.co/80x80/0891b2/FFFFFF?text=MAP&amp;font=orbitron" alt="Map Icon" />
+                <h2 class="text-3xl font-bold text-cyan-400">🗺️ Course Schedule - Your Roadmap to Success!</h2>
+            </div>
+            <p class="mb-4 text-gray-400"><span style="font-size: 14pt;">*<strong>CANVAS- </strong>Modules is the place to find all assignments! Be sure to start there and work to <br />complete each Module's </span><span style="font-size: 14pt;">assignments by the noted Due Dates.</span><em> </em><span style="font-size: 14pt;">Schedule below contains a <br />high-level<em> </em>overview of dates, topics, and chapters<em>.</em> T.I.A is the Tech in Action e-Text. Other <br />e-Text, such as GO! Word and GO! Excel, are easily found at the related Pearson Links.</span>&nbsp;<em><br />This schedule can change and is subject to change with notice. Check <a class="text-blue-400 hover:text-blue-300" href="https://deltacollege.okta.com/" target="_blank" rel="noopener">CANVAS! </a> for the latest updates!</em></p>
+            <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-700">
+            <caption>Assignments table</caption>
+            <thead class="bg-gray-700">
+                <tr>
+                    <th class="py-2 text-white">Ch.</th>
+                    <th class="py-2 text-white">Assignment Name</th>
+                    <th class="py-2 text-white">TYPE</th>
+                    <th class="py-2 text-white">PTs</th>
+                    <th class="py-2 text-white">DUE Date</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-700">
+                <tr class="hover:bg-gray-800">
+                    <td class="whitespace-nowrap">URGENT</td>
+                    <td>Avoid being dropped: CANVAS - Self Intro (In Modules)</td>
+                    <td>First 3 Days</td>
+                    <td>3</td>
+                    <td>Aug. 18</td>
+                </tr>
+                <tr class="hover:bg-gray-800">
+                    <td class="whitespace-nowrap">URGENT</td>
+                    <td>Avoid being dropped: CANVAS - Syllabus QUIZ</td>
+                    <td>First 3 Days</td>
+                    <td>10</td>
+                    <td>Aug. 20</td>
+                </tr>
+                <tr class="hover:bg-gray-800">
+                    <td class="whitespace-nowrap">URGENT</td>
+                    <td>Avoid being dropped: CANVAS - Syllabus , Agreement</td>
+                    <td>First 3 Days</td>
+                    <td>2</td>
+                    <td>Aug. 25</td>
+                </tr>
+                <tr class="hover:bg-gray-800">
+                    <td class="whitespace-nowrap">Intro</td>
+                    <td>Cengage/Mindtap: Getting Started with MindTap</td>
+                    <td>HomeWk.</td>
+                    <td>*</td>
+                    <td>Aug. 21</td>
+                </tr>
+                <tr class="hover:bg-gray-800">
+                    <td class="whitespace-nowrap">Intro</td>
+                    <td>Cengage/Mindtap: Getting Started with Coding Labs</td>
+                    <td>HomeWk.</td>
+                    <td>*</td>
+                    <td>Aug. 22</td>
+                </tr>
+                <tr class="hover:bg-gray-800">
+                    <td class="whitespace-nowrap">Intro</td>
+                    <td>Cengage/Mindtap: Pre-Requisite: Coding Labs</td>
+                    <td>HomeWk.</td>
+                    <td>61</td>
+                    <td>Aug. 25</td>
+                </tr>
+                <tr class="hover:bg-gray-800">
+                    <td class="whitespace-nowrap">Intro</td>
+                    <td>Cnge/Mndtp: Dwnld Data Files & Pre-Course Assessment</td>
+                    <td>HomeWk.</td>
+                    <td>25</td>
+                    <td>Aug. 26</td>
+                </tr>
+                <tr class="hover:bg-gray-800">
+                    <td class="whitespace-nowrap">Tutorial 1</td>
+                    <td>Cengage/Mindtap: Getting Started & Visualize</td>
+                    <td>HomeWk.</td>
+                    <td>*</td>
+                    <td>Aug. 28</td>
+                </tr>
+                <tr class="hover:bg-gray-800">
+                    <td class="whitespace-nowrap">Tutorial 1</td>
+                    <td>Cnge/Mndtp: Code (Chalenges, Assgnmts, Case) (5)</td>
+                    <td>HomeWk.</td>
+                    <td>60</td>
+                    <td>Aug. 31</td>
+                </tr>
+                <tr class="hover:bg-gray-800">
+                    <td class="whitespace-nowrap">Tutorial 1</td>
+                    <td>Cengage/Mindtap: STUDY It. Section:</td>
+                    <td>HomeWk.</td>
+                    <td>*</td>
+                    <td>Sept. 1</td>
+                </tr>
+                <tr class="hover:bg-gray-800">
+                    <td class="whitespace-nowrap">Tutorial 1</td>
+                    <td>Cengage/Mindtap: Apply It. Section 1.1 , 1.2 , & 1.3</td>
+                    <td>HomeWk.</td>
+                    <td>27</td>
+                    <td>Sept. 3</td>
+                </tr>
+                <tr class="hover:bg-gray-800">
+                    <td class="whitespace-nowrap">READ</td>
+                    <td>Read Appendix Items: ( A thru F ) 6 appendices</td>
+                    <td>HomeWk.</td>
+                    <td>*</td>
+                    <td>Sept. 06</td>
+                </tr>
+                <tr class="hover:bg-gray-800">
+                    <td class="whitespace-nowrap">Tutorial 2</td>
+                    <td>Cng./Mndtp: Preview, Read, & Visualize</td>
+                    <td>HomeWk.</td>
+                    <td>*</td>
+                    <td>Sept. 5</td>
+                </tr>
+                <tr class="hover:bg-gray-800">
+                    <td class="whitespace-nowrap">Tutorial 2</td>
+                    <td>Cng./Mndtp: CODE (Challenges, Assgnmt, & Case Prob.) 4</td>
+                    <td>HomeWk.</td>
+                    <td>45</td>
+                    <td>Sept. 8</td>
+                </tr>
+                <tr class="hover:bg-gray-800">
+                    <td class="whitespace-nowrap">Tutorial 2</td>
+                    <td>Cng./Mndtp: STUDY & APPLY</td>
+                    <td>HomeWk.</td>
+                    <td>24</td>
+                    <td>Sept. 9</td>
+                </tr>
+                <tr class="hover:bg-gray-800">
+                    <td class="whitespace-nowrap">In the NEWS</td>
+                    <td>Read: In the News - various linked items -  Discussion (?)</td>
+                    <td>HomeWk.</td>
+                    <td>10</td>
+                    <td>Sept. 11</td>
+                </tr>
+                <tr class="hover:bg-gray-800">
+                    <td class="whitespace-nowrap">Tutorial 3</td>
+                    <td>Cng./Mndtp: Preview, Read, & Visualize</td>
+                    <td>HomeWk.</td>
+                    <td>*</td>
+                    <td>Sept. 12</td>
+                </tr>
+                <tr class="hover:bg-gray-800">
+                    <td class="whitespace-nowrap">Tutorial 3</td>
+                    <td>Cng./Mndtp: CODE (Challenges, Assgnmt, & Case Prob.) 4</td>
+                    <td>HomeWk.</td>
+                    <td>45</td>
+                    <td>Sept. 16</td>
+                </tr>
+                <tr class="hover:bg-gray-800">
+                    <td class="whitespace-nowrap">Tutorial 3</td>
+                    <td>Cng./Mndtp: Apply It. Section: (Use It, Decision & Qz.)</td>
+                    <td>HomeWk.</td>
+                    <td>25</td>
+                    <td>Sept. 18</td>
+                </tr>
+                <tr class="hover:bg-gray-800">
+                    <td class="whitespace-nowrap">Tutorial 4</td>
+                    <td>Cng./Mndtp: Preview, Read</td>
+                    <td>HomeWk.</td>
+                    <td>*</td>
+                    <td>Sept. 25</td>
+                </tr>
+                <tr class="hover:bg-gray-800">
+                    <td class="whitespace-nowrap">Tutorial 4</td>
+                    <td>Cng./Mndtp: CODE (Challenges, Assgnmt, & Case Prob.) 4</td>
+                    <td>HomeWk.</td>
+                    <td>45</td>
+                    <td>Sept. 27</td>
+                </tr>
+                <tr class="hover:bg-gray-800">
+                    <td class="whitespace-nowrap">Tutorial 4</td>
+                    <td>Cng./Mndtp: STUDY & APPLY</td>
+                    <td>HomeWk.</td>
+                    <td>25</td>
+                    <td>Sept. 29</td>
+                </tr>
+                <tr class="hover:bg-gray-800">
+                    <td class="whitespace-nowrap">Tutorial 5</td>
+                    <td>Cng./Mndtp: Preview, Read, & Visualize</td>
+                    <td>HomeWk.</td>
+                    <td>*</td>
+                    <td>Oct. 02</td>
+                </tr>
+                <tr class="hover:bg-gray-800">
+                    <td class="whitespace-nowrap">Tutorial 5</td>
+                    <td>Cng./Mndtp: CODE (Challenges, Assgnmt, & Case Prob.) 4</td>
+                    <td>HomeWk.</td>
+                    <td>45</td>
+                    <td>Oct. 05</td>
+                </tr>
+                <tr class="hover:bg-gray-800">
+                    <td class="whitespace-nowrap">Tutorial 5</td>
+                    <td>Cng./Mndtp: STUDY & APPLY</td>
+                    <td>HomeWk.</td>
+                    <td>24</td>
+                    <td>Oct. 07</td>
+                </tr>
+                <tr class="hover:bg-gray-800">
+                    <td class="whitespace-nowrap">MID-TERM</td>
+                    <td>MID TERM TEST: Covers Chapters 1 to 5</td>
+                    <td>TEST</td>
+                    <td>150</td>
+                    <td>Oct. 13</td>
+                </tr>
+                <tr class="hover:bg-gray-800">
+                    <td class="whitespace-nowrap">Tutorial 6</td>
+                    <td>Cng./Mndtp: Preview, Read</td>
+                    <td>HomeWk.</td>
+                    <td>*</td>
+                    <td>Oct. 14</td>
+                </tr>
+                <tr class="hover:bg-gray-800">
+                    <td class="whitespace-nowrap">Tutorial 6</td>
+                    <td>Cng./Mndtp: CODE (Challenges, Assgnmt, & Case Prob.) 4</td>
+                    <td>HomeWk.</td>
+                    <td>45</td>
+                    <td>Oct. 17</td>
+                </tr>
+                <tr class="hover:bg-gray-800">
+                    <td class="whitespace-nowrap">Tutorial 6</td>
+                    <td>Cng./Mndtp: STUDY & APPLY</td>
+                    <td>HomeWk.</td>
+                    <td>18</td>
+                    <td>Oct. 19</td>
+                </tr>
+                <tr class="hover:bg-gray-800">
+                    <td class="whitespace-nowrap">Tutorial 7</td>
+                    <td>Cng./Mndtp: Preview, Read</td>
+                    <td>HomeWk.</td>
+                    <td>*</td>
+                    <td>Oct. 21</td>
+                </tr>
+                <tr class="hover:bg-gray-800">
+                    <td class="whitespace-nowrap">Tutorial 7</td>
+                    <td>Cng./Mndtp: CODE (Challenges, Assgnmt, & Case Prob.) 4</td>
+                    <td>HomeWk.</td>
+                    <td>45</td>
+                    <td>Oct. 24</td>
+                </tr>
+                <tr class="hover:bg-gray-800">
+                    <td class="whitespace-nowrap">Tutorial 7</td>
+                    <td>Cng./Mndtp: STUDY & APPLY</td>
+                    <td>HomeWk.</td>
+                    <td>23</td>
+                    <td>Oct. 26</td>
+                </tr>
+                <tr class="hover:bg-gray-800">
+                    <td class="whitespace-nowrap"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="hover:bg-gray-800">
+                    <td class="whitespace-nowrap">Tutorial 8</td>
+                    <td>Cng./Mndtp: Preview, Read</td>
+                    <td>HomeWk.</td>
+                    <td>*</td>
+                    <td>Oct. 28</td>
+                </tr>
+                <tr class="hover:bg-gray-800">
+                        <td class="whitespace-nowrap">Tutorial 8</td>
+                        <td class="whitespace-nowrap">CODE (Challenges, Assgnmt, & Case Prob.) 4</td>
+                        <td class="whitespace-nowrap">HomeWk.</td>
+                        <td class="whitespace-nowrap">45</td>
+                        <td class="whitespace-nowrap">Oct. 31</td>
+                    </tr>
+                    <tr class="hover:bg-gray-800">
+                        <td class="whitespace-nowrap">Tutorial 8</td>
+                        <td class="whitespace-nowrap">STUDY & APPLY</td>
+                        <td class="whitespace-nowrap">HomeWk.</td>
+                        <td class="whitespace-nowrap">25</td>
+                        <td class="whitespace-nowrap">Nov. 02</td>
+                    </tr>
+                    <!-- Tutorial 9 -->
+                    <tr class="hover:bg-gray-800">
+                        <td class="whitespace-nowrap">Tutorial 9</td>
+                        <td class="whitespace-nowrap">Preview, Read</td>
+                        <td class="whitespace-nowrap">HomeWk.</td>
+                        <td class="whitespace-nowrap">*</td>
+                        <td class="whitespace-nowrap">Nov. 04</td>
+                    </tr>
+                    <tr class="hover:bg-gray-800">
+                        <td class="whitespace-nowrap">Tutorial 9</td>
+                        <td class="whitespace-nowrap">CODE (Challenges, Assgnmt, & Case Prob.) 4</td>
+                        <td class="whitespace-nowrap">HomeWk.</td>
+                        <td class="whitespace-nowrap">45</td>
+                        <td class="whitespace-nowrap">Nov. 09</td>
+                    </tr>
+                    <tr class="hover:bg-gray-800">
+                        <td class="whitespace-nowrap">Tutorial 9</td>
+                        <td class="whitespace-nowrap">STUDY & APPLY</td>
+                        <td class="whitespace-nowrap">HomeWk.</td>
+                        <td class="whitespace-nowrap">24</td>
+                        <td class="whitespace-nowrap">Nov. 14</td>
+                    </tr>
+                    <!-- Tutorial 10 -->
+                    <tr class="hover:bg-gray-800">
+                        <td class="whitespace-nowrap">Tutorial 10</td>
+                        <td class="whitespace-nowrap">Preview, Read</td>
+                        <td class="whitespace-nowrap">HomeWk.</td>
+                        <td class="whitespace-nowrap">*</td>
+                        <td class="whitespace-nowrap">Nov. 17</td>
+                    </tr>
+                    <tr class="hover:bg-gray-800">
+                        <td class="whitespace-nowrap">Tutorial 10</td>
+                        <td class="whitespace-nowrap">CODE (Challenges, Assgnmt, & Case Prob.) 4</td>
+                        <td class="whitespace-nowrap">HomeWk.</td>
+                        <td class="whitespace-nowrap">24</td>
+                        <td class="whitespace-nowrap">Nov. 24</td>
+                    </tr>
+                    <tr class="hover:bg-gray-800">
+                        <td class="whitespace-nowrap">Tutorial 10</td>
+                        <td class="whitespace-nowrap">STUDY & APPLY</td>
+                        <td class="whitespace-nowrap">HomeWk.</td>
+                        <td class="whitespace-nowrap">21</td>
+                        <td class="whitespace-nowrap">Nov. 26</td>
+                    </tr>
+                    <!-- Discussion -->
+                    <tr class="hover:bg-gray-800">
+                        <td class="whitespace-nowrap">Discussion</td>
+                        <td class="whitespace-nowrap">Discussion Questions #2 DUE</td>
+                        <td class="whitespace-nowrap">HomeWk.</td>
+                        <td class="whitespace-nowrap">30</td>
+                        <td class="whitespace-nowrap">Dec. 01</td>
+                    </tr>
+                    <!-- Final Exam -->
+                    <tr class="hover:bg-gray-800">
+                        <td class="whitespace-nowrap">Final Exam</td>
+                        <td class="whitespace-nowrap">IN- CLASS Final Exam: Parts to be done IN-CLASS: T.B.A.</td>
+                        <td class="whitespace-nowrap">FINAL</td>
+                        <td class="whitespace-nowrap">180</td>
+                        <td class="whitespace-nowrap">Dec. 08</td>
+                    </tr>
+            </tbody>
+        </table>
+                </div>
+        </section>
+        <section id="assignments" class="mb-12 p-6 bg-gray-800 rounded-lg shadow-lg card">
+                <div class="flex items-center mb-4"><img class="rounded-lg section-icon" src="https://placehold.co/80x80/d946ef/FFFFFF?text=QUEST&amp;font=orbitron" alt="Quest Icon" />
+                <h2 class="text-3xl font-bold text-fuchsia-400">✍️ Assignments - Additional information and coding tips!</h2>
+                </div>
+                <ul class="list-disc list-inside space-y-3 text-lg">
+                    <li><strong>Labs / Exercises: Such as Tutorial CODE and others as may be added in Canvas are:</strong> exercises to work through to best get acquainted with the various coding languages. These exercises are to increase your ability to use each of the coding Apps as well. Expect to spend some time reading through the related chapters for each Tutorial and then working through the <strong>Labs / Exercises</strong>. 🛠️</li>
+                    <li><strong>W3Schools.com:</strong> Learning Web Animation will consist of reading and working through the online Exercises. Some additional information found at - <a class="text-blue-400 hover:text-blue-300" href="https://www.w3schools.com/" target="_blank" rel="noopener">https://www.w3schools.com/</a>  will help to get through the sections and assignments. <strong> LinkedIn Learning </strong>  and other online tools and sites will also be presented in Canvas. 🤔</li>
+                    <li><strong>Quizzes:</strong> Will cover Chapter material for each Module and chapter reading. Keep those neurons firing! ⚡</li>
+                    <li><strong>Midterm &amp; Final Exams:</strong> Will assess your understanding of concepts and your ability to apply them. They will include multiple-choice, short answer, and some coding questions. 📜</li>
+                    <li><strong>(Optional) Final Project:</strong> [An Extra Credit Project will be announced prior to the Midterm. "A culminating project where you'll design and work towards coding an animated web page." More details will be provided separately.] 💡</li>
+                </ul>
+                <img class="mt-1 rounded-lg shadow-md mx-auto" src="https://placehold.co/600x90/1f2937/a855f7?text=Code+Your+Destiny!&amp;font=orbitron" alt="Coding Graphic" />
+        </section>
+        <section class="text-center p-8 bg-gray-800 rounded-lg shadow-xl border-t-4 border-blue-500">
+                <h2 class="text-3xl font-bold text-blue-400 mb-4">A Final Byte of Wisdom...</h2>
+                <p class="text-lg leading-relaxed">Learning computer science is like learning a new language and a new way of thinking. It takes practice, persistence, and patience. Don't be afraid to make mistakes &ndash; they are part of the learning process! <span style="font-size: 14pt;">Ask for help when you need it, collaborate (appropriately!), and most importantly, have fun</span> exploring what you can create! I'm here to help you succeed. Let's have an amazing semester! ✨</p>
+        </section>
+                </div>
+
+        <footer class="text-center py-8 text-gray-500 text-sm">
+        <p>&copy; 2025-2026 Tony Pacheco - San Joaquin Delta Community College. Syllabus content is subject to change with notification.</p>
+        <p></p>
+        </footer>
+
+</body>
+</html>
