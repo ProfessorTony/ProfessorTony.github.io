@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Web Design - In-Person Meetings</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* Use the Inter font family */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* A subtle gradient for the background */
+        .gradient-bg {
+            background-color: #111827;
+            background-image: radial-gradient(at 47% 33%, hsl(204.00, 0%, 100%) 0, transparent 59%), radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
+        }
+    </style>
+</head>
+<body class="gradient-bg text-gray-200 antialiased">
+
+    <!-- Main Container -->
+    <div class="container mx-auto px-4 py-8 md:py-16 max-w-4xl">
+
+        <!-- Header Section -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-6xl font-black text-white tracking-tight leading-tight">Basic Web Design</h1>
+            <p class="text-lg md:text-xl text-indigo-700 mt-2">Welcome, Future Web Developers! Here are our on-campus dates.</p>
+        </header>
+
+        <!-- Main Content Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+
+            <!-- Left Column with Image and Details -->
+            <div class="md:col-span-1 space-y-8">
+                <!-- Main Image -->
+                <img src="https://placehold.co/600x400/111827/3b82f6?text=Code+Editor" 
+                     alt="Stylized image of a code editor on a screen"
+                     class="rounded-2xl shadow-2xl border-2 border-gray-700 w-full h-auto object-cover"
+                     onerror="this.onerror=null;this.src='https://placehold.co/600x400/111827/FFFFFF?text=Image+Error';">
+                
+                <!-- Meeting Info Card -->
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-2xl border border-gray-700 shadow-lg">
+                    <h3 class="text-xl font-bold text-white mb-4">Meeting Details</h3>
+                    <div class="space-y-4 text-gray-300">
+                        <!-- Location -->
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                            <span><strong class="font-semibold text-white">Location:</strong> Shima 109</span>
+                        </div>
+                        <!-- Day & Time -->
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            <span><strong class="font-semibold text-white">When:</strong> Tuesdays at 1:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Second Image -->
+                <img src="https://placehold.co/600x400/111827/818cf8?text=Web+Design" 
+                     alt="Abstract design representing web layout"
+                     class="rounded-2xl shadow-xl border-2 border-gray-700 w-full h-auto object-cover"
+                     onerror="this.onerror=null;this.src='https://placehold.co/600x400/111827/FFFFFF?text=Image+Error';">
+            </div>
+
+            <!-- Right Column with Dates -->
+            <div class="md:col-span-2">
+                <div class="bg-gray-900/60 backdrop-blur-sm p-6 md:p-8 rounded-2xl border border-gray-700 shadow-2xl">
+                    <h2 class="text-2xl md:text-3xl font-bold text-white mb-6">In-Person Class Dates</h2>
+                    <div class="space-y-4">
+                        <!-- Date Item: September 16 -->
+                        <div class="flex items-center bg-gray-800 p-4 rounded-lg transition-all duration-300 hover:bg-indigo-500/20 hover:scale-105">
+                            <div class="flex-shrink-0 bg-indigo-500 text-white rounded-md h-12 w-12 flex flex-col items-center justify-center mr-4">
+                                <span class="text-xs font-semibold">SEP</span>
+                                <span class="text-xl font-bold">16</span>
+                            </div>
+                            <div class="flex-grow">
+                                <p class="text-lg font-medium text-gray-100">September 16</p>
+                                <p class="text-sm text-gray-400">Ch. 03: Enhancing a Website with Images and Links.</p>
+                            </div>
+                        </div>
+                        <!-- Date Item: October 7 -->
+                        <div class="flex items-center bg-gray-800 p-4 rounded-lg transition-all duration-300 hover:bg-indigo-500/20 hover:scale-105">
+                            <div class="flex-shrink-0 bg-indigo-500 text-white rounded-md h-12 w-12 flex flex-col items-center justify-center mr-4">
+                                <span class="text-xs font-semibold">OCT</span>
+                                <span class="text-xl font-bold">7</span>
+                            </div>
+                            <div class="flex-grow">
+                                <p class="text-lg font-medium text-gray-100">October 7</p>
+                                <p class="text-sm text-gray-400">Ch. 06: Responsive Design Part 2.</p>
+                            </div>
+                        </div>
+                        <!-- Date Item: October 28 -->
+                        <div class="flex items-center bg-gray-800 p-4 rounded-lg transition-all duration-300 hover:bg-indigo-500/20 hover:scale-105">
+                            <div class="flex-shrink-0 bg-indigo-500 text-white rounded-md h-12 w-12 flex flex-col items-center justify-center mr-4">
+                                <span class="text-xs font-semibold">OCT</span>
+                                <span class="text-xl font-bold">28</span>
+                            </div>
+                            <div class="flex-grow">
+                                <p class="text-lg font-medium text-gray-100">October 28</p>
+                                <p class="text-sm text-gray-400">Ch. 08: Creating Tables and Forms.</p>
+                            </div>
+                        </div>
+                        <!-- Date Item: November 18 -->
+                        <div class="flex items-center bg-gray-800 p-4 rounded-lg transition-all duration-300 hover:bg-indigo-500/20 hover:scale-105">
+                            <div class="flex-shrink-0 bg-indigo-500 text-white rounded-md h-12 w-12 flex flex-col items-center justify-center mr-4">
+                                <span class="text-xs font-semibold">NOV</span>
+                                <span class="text-xl font-bold">18</span>
+                            </div>
+                            <div class="flex-grow">
+                                <p class="text-lg font-medium text-gray-100">November 18</p>
+                                <p class="text-sm text-gray-400">Ch. 11: Publish, Promote, and Maintain a Website.</p>
+                            </div>
+                        </div>
+                        <!-- Date Item: December 2 -->
+                        <div class="flex items-center bg-gray-800 p-4 rounded-lg transition-all duration-300 hover:bg-indigo-500/20 hover:scale-105">
+                            <div class="flex-shrink-0 bg-indigo-500 text-white rounded-md h-12 w-12 flex flex-col items-center justify-center mr-4">
+                                <span class="text-xs font-semibold">DEC</span>
+                                <span class="text-xl font-bold">2</span>
+                            </div>
+                            <div class="flex-grow">
+                                <p class="text-lg font-medium text-gray-100">December 2</p>
+                                <p class="text-sm text-gray-400">Ch. 12: Getting Started with Bootstrap.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center mt-16">
+            <p class="text-gray-500">Looking forward to seeing you all in class. Let's build something amazing!</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
