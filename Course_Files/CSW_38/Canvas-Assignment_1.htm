@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to Web Animation | CS-105</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Dark Gray */
+            color: #E5E7EB; /* Light Gray */
+        }
+        canvas {
+            background-color: #1F2937; /* Slightly lighter gray for contrast */
+            border-radius: 0.5rem;
+            border: 1px solid #374151;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Main container -->
+    <div class="container mx-auto px-4 py-8 md:py-12 max-w-4xl">
+
+        <!-- Header Section -->
+        <header class="text-center mb-8">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-2">Welcome to Web Animation!</h1>
+            <p class="text-lg text-gray-400">Example / Assignment Animation #1.</p>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <div class="bg-gray-800 rounded-lg p-6 md:p-8 shadow-lg">
+                <p class="mb-6 leading-relaxed">
+                    Hello class! Welcome to our exploration of web animation. One of the most powerful tools we have for creating animations directly in the browser is the HTML5 <strong><code>&lt;canvas&gt;</code></strong> element. Think of it as a blank digital canvas where we can draw shapes, text, and images using JavaScript. By drawing, clearing, and re-drawing objects in slightly different positions very quickly, we create the illusion of movement.
+                </p>
+
+                <!-- Placeholder Image -->
+                <div class="my-6">
+                    
+                    <img src="https://placehold.co/800x400/1F2937/E5E7EB?text=Code+on+a+Screen" 
+                         alt="A computer screen showing animation code"
+                         class="w-full h-auto rounded-lg object-cover"
+                         onerror="this.onerror=null;this.src='https://placehold.co/800x400/1F2937/E5E7EB?text=Image+Not+Found';">
+                    <p class="text-center text-sm text-gray-100 mt-2">Animation starts with code, just like this.</p>
+                </div>
+
+                <p class="mb-4 leading-relaxed">
+                    Below is a live example. We're using JavaScript to draw a circle on the canvas and update its position in a loop. I've heavily commented the JavaScript code so you can see exactly what each part does. Take your time to read through it, and then try changing some of the values—like the circle's color, size, or speed—to see what happens! This is the best way to learn.
+                </p>
+
+                <!-- The Canvas Element -->
+                <canvas id="animationCanvas"></canvas>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center mt-8 text-gray-500">
+            <p>Professor Pacheco | Technology & Computer Sciences</p>
+        </footer>
+
+    </div>
+
+    <script>
+        // === SCRIPT START ===
+
+        // Wait for the window to load before running our script
+        window.onload = function() {
+
+            // --- 1. SETUP ---
+
+            // Get a reference to the canvas element from our HTML
+            const canvas = document.getElementById('animationCanvas');
+            
+            // Get the 2D "context" of the canvas. This is the object we use to draw things.
+            const ctx = canvas.getContext('2d');
+
+            // Set initial canvas size. We'll make it responsive later.
+            let canvasWidth = canvas.parentElement.clientWidth;
+            let canvasHeight = 400; // A fixed height is fine for this example
+            canvas.width = canvasWidth;
+            canvas.height = canvasHeight;
+
+
+            // --- 2. ANIMATION STATE ---
+            
+            // Here we define the properties of the object we want to animate.
+            // Let's create a circle.
+            let circle = {
+                x: 100,                     // Initial horizontal position
+                y: canvasHeight / 2,        // Initial vertical position (center)
+                radius: 25,                 // The radius of the circle
+                dx: 3,                      // Horizontal velocity (how many pixels to move per frame)
+                color: '#34D399'            // A nice green color
+            };
+
+
+            // --- 3. DRAWING FUNCTIONS ---
+
+            // This function clears the canvas and draws our circle at its current position
+            function draw() {
+                // Clear the entire canvas from top-left (0,0) to bottom-right
+                // We have to do this in every frame to erase the previous drawing
+                ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+
+                // Start drawing
+                ctx.beginPath();
+                
+                // Define the circle: arc(x, y, radius, startAngle, endAngle)
+                // Math.PI * 2 creates a full circle.
+                ctx.arc(circle.x, circle.y, circle.radius, 0, Math.PI * 2);
+                
+                // Set the color and fill the shape
+                ctx.fillStyle = circle.color;
+                ctx.fill();
+                
+                // Finish drawing
+                ctx.closePath();
+            }
+
+
+            // --- 4. UPDATE FUNCTION ---
+
+            // This function updates the state of our circle for the next frame
+            function update() {
+                // Move the circle horizontally
+                circle.x += circle.dx;
+
+                // Collision detection: Check if the circle hits the left or right edge
+                // If the circle's edge goes past the canvas boundary...
+                if (circle.x + circle.radius > canvasWidth || circle.x - circle.radius < 0) {
+                    // ...reverse its horizontal direction by making the velocity negative/positive.
+                    circle.dx *= -1; 
+                }
+            }
+
+
+            // --- 5. THE ANIMATION LOOP ---
+
+            // This is the heart of the animation. It's a function that runs on every frame.
+            function animate() {
+                update(); // First, update the object's position and state
+                draw();   // Then, redraw the scene with the new state
+                
+                // requestAnimationFrame tells the browser to run this function again
+                // before the next repaint. This creates a smooth, efficient loop.
+                requestAnimationFrame(animate);
+            }
+
+            // --- 6. MAKING IT RESPONSIVE ---
+
+            function resizeCanvas() {
+                // Get the width of the container element
+                canvasWidth = canvas.parentElement.clientWidth;
+                canvas.width = canvasWidth;
+                // We can also recenter the circle if we want
+                circle.y = canvasHeight / 2;
+            }
+
+            // Listen for the window to be resized and call our function
+            window.addEventListener('resize', resizeCanvas);
+
+
+            // --- KICK IT OFF! ---
+            // Call the animate function once to start the loop.
+            animate();
+        };
+
+    </script>
+
+</body>
+</html>

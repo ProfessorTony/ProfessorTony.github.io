@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Animation Assignment | CS-105</title>
+    <!-- 
+      This <style> block contains all the styling for the page.
+      For a small, self-contained page like this, this is a great way to include CSS
+      without needing a separate file. This is often called "Internal CSS".
+      "Inline CSS" refers to using the 'style' attribute directly on an HTML element,
+      like <p style="color: red;">. We use a mix of both here.
+    -->
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #121212; /* A very dark gray, almost black */
+            color: #E0E0E0; /* A light gray for readability */
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #1E1E1E; /* A slightly lighter dark gray for the content area */
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 20px 40px;
+        }
+        h1, h2 {
+            color: #FFFFFF; /* White for main headings */
+            border-bottom: 2px solid #4A90E2; /* A blue accent color */
+            padding-bottom: 10px;
+        }
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin-top: 40px;
+        }
+        code {
+            background-color: #333;
+            color: #F8F8F2; /* A common light color for code */
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: "Courier New", Courier, monospace;
+        }
+        ol li, ul li {
+            margin-bottom: 10px;
+        }
+        strong {
+            color: #FFD700; /* Gold color to highlight important text */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #444;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #4A90E2;
+            color: #FFFFFF;
+        }
+        tr:nth-child(even) {
+            background-color: #2C2C2C; /* Banded rows for the table */
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Canvas Animation Assignment</h1>
+
+        <!-- Assignment Instructions Section -->
+        <div>
+            <h2>Instructions (17 pts. Total)</h2>
+            <ol>
+                <li>After reading, reviewing, and learning the content and concepts in the W3 Schools Canvas assigned sections, proceed with the "Animation Assignment".</li>
+                <li>Use the provided code page, <code>Canvas-Assignment_1.htm</code>, and <strong>UPDATE and CREATE</strong> your own version.</li>
+                <li>You must make, at a minimum, the following changes:
+                    <ul>
+                        <li>a. Change the <strong>color</strong> of the moving object.</li>
+                        <li>b. Change the <strong>location</strong> of the canvas in relation to the webpage layout.</li>
+                        <li>c. Change the <strong>size</strong> of the object.</li>
+                        <li>d. Attempt to change the <strong>direction</strong> of movement (e.g., vertical, diagonal).</li>
+                        <li>e. Attempt to add a <strong>2nd moving object</strong>.</li>
+                        <li>f. Add <strong>your name</strong> in the Webpage near the top (e.g., in the header).</li>
+                        <li>g. <strong>Rename</strong> the File before submitting / Publishing. Format to use is First initial.Last Name.Animation_1.htm (Example: T.Pacheco.Animation_1.htm)</li>
+                        <li>h. Lastly, <strong>PUBLISH</strong> the page to your Hosting site and <strong>Submit</strong> the URL, web address.</li>
+                    </ul>
+                </li>
+                <li>Your score will be assessed per the Rubric below.</li>
+            </ol>
+        </div>
+
+        <!-- Grading Rubric Section -->
+        <div>
+            <h2>Grading Rubric</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Criteria</th>
+                        <th>Description</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Student Name</td>
+                        <td>Student's full name is clearly visible near the top of the webpage. File name changed and Published online.</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Object Color</td>
+                        <td>The color of the primary animated object has been successfully changed from the original.</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Object Size</td>
+                        <td>The size (e.g., radius of a circle) of the primary animated object has been changed.</td>
+                        <td>4</td>
+                    </tr>
+                     <tr>
+                        <td>Canvas Location</td>
+                        <td>The <code>&lt;canvas&gt;</code> element is in a different location on the page than the original example.</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Movement Direction</td>
+                        <td>A clear attempt was made to alter the movement vector (e.g., adding a <code>dy</code> velocity). The object does not have to behave perfectly.</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Second Object</td>
+                        <td>A clear attempt was made to add a second, distinct animated object to the canvas. The object does not have to behave perfectly.</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right; font-weight: bold; color: #FFFFFF;" colspan="2">Total Score</td>
+                        <td style="font-weight: bold; color: #FFFFFF;">17</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="footer">
+            <p>Professor Pacheco | Technology & Computer Sciences</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
