@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Particle Animation</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden; /* Prevents scrollbars from appearing */
+            background-color: #1a1a1a; /* Dark background for the page */
+        }
+        canvas {
+            display: block; /* Removes default margin under the canvas */
+        }
+    </style>
+</head>
+<body>
+    <canvas id="animationCanvas"></canvas>
+
+    <script>
+        // --- 1. SETUP ---
+        // Get the canvas element and its 2D rendering context
+        const canvas = document.getElementById('animationCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Set the canvas to fill the browser window
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        // --- 2. GLOBAL VARIABLES & OBJECTS ---
+        // (This is where you can add variables you need to access everywhere)
+
+        // For Stage 3, you'll want an object to store the mouse position
+        // const mouse = {
+        //     x: undefined,
+        //     y: undefined
+        // };
+
+
+        // --- 3. EVENT LISTENERS ---
+        // (This is where you'll add your 'mousemove' and 'resize' listeners for Stage 3)
+
+        // Example for window resize:
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            // You might need to re-initialize your particles here if you want them
+            // to be contained in the new window size.
+        });
+
+
+        // --- 4. PARTICLE CLASS / OBJECT ---
+        // (This is where you will define your Particle for Stage 1)
+        // A class is a great way to structure this.
+        /*
+        class Particle {
+            constructor(x, y, radius, color, dx, dy) {
+                this.x = x;
+                this.y = y;
+                // ... and so on
+            }
+
+            // A function to draw the particle on the canvas
+            draw() {
+                // ... drawing logic here using ctx ...
+            }
+
+            // A function to update the particle's position and handle bouncing
+            update() {
+                // ... update logic here ...
+                this.draw();
+            }
+        }
+        */
+
+
+        // --- 5. INITIALIZATION ---
+        // (This is where you will create your particle(s))
+
+        // For Stage 1, you'll create one new particle:
+        // let myParticle = new Particle( ... );
+
+        // For Stage 2, you'll create an array and fill it with particles:
+        // let particleArray = [];
+        // function init() {
+        //     particleArray = []; // Clear the array
+        //     for (let i = 0; i < 100; i++) {
+        //         // Create a new particle with random properties and push it
+        //     }
+        // }
+
+
+        // --- 6. ANIMATION LOOP ---
+        function animate() {
+            // Clears the canvas with a semi-transparent fill for a motion blur effect
+            // Or use ctx.clearRect(0, 0, canvas.width, canvas.height) for a solid clear.
+            ctx.fillStyle = 'rgba(26, 26, 26, 0.2)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+
+            // For Stage 1: Update your single particle
+            // myParticle.update();
+
+            // For Stage 2: Loop through your array and update all particles
+            // particleArray.forEach(particle => {
+            //     particle.update();
+            // });
+
+
+            // This creates the loop
+            requestAnimationFrame(animate);
+        }
+
+        // --- 7. START THE ANIMATION ---
+        // Call your init function (from Stage 2) and then start the animation loop.
+        // init();
+        animate();
+
+    </script>
+</body>
+</html>
