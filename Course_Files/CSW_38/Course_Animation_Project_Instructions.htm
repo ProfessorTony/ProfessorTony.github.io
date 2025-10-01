@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSW 38 - Bouncing Particles Animation Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Tailwind gray-900 */
+            color: #d1d5db; /* Tailwind gray-300 */
+        }
+        .card {
+            background-color: #1f2937; /* Tailwind gray-800 */
+            border: 1px solid #374151; /* Tailwind gray-700 */
+        }
+        h1, h2, h3, h4 {
+            color: #f9fafb; /* Tailwind gray-50 */
+            font-weight: 700;
+        }
+        h3 {
+            border-bottom: 2px solid #4b5563; /* Tailwind gray-600 */
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        ul {
+            list-style-position: inside;
+        }
+        ol {
+            list-style-type: decimal;
+            list-style-position: inside;
+            padding-left: 0.5rem;
+        }
+        li {
+            margin-bottom: 1rem;
+        }
+        code {
+            background-color: #374151;
+            color: #e5e7eb;
+            padding: 0.2rem 0.4rem;
+            border-radius: 0.25rem;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 lg:p-8">
+
+        <!-- Header Section -->
+        <header class="mb-10">
+            <h1 class="text-4xl text-center sm:text-5xl font-bold tracking-tight mb-6">Project Assignment: HTML Canvas Web Animation</h1>
+            <div class="card p-6 rounded-lg text-lg">
+                <p class="mb-2"><strong>Course:</strong> CSW 38 - Web Animation</p>
+                <p class="mb-2"><strong>Instructor:</strong> Professor Pacheco</p>
+                <p class="mb-4"><strong>Project:</strong> Interactive Bouncing Particle System</p>
+                <strong>Due Dates:</strong>
+                <ul class="mt-2 list-disc list-inside">
+                    <li><strong>Stage 1:</strong> Wk. 4 Due Oct. 27 (10 pts.)</li>
+                    <li><strong>Stage 2:</strong> Wk. 7 Due Nov. 17 (15 pts.)</li>
+                    <li><strong>Stage 3:</strong> Wk. 9 Due Dec. 5  (20 pts.)</li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- Image 1 -->
+        <div class="mb-10 rounded-lg overflow-hidden shadow-2xl">
+            
+        </div>
+
+        <!-- Project Overview -->
+        <section class="mb-12">
+            <h3 class="text-3xl">Project Overview</h3>
+            <p class="text-lg leading-relaxed">
+                Welcome to your first major project! Over the next few weeks, you will build an interactive particle animation from scratch using the HTML <code>&lt;canvas&gt;</code> element and JavaScript. This project is divided into three stages, each building upon the last. You will start by creating a single animated particle, then build a system of multiple particles, and finally add user interaction.
+            </p>
+            <p class="mt-4 text-lg leading-relaxed">
+                This project will solidify your understanding of core animation concepts, including the animation loop, object-oriented programming in JavaScript, and event handling.
+            </p>
+        </section>
+
+        <!-- Stages Section -->
+        <div class="space-y-12">
+
+            <!-- Stage 1 -->
+            <section class="card p-6 sm:p-8 rounded-lg">
+                <h3 class="text-2xl">Stage 1: The Lone Particle</h3>
+                <p class="mb-6"><strong>Objective:</strong> Create a single particle (a circle) that moves across the canvas and bounces off the edges.</p>
+                <h4 class="font-semibold text-white mb-3 text-xl">Requirements:</h4>
+                <ol>
+                    <li><strong>Canvas Setup:</strong> Create an HTML file with a <code>&lt;canvas&gt;</code> element that fills most of the browser window.</li>
+                    <li><strong>Particle Object:</strong> In your JavaScript, create a <code>Particle</code> object or class. This object should have properties for:
+                        <ul class="list-disc list-inside mt-2 ml-4">
+                            <li><code>x</code> and <code>y</code> position</li>
+                            <li><code>radius</code></li>
+                            <li><code>color</code></li>
+                            <li><code>dx</code> and <code>dy</code> for velocity (speed in the x and y directions)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Draw the Particle:</strong> Create a function that draws the particle on the canvas at its current <code>x</code> and <code>y</code> position.</li>
+                    <li><strong>Animation Loop:</strong> Implement an animation loop (<code>requestAnimationFrame</code>) that does the following on each frame:
+                        <ul class="list-disc list-inside mt-2 ml-4">
+                            <li>Clears the entire canvas.</li>
+                            <li>Updates the particle's <code>x</code> and <code>y</code> position based on its velocity (<code>dx</code>, <code>dy</code>).</li>
+                            <li>Draws the particle at its new position.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Edge Detection:</strong> Add logic to check if the particle has hit any of the four edges of the canvas. If it has, reverse the corresponding velocity (<code>dx</code> or <code>dy</code>) to make it "bounce."</li>
+                </ol>
+                <p class="mt-6"><strong>What to Submit:</strong> Your single HTML file containing all your HTML, CSS, and JavaScript code.</p>
+            </section>
+            
+            <!-- Stage 2 -->
+            <section class="card p-6 sm:p-8 rounded-lg">
+                <h3 class="text-2xl">Stage 2: A Swarm of Particles</h3>
+                <p class="mb-6"><strong>Objective:</strong> Expand your program to create and animate a collection of particles, each with its own unique properties.</p>
+                <h4 class="font-semibold text-white mb-3 text-xl">Requirements:</h4>
+                <ol>
+                    <li><strong>Particle Array:</strong> Create an array to hold multiple <code>Particle</code> objects.</li>
+                    <li><strong>Particle Generation:</strong> Write a function that creates a specified number of particles (e.g., 100) and adds them to your array.</li>
+                    <li><strong>Randomization:</strong> When creating each particle, randomize its initial properties:
+                        <ul class="list-disc list-inside mt-2 ml-4">
+                            <li>Starting <code>x</code> and <code>y</code> position (within the canvas bounds).</li>
+                            <li><code>radius</code> (within a reasonable range, e.g., 5 to 15 pixels).</li>
+                            <li><code>color</code>.</li>
+                            <li><code>dx</code> and <code>dy</code> velocity (can be positive or negative).</li>
+                        </ul>
+                    </li>
+                    <li><strong>Update the Animation Loop:</strong> Modify your animation loop to iterate through the entire particle array. In each frame, it should update the position of <em>every</em> particle and draw it to the canvas. The edge detection logic from Stage 1 should apply to all particles.</li>
+                </ol>
+                <p class="mt-6"><strong>What to Submit:</strong> Your updated HTML file.</p>
+            </section>
+
+            <!-- Image 2 -->
+            <div class="my-10 rounded-lg overflow-hidden shadow-2xl">
+                
+            </div>
+
+            <!-- Stage 3 -->
+            <section class="card p-6 sm:p-8 rounded-lg">
+                <h3 class="text-2xl">Stage 3: User Interaction and Polish</h3>
+                <p class="mb-6"><strong>Objective:</strong> Make the particle system interactive by having the particles react to the user's mouse.</p>
+                <h4 class="font-semibold text-white mb-3 text-xl">Requirements:</h4>
+                <ol>
+                    <li><strong>Mouse Tracking:</strong> Add a mouse event listener (<code>mousemove</code>) to the canvas to track the <code>x</code> and <code>y</code> coordinates of the user's cursor. Store these coordinates in a global <code>mouse</code> object.</li>
+                    <li><strong>Interaction Logic:</strong> In your <code>Particle</code> object's update function, add logic to check the distance between the particle and the mouse cursor.</li>
+                    <li><strong>Enlarge on Proximity:</strong> If a particle is within a certain distance of the mouse (e.g., 50 pixels), make it grow larger (increase its radius). If it's outside that distance, it should return to its original size.
+                        <ul class="list-disc list-inside mt-2 ml-4">
+                           <li><em>Hint:</em> You may want to store the particle's original radius in a separate property so it can shrink back.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Smooth Sizing (Optional but Recommended):</strong> Instead of instantly changing the radius, try to animate the growth and shrinking smoothly for a more polished effect.</li>
+                    <li><strong>Window Resizing:</strong> Add an event listener for the browser <code>resize</code> event. When the window is resized, update the canvas's <code>width</code> and <code>height</code> attributes to match the new window dimensions. This will prevent your animation from becoming distorted or clipped.</li>
+                </ol>
+                <p class="mt-6"><strong>What to Submit:</strong> Your final, completed HTML file.</p>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center mt-12 py-6 border-t border-gray-700">
+            <p class="text-gray-400 text-lg">Good luck, and have fun!</p>
+        </footer>
+
+    </div>
+</body>
+</html>
+
