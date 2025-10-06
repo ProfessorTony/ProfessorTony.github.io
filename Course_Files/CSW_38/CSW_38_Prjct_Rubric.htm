@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSW 38 - Project Rubric</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Tailwind gray-900 */
+            color: #d1d5db; /* Tailwind gray-300 */
+        }
+        .card {
+            background-color: #1f2937; /* Tailwind gray-800 */
+            border: 1px solid #374151; /* Tailwind gray-700 */
+        }
+        h1, h2, h3, h4 {
+            color: #f9fafb; /* Tailwind gray-50 */
+            font-weight: 700;
+        }
+        h3 {
+            border-bottom: 2px solid #4b5563; /* Tailwind gray-600 */
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        th {
+            background-color: #374151; /* Tailwind gray-700 */
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 lg:p-8">
+
+        <!-- Header Section -->
+        <header class="mb-10">
+            <h1 class="text-4xl text-center sm:text-5xl font-bold tracking-tight mb-6">Grading Rubric: Interactive Particle System</h1>
+            <div class="card p-6 rounded-lg text-lg text-center">
+                <p><strong>Course:</strong> CSW 38 - Web Animation</p>
+                <p><strong>Instructor:</strong> Professor Pacheco</p>
+            </div>
+        </header>
+
+        <!-- Image of a checklist or grading sheet -->
+        <div class="mb-10 rounded-lg overflow-hidden shadow-2xl">
+            
+        </div>
+
+        <!-- Stages Section -->
+        <div class="space-y-12">
+
+            <!-- Stage 1 Rubric -->
+            <section class="card p-6 sm:p-8 rounded-lg">
+                <h3 class="text-2xl">Stage 1: The Lone Particle (10 Points)</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr>
+                                <th class="p-3">Criteria</th>
+                                <th class="p-3 text-center">Points</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-700">
+                                <td class="p-3"><strong>Canvas Setup:</strong> HTML file includes a <code>&lt;canvas&gt;</code> element properly configured to fill the window.</td>
+                                <td class="p-3 text-center">2</td>
+                            </tr>
+                            <tr class="border-b border-gray-700">
+                                <td class="p-3"><strong>Particle Object:</strong> A JavaScript object or class correctly represents the particle with all required properties (position, radius, color, velocity).</td>
+                                <td class="p-3 text-center">3</td>
+                            </tr>
+                            <tr class="border-b border-gray-700">
+                                <td class="p-3"><strong>Animation Loop:</strong> <code>requestAnimationFrame</code> is used to create a loop that properly clears, updates, and draws the particle.</td>
+                                <td class="p-3 text-center">3</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3"><strong>Edge Detection:</strong> Logic correctly detects collisions with all four canvas edges and reverses the appropriate velocity.</td>
+                                <td class="p-3 text-center">2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            
+            <!-- Stage 2 Rubric -->
+            <section class="card p-6 sm:p-8 rounded-lg">
+                <h3 class="text-2xl">Stage 2: A Swarm of Particles (15 Points)</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr>
+                                <th class="p-3">Criteria</th>
+                                <th class="p-3 text-center">Points</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-700">
+                                <td class="p-3"><strong>Particle Array:</strong> An array is successfully implemented to store multiple particle objects.</td>
+                                <td class="p-3 text-center">3</td>
+                            </tr>
+                            <tr class="border-b border-gray-700">
+                                <td class="p-3"><strong>Particle Generation:</strong> A function is written to generate a specified number of particles and populate the array.</td>
+                                <td class="p-3 text-center">5</td>
+                            </tr>
+                            <tr class="border-b border-gray-700">
+                                <td class="p-3"><strong>Randomization:</strong> Particle properties (position, radius, color, velocity) are effectively randomized for variety.</td>
+                                <td class="p-3 text-center">5</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3"><strong>Animation Loop Update:</strong> The animation loop correctly iterates through the particle array to update and draw all particles.</td>
+                                <td class="p-3 text-center">2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Stage 3 Rubric -->
+            <section class="card p-6 sm:p-8 rounded-lg">
+                <h3 class="text-2xl">Stage 3: User Interaction and Polish (20 Points)</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr>
+                                <th class="p-3">Criteria</th>
+                                <th class="p-3 text-center">Points</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-700">
+                                <td class="p-3"><strong>Mouse Tracking:</strong> A <code>mousemove</code> event listener is implemented to accurately track and store the cursor's coordinates.</td>
+                                <td class="p-3 text-center">5</td>
+                            </tr>
+                            <tr class="border-b border-gray-700">
+                                <td class="p-3"><strong>Interaction Logic:</strong> Particles correctly check their distance to the mouse and enlarge when the cursor is in proximity, returning to their original size when it is not.</td>
+                                <td class="p-3 text-center">10</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3"><strong>Window Resizing:</strong> A <code>resize</code> event listener is added that correctly updates the canvas dimensions to match the browser window, ensuring the animation remains responsive.</td>
+                                <td class="p-3 text-center">5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center mt-12 py-6 border-t border-gray-700">
+            <p class="text-gray-400 text-lg">Make sure to test your code thoroughly before submission!</p>
+        </footer>
+
+    </div>
+</body>
+</html>
