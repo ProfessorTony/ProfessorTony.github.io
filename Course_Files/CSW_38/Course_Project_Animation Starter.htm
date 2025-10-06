@@ -2,31 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" ">
     <title>Canvas Particle Animation</title>
     <style>
         body {
             margin: 0;
-            overflow: hidden; /* Prevents scrollbars from appearing */
-            background-color: #1a1a1a; /* Dark background for the page */
+             /* Prevents scrollbars from appearing */
+             /* Dark background for the page */
         }
         canvas {
-            display: block; /* Removes default margin under the canvas */
+             /* Removes default margin under the canvas */
         }
     </style>
 </head>
 <body>
-    <canvas id="animationCanvas"></canvas>
+    <canvas >  </canvas>
 
     <script>
         // --- 1. SETUP ---
         // Get the canvas element and its 2D rendering context
-        const canvas = document.getElementById('animationCanvas');
-        const ctx = canvas.getContext('2d');
+        const canvas = ;
+        const ctx = ;
 
         // Set the canvas to fill the browser window
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
+        
 
         // --- 2. GLOBAL VARIABLES & OBJECTS ---
         // (This is where you can add variables you need to access everywhere)
@@ -95,8 +94,8 @@
         function animate() {
             // Clears the canvas with a semi-transparent fill for a motion blur effect
             // Or use ctx.clearRect(0, 0, canvas.width, canvas.height) for a solid clear.
-            ctx.fillStyle = 'rgba(26, 26, 26, 0.2)';
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle =;
+            ctx.fillRect(0, 0, );
 
 
             // For Stage 1: Update your single particle
@@ -109,7 +108,7 @@
 
 
             // This creates the loop
-            requestAnimationFrame(animate);
+            requestAnimation
         }
 
         // --- 7. START THE ANIMATION ---
