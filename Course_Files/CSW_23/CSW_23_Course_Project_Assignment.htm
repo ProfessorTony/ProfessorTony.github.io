@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Project: Basic Web Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-300">
+
+    <div class="container mx-auto max-w-4xl px-4 py-8 sm:py-12">
+
+        <header class="text-center mb-10">
+            <h1 class="text-4xl sm:text-5xl font-bold text-white tracking-tight">Course Project: Basic Web Design</h1>
+        </header>
+
+        <main class="space-y-12">
+
+            <!-- Project Overview Section -->
+            <section>
+                <h2 class="text-2xl sm:text-3xl font-semibold text-cyan-400 border-b-2 border-cyan-400/30 pb-2 mb-4">Project Overview</h2>
+                <p class="text-lg text-gray-300">
+                    Welcome to your main project for Basic Web Design! In this project, you will create a personal, two-page website on a topic of your choice. This project will test your skills in HTML for structuring and CSS for styling. You will build the site in three stages, culminating in a live website that you can share.
+                </p>
+            </section>
+
+            <!-- Project Requirements Section -->
+            <section>
+                <h2 class="text-2xl sm:text-3xl font-semibold text-cyan-400 border-b-2 border-cyan-400/30 pb-2 mb-6">Project Requirements</h2>
+                <p class="mb-6 text-lg">Your finished website must meet the following criteria:</p>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-xl font-semibold text-white">1. Two Linked Pages</h3>
+                        <p class="ml-4 text-gray-400">You will create a "Home" page (<code class="bg-gray-700 text-sm rounded px-1 py-0.5">index.html</code>) and an "About" page (<code class="bg-gray-700 text-sm rounded px-1 py-0.5">about.html</code>). These pages must be linked together through a navigation menu.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-white">2. Content</h3>
+                        <ul class="list-disc list-inside ml-4 space-y-2 text-gray-400">
+                            <li><strong class="text-gray-300">Topic:</strong> Choose any school-appropriate topic you are passionate about. It could be a hobby, a portfolio, a fan page for a band, or information about a cause you support.</li>
+                            <li><strong class="text-gray-300">Images:</strong> Include at least two images.</li>
+                            <li><strong class="text-gray-300">Video:</strong> Embed at least one video directly on a page.</li>
+                            <li><strong class="text-gray-300">Lists & Links:</strong> Include one ordered list and at least two hypertext links to external websites related to your topic.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-white">3. Design & Layout</h3>
+                        <ul class="list-disc list-inside ml-4 space-y-2 text-gray-400">
+                            <li><strong class="text-gray-300">Responsive Design:</strong> Your website must be responsive and look good on both desktop and mobile devices.</li>
+                            <li><strong class="text-gray-300">Color Scheme:</strong> Use a consistent color scheme with at least three different colors.</li>
+                            <li><strong class="text-gray-300">Typography:</strong> Use different text styles for headings, paragraphs, and a footer.</li>
+                            <li><strong class="text-gray-300">Separators:</strong> Use lines or borders to separate and organize content sections.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-white">4. Publishing</h3>
+                        <p class="ml-4 text-gray-400">The final stage is to publish your website online. Your final submission will be the live URL. We will discuss free hosting options like GitHub Pages in class.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project Stages Section -->
+            <section>
+                <h2 class="text-2xl sm:text-3xl font-semibold text-cyan-400 border-b-2 border-cyan-400/30 pb-2 mb-6">Project Stages & Deadlines</h2>
+                <p class="mb-8 text-lg">This project is divided into three stages.</p>
+                <div class="space-y-8">
+                    <!-- Stage 1 -->
+                    <div class="bg-gray-800/50 p-6 rounded-lg border border-gray-700">
+                        <h3 class="text-xl font-bold text-white">Stage 1: Content & Structure (HTML)- (10 pts.)</h3>
+                        <p class="text-base text-cyan-400 mb-4 font-semibold">Due: October 24</p>
+                        <p class="mb-4">For this stage, you will focus only on the HTML structure. Do not worry about colors, fonts, or layout yet. The goal is to get all your content onto the pages.</p>
+                        <strong class="text-gray-300">Tasks:</strong>
+                        <ol class="list-decimal list-inside mt-2 space-y-1 text-gray-400">
+                            <li>Choose your website topic.</li>
+                            <li>Gather your content: write the text for both pages, choose your two images, and find a video to embed.</li>
+                            <li>Create <code class="bg-gray-700 text-sm rounded px-1 py-0.5">index.html</code> and <code class="bg-gray-700 text-sm rounded px-1 py-0.5">about.html</code> files. You may use the provided starter code files or create your own.</li>
+                            <li>Add your text, images, video, lists, and links to the HTML files.</li>
+                            <li>Create a working navigation menu that links the two pages together.</li>
+                            <li>Add a header, main content area, and a footer to both pages.</li>
+                            <li>PUBLISH the files to a Hosting provider so that they are accessible on the Web. Submit the URL / web address for each file using the Canvas assignment link for Project Stage 1.</li>
+                        </ol>
+                    </div>
+                    <!-- Stage 2 -->
+                    <div class="bg-gray-800/50 p-6 rounded-lg border border-gray-700">
+                        <h3 class="text-xl font-bold text-white">Stage 2: Styling with CSS- (25 pts.)</h3>
+                        <p class="text-base text-cyan-400 mb-4 font-semibold">Due: November 12</p>
+                        <p class="mb-4">Now it's time to bring your website to life with CSS. You will focus on layout, colors, and typography to make your site visually appealing and easy to read.</p>
+                        <strong class="text-gray-300">Tasks:</strong>
+                        <ol class="list-decimal list-inside mt-2 space-y-1 text-gray-400">
+                            <li>Create and link a <code class="bg-gray-700 text-sm rounded px-1 py-0.5">style.css</code> stylesheet to both of your HTML files.</li>
+                            <li>Define a color scheme and apply it to the background, text, and other elements.</li>
+                            <li>Choose fonts and apply different sizes and styles for your headers, paragraphs, and footer.</li>
+                            <li>Add borders or lines to create visual separation between sections.</li>
+                            <li>Start working on the responsive design using media queries to ensure the site looks good on smaller screens.</li>
+                            <li>PUBLISH updated files, including the css file, to a Hosting provider so that they are accessible on the Web. <strong>Submit the URL</strong> / web address for each html file using the Canvas assignment link for Project Stage 2.
+                            </li>
+                            <li>Be sure the .css file is properly linked to each html file. TEST before submitting.</li>
+                        </ol>
+                    </div>
+                    <!-- Stage 3 -->
+                    <div class="bg-gray-800/50 p-6 rounded-lg border border-gray-700">
+                        <h3 class="text-xl font-bold text-white">Stage 3: Final Touches & Publishing- (40 pts.)</h3>
+                        <p class="text-base text-cyan-400 mb-4 font-semibold">Due: December 3, (Final Submission)</p>
+                        <p class="mb-4">In the final stage, you will refine your design, test everything, and publish your website to the internet.</p>
+                        <strong class="text-gray-300">Tasks:</strong>
+                        <ol class="list-decimal list-inside mt-2 space-y-1 text-gray-400">
+                            <li>Finalize your responsive design. Test your site on a mobile device or using the browser's developer tools.</li>
+                            <li>Check all your links to make sure they work.</li>
+                            <li>Proofread all of your text content.</li>
+                            <li>Publish all updated files to your Hosting provider. Verify everything is working properly online.</li>
+                            <li>Verify-Test that your webpages are acessible online and appear as designed. Test Responsiveness!</li>
+                            <li>Submit the live URL of your website for grading. Use Canvas Stage 3 assignment link.</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>

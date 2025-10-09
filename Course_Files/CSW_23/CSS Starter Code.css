@@ -1,0 +1,129 @@
+/* Basic Web Design - CSS Starter File - Correct, Add, Remove code as needed.
+  
+  Instructions:
+  1. Add code to css as needed and link this file to your index.html and about.html files.
+  2. Start by defining your color scheme in the :root section.
+  3. Style the body, header, nav, main, sections, and footer.
+  4. Use CSS to make your images responsive.
+  5. Add a media query at the bottom to adjust styles for mobile devices.
+*/
+
+/* ------------------- */
+/* Color and Font Vars */
+/* ------------------- */
+:root {
+  /* Define your color scheme here */
+  --color-primary: #333;   /* Dark color for text */
+  --color-secondary: #f4f4f4; /* Light color for background */
+  --color-accent: #007bff; /* An accent color for links/buttons */
+
+  /* Define your fonts here */
+  --font-heading: Georgia, serif;
+  --font-body: Arial, sans-serif;
+}
+
+
+/* ------------------- */
+/* Basic Body Styles   */
+/* ------------------- */
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* ------------------- */
+/* Layout & Sections   */
+/* ------------------- */
+header {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+  max-width: 900px;
+                  /* This centers the main content */
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+/* Example of a border for a block area */
+.content-block {
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: white;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+}
+
+footer {
+  text-align: center;
+  
+
+
+}
+
+
+/* ------------------- */
+/* Content Styling     */
+/* ------------------- */
+h1, h2 {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+}
+
+header h1 {
+    color: white; /* Overriding for the header */
+}
+
+a {
+    color: var(--color-accent);
+}
+
+/* Make images responsive */
+
+
+
+
+
+/* ------------------- */
+/* Responsive Design   */
+/* ------------------- */
+/* Media Query for screens smaller than 600px */
+
+  nav ul li {
+    display: block; /* Stack navigation links vertically */
+    margin: 10px 0;
+  }
+
+  main {
+      padding: 10px;
+  }
+

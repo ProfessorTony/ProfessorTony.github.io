@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Web Design: Project Rubric</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .table-container {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="container mx-auto max-w-6xl px-4 py-8 sm:py-12">
+
+        <header class="text-center mb-10">
+            <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 tracking-tight">Basic Web Design: Project Rubric</h1>
+            <p class="mt-3 text-lg text-gray-600">Rubrics outline the grading criteria for each stage of the website project. Each stage is worth a specific number of points. Overall total = <strong>76 pts.</strong></p>
+        </header>
+
+        <main class="space-y-12">
+
+            <!-- HTML Structure & Content -->
+            <section>
+                <h2 class="text-2xl sm:text-3xl font-semibold text-gray-900 border-b-2 border-gray-300 pb-2 mb-6">1. HTML Structure & Content (12 points)</h2>
+                <div class="table-container bg-white rounded-lg shadow-md border border-gray-300">
+                    <table class="w-full text-left">
+                        <thead class="bg-gray-100">
+                            <tr>
+                                <th class="p-4 font-semibold">Criteria</th>
+                                <th class="p-4 font-semibold">1 Points</th>
+                                <th class="p-4 font-semibold">2 Points</th>
+                                <th class="p-4 font-semibold">3 Points</th>
+                                <th class="p-4 font-semibold w-24 border-l border-gray-300">Pts.</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-300">
+                            <tr>
+                                <td class="p-4 font-medium text-gray-900">Two HTML Pages</td>
+                                <td class="p-4">Only one page created or pages are not linked.</td>
+                                <td class="p-4">Both pages are present, but navigation is broken or unclear.</td>
+                                <td class="p-4"><code class="bg-gray-200 text-sm rounded px-1 py-0.5">index.html</code> and <code class="bg-gray-200 text-sm rounded px-1 py-0.5">about.html</code> are present and correctly linked via navigation.</td>
+                                <td class="p-4 border-l border-gray-300"></td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-medium text-gray-900">Images & Video</td>
+                                <td class="p-4">Missing images or video, or they are broken.</td>
+                                <td class="p-4">At least one image and a video are present, but may not be embedded correctly.</td>
+                                <td class="p-4">At least two images and one embedded video are correctly implemented and visible.</td>
+                                <td class="p-4 border-l border-gray-300"></td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-medium text-gray-900">Lists & Links</td>
+                                <td class="p-4">No ordered list or external links included.</td>
+                                <td class="p-4">List or links are present but incorrect (e.g., list is unordered, links don't work).</td>
+                                <td class="p-4">An ordered list and at least two working external links are included.</td>
+                                <td class="p-4 border-l border-gray-300"></td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-medium text-gray-900">Semantic HTML</td>
+                                <td class="p-4">Little to no use of semantic tags (<code class="bg-gray-200 text-sm rounded px-1 py-0.5">&lt;header&gt;</code>, <code class="bg-gray-200 text-sm rounded px-1 py-0.5">&lt;footer&gt;</code>, <code class="bg-gray-200 text-sm rounded px-1 py-0.5">&lt;main&gt;</code>, <code class="bg-gray-200 text-sm rounded px-1 py-0.5">&lt;nav&gt;</code>).</td>
+                                <td class="p-4">Some semantic tags are used, but structure is inconsistent.</td>
+                                <td class="p-4">Clear and correct use of semantic HTML tags to structure the content on both pages.</td>
+                                <td class="p-4 border-l border-gray-300"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- CSS Styling & Design -->
+            <section>
+                <h2 class="text-2xl sm:text-3xl font-semibold text-gray-900 border-b-2 border-gray-300 pb-2 mb-6">2. CSS Styling & Design (20 points)</h2>
+                <div class="table-container bg-white rounded-lg shadow-md border border-gray-300">
+                    <table class="w-full text-left">
+                        <thead class="bg-gray-100">
+                            <tr>
+                                <th class="p-4 font-semibold">Criteria</th>
+                                <th class="p-4 font-semibold">0-2 Points</th>
+                                <th class="p-4 font-semibold">3-4 Points</th>
+                                <th class="p-4 font-semibold">5 Points</th>
+                                <th class="p-4 font-semibold w-24 border-l border-gray-300">Pts.</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-300">
+                             <tr>
+                                <td class="p-4 font-medium text-gray-900">CSS Linked</td>
+                                <td class="p-4">CSS file is missing or not linked to the HTML files.</td>
+                                <td class="p-4">CSS is linked, but many styles are not applying correctly.</td>
+                                <td class="p-4">A single <code class="bg-gray-200 text-sm rounded px-1 py-0.5">style.css</code> file is correctly linked and styles both pages.</td>
+                                <td class="p-4 border-l border-gray-300"></td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-medium text-gray-900">Color Scheme</td>
+                                <td class="p-4">No custom colors used, or colors have poor contrast.</td>
+                                <td class="p-4">Fewer than 3 colors used, or the scheme is inconsistent across pages.</td>
+                                <td class="p-4">A consistent color scheme with at least 3 colors is used effectively.</td>
+                                <td class="p-4 border-l border-gray-300"></td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-medium text-gray-900">Typography</td>
+                                <td class="p-4">All text is the same size and font.</td>
+                                <td class="p-4">Some text styling is present, but lacks a clear hierarchy (header, text, footer).</td>
+                                <td class="p-4">Clear and different styles are applied for headers, main text, and footer content.</td>
+                                <td class="p-4 border-l border-gray-300"></td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-medium text-gray-900">Separators/Borders</td>
+                                <td class="p-4">No lines or borders are used to separate content.</td>
+                                <td class="p-4">Separators are used, but they are inconsistent or visually jarring.</td>
+                                <td class="p-4">Lines (<code class="bg-gray-200 text-sm rounded px-1 py-0.5">&lt;hr&gt;</code>) or CSS borders are used effectively to organize content sections.</td>
+                                <td class="p-4 border-l border-gray-300"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Responsive Design & Publishing -->
+            <section>
+                <h2 class="text-2xl sm:text-3xl font-semibold text-gray-900 border-b-2 border-gray-300 pb-2 mb-6">3. Responsive Design & Publishing (44 points)</h2>
+                <div class="table-container bg-white rounded-lg shadow-md border border-gray-300">
+                    <table class="w-full text-left">
+                        <thead class="bg-gray-100">
+                            <tr>
+                                <th class="p-4 font-semibold">Criteria</th>
+                                <th class="p-4 font-semibold">0-6 Points</th>
+                                <th class="p-4 font-semibold">7-10 Points</th>
+                                <th class="p-4 font-semibold">11 Points</th>
+                                <th class="p-4 font-semibold w-24 border-l border-gray-300">Pts.</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-300">
+                            <tr>
+                                <td class="p-4 font-medium text-gray-900">Responsiveness</td>
+                                <td class="p-4">Website is unusable or looks broken on mobile screens.</td>
+                                <td class="p-4">The site is partially responsive, but some elements overflow or are hard to read.</td>
+                                <td class="p-4">The layout adapts cleanly to different screen sizes (desktop and mobile) with no horizontal scrollbars.</td>
+                                <td class="p-4 border-l border-gray-300"></td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-medium text-gray-900">Publishing</td>
+                                <td class="p-4">Project was not published online.</td>
+                                <td class="p-4">Project is online, but the URL is incorrect or the page doesn't load properly.</td>
+                                <td class="p-4">The website is live on the internet and accessible via the submitted URL.</td>
+                                <td class="p-4 border-l border-gray-300"></td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-medium text-gray-900">Code Quality</td>
+                                <td class="p-4">HTML or CSS has significant errors and is poorly formatted.</td>
+                                <td class="p-4">Code is functional but messy and hard to read.</td>
+                                <td class="p-4">Code is clean, well-commented, and easy to understand.</td>
+                                <td class="p-4 border-l border-gray-300"></td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-medium text-gray-900">Overall Effort</td>
+                                <td class="p-4">Project appears incomplete or rushed.</td>
+                                <td class="p-4">Project meets the basic requirements but lacks polish.</td>
+                                <td class="p-4">The project shows clear effort, creativity, and attention to detail.</td>
+                                <td class="p-4 border-l border-gray-300"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+</body>
+</html>
+
+
