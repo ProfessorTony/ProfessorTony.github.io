@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll-Triggered Sprite Animation</title>
+    
+    <!-- Link to the external CSS file for positioning and general styling -->
+    <link rel="stylesheet" href="scroll_sprite_style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Scroll-Triggered Sprite Demo</h1>
+        <p>Scroll down the page to see the rabbit sprite run across the screen.</p>
+    </header>
+
+    <!-- 
+      The main content div provides the necessary height for scrolling.
+      The scroll event is what drives the animation!
+    -->
+    <div class="content-wrapper">
+        <section>
+            <h2>Chapter 1: The Principle of Scroll Mapping</h2>
+            <p>
+                In this demonstration, we are using the user's scroll position to control two things simultaneously: 
+                the sprite's **horizontal position** across the viewport, and the sprite's **animation frame**. 
+                The key concept is mapping the scroll distance (from 0% at the top to 100% at the bottom) to 
+                the required values for the animation. This is a common technique in interactive storytelling websites.
+            </p>
+            <p>
+                To achieve this, the JavaScript continuously calculates the ratio of `current_scroll / total_scroll_height`. 
+                If the user has scrolled halfway, the sprite should be halfway across the screen. If the user has scrolled 
+                one-quarter of the way, the sprite should display the first quarter of its running cycle.
+            </p>
+            <p>
+                This content section is intentionally long. Its sole purpose is to provide enough vertical height 
+                to allow the page to scroll, giving our JavaScript engine a measurable input to work with.
+            </p>
+        </section>
+
+        <!-- Placeholder Text to Force Scrolling -->
+        <div class="scroll-filler">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Fusce ut ante eget odio sollicitudin volutpat. Quisque sit amet feugiat nulla. Etiam ac finibus ex. Sed vel ex eget justo varius dictum vel non libero. Aliquam erat volutpat. Nam scelerisque tincidunt nisl, a consequat quam convallis eget. Vivamus ac magna eu odio dignissim luctus. Nam dapibus nibh quis ligula ultrices, in hendrerit ipsum tincidunt.
+            </p>
+            <p>
+                Proin id eros nec libero mattis tristique non vitae leo. Nam ac nulla nec arcu malesuada tristique. In hac habitasse platea dictumst. Quisque facilisis, arcu id fringilla hendrerit, ante velit dictum massa, in volutpat neque ligula a tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur mollis euismod turpis, a elementum justo viverra eget.
+                Sed pulvinar sapien sed quam hendrerit, at facilisis tellus blandit. Aliquam erat volutpat. Ut sit amet urna in est bibendum lacinia. Donec auctor, elit eu euismod auctor, velit ipsum consectetur elit, a finibus velit sapien eu nunc.
+            </p>
+            <p>
+                Nunc vel risus ut nunc tristique dapibus. Suspendisse potenti. Integer placerat libero sit amet arcu tincidunt, non volutpat dolor congue. Aenean eget quam nec nisi tincidunt lacinia. Sed ac nibh vitae arcu fringilla ultrices. Cras euismod, libero vitae consectetur placerat, mi ligula scelerisque est, in hendrerit sem metus id sapien. Aliquam et enim at dui sollicitudin malesuada.
+                Phasellus ac elit quis purus fringilla hendrerit. Nam in odio vel quam tristique venenatis. Curabitur vitae purus vel velit varius dapibus. Vivamus vitae felis vel est ultrices euismod. Duis eget odio sit amet urna ultricies consectetur. Integer eu arcu vel nulla eleifend eleifend. In efficitur, nulla a semper convallis, elit leo euismod nulla, id rhoncus mi purus at libero.
+            </p>
+            <p>
+                Donec vel felis non nunc tincidunt egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin id eros nec libero mattis tristique non vitae leo. Nam ac nulla nec arcu malesuada tristique. In hac habitasse platea dictumst. Quisque facilisis, arcu id fringilla hendrerit, ante velit dictum massa, in volutpat neque ligula a tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur mollis euismod turpis, a elementum justo viverra eget.
+            </p>
+        </div>
+    </div>
+    
+    <!-- 
+      THE SPRITE CONTAINER: This div holds the rabbit image.
+      It is positioned fixed via CSS to stay in the viewport.
+    -->
+    <div id="sprite-container" class="sprite-robbot"></div>
+
+    <!-- Link to the external JavaScript file, loaded after the HTML -->
+    <script src="scroll_sprite_script.js" defer></script>
+</body>
+</html>
