@@ -1,0 +1,77 @@
+<!-- 
+  CS 56: Networking Essentials - Network Tools & Reconnaissance Assignment
+  Theme: Tech Dark Mode / Cybersecurity
+  LMS: Canvas Compatible (Strict Inline Styles, rem/em units)
+-->
+<div style="background-color: #0f172a; color: #f8fafc; padding: 2.5rem; border-radius: 1.5rem; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 65rem; margin: 2rem auto; border: 0.15rem solid #1e293b; box-shadow: 0 1rem 2.5rem rgba(0,0,0,0.6); line-height: 1.6;">
+
+    <!-- Banner Graphic -->
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1000&q=80" alt="Cyber Security Matrix Code" style="width: 100%; max-height: 14rem; object-fit: cover; border-radius: 1rem; border: 0.15rem solid #334155; box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.4);">
+    </div>
+
+    <!-- Header Section -->
+    <div style="text-align: center; border-bottom: 0.15rem solid #10b981; padding-bottom: 1.5rem; margin-bottom: 2rem;">
+        <h1 style="color: #10b981; font-size: 2.5rem; margin: 0; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 800;">🔍 Network Reconnaissance & Tooling</h1>
+        <p style="font-size: 1.25rem; color: #94a3b8; margin-top: 0.5rem; font-weight: 600;">Hands-On Information Gathering Activity</p>
+    </div>
+
+    <!-- Introduction / Context -->
+    <div style="background-color: #1e293b; padding: 1.5rem 2rem; border-radius: 1rem; border-left: 0.5rem solid #38bdf8; margin-bottom: 2.5rem;">
+        <h2 style="color: #38bdf8; font-size: 1.75rem; margin-top: 0; display: flex; align-items: center;">
+            <span style="font-size: 2rem; margin-right: 0.75rem;">🛡️</span> The Administrator's Toolkit
+        </h2>
+        <p style="font-size: 1.1rem; margin-bottom: 0; color: #e2e8f0;">
+            Before a network engineer can secure a network, or before a penetration tester can evaluate one, they must first gather intelligence. This phase is known as <strong>Network Reconnaissance</strong>. In this assignment, you will step into the shoes of a network professional and use a suite of public web tools to analyze domain names, investigate IP addresses, and scan for open ports.
+        </p>
+    </div>
+
+    <!-- Assignment Instructions -->
+    <div style="background-color: #0f172a; padding: 2rem; border-radius: 1rem; border: 0.1rem solid #334155; margin-bottom: 2.5rem;">
+        <h3 style="color: #fcd34d; font-size: 1.6rem; margin-top: 0; border-bottom: 0.1rem solid #334155; padding-bottom: 0.75rem; margin-bottom: 1.5rem;">📋 Your Mission Instructions</h3>
+        
+        <p style="font-size: 1.1rem; color: #cbd5e1; margin-bottom: 1.5rem;">
+            Navigate to the following external resource. This site provides an expansive toolkit for networking and DNS diagnostics:
+        </p>
+        
+        <!-- Call to Action Button -->
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <a href="https://dnschecker.org/all-tools.php" target="_blank" rel="noopener noreferrer" style="display: inline-block; background-color: #0284c7; color: #ffffff; padding: 1rem 2rem; border-radius: 0.5rem; text-decoration: none; font-weight: 700; font-size: 1.15rem; box-shadow: 0 0.25rem 0.5rem rgba(2, 132, 199, 0.4); transition: transform 0.2s;">
+                Launch DNSChecker Tool Suite 🚀
+            </a>
+        </div>
+
+        <p style="font-size: 1.1rem; color: #f8fafc; font-weight: 600; margin-bottom: 1rem;">Select a public target domain (e.g., <em>deltacollege.edu</em>, <em>cisco.com</em>, or an allowed public test server) and complete the following tasks:</p>
+
+        <ul style="font-size: 1.1rem; color: #e2e8f0; padding-left: 1.5rem; line-height: 1.8;">
+            <li style="margin-bottom: 1rem;">
+                <strong style="color: #38bdf8;">1. DNS & WHOIS Lookup:</strong> Use the Domain/WHOIS tools to identify the registrar of the domain, the registration date, and the authoritative name servers handling its DNS traffic.
+            </li>
+            <li style="margin-bottom: 1rem;">
+                <strong style="color: #38bdf8;">2. IP Location Finder:</strong> Find the IP address of your target domain and use the IP tools to determine the physical geographic location of the server.
+            </li>
+            <li style="margin-bottom: 1rem;">
+                <strong style="color: #38bdf8;">3. Port Scanner:</strong> Run a basic port scan on your target. Document which common ports (like 80 HTTP, 443 HTTPS, 21 FTP, 22 SSH) are left "Open" and which are "Closed" or filtered by a firewall.
+            </li>
+            <li style="margin-bottom: 0;">
+                <strong style="color: #38bdf8;">4. Ping / Latency Check:</strong> Use the network Ping tools to determine the response time (latency) between the testing server and your target. 
+            </li>
+        </ul>
+    </div>
+
+    <!-- Submission Guidelines -->
+    <div style="background-color: #1e293b; padding: 1.5rem; border-radius: 1rem; border: 0.1rem solid #334155;">
+        <h3 style="color: #eab308; font-size: 1.4rem; margin-top: 0; margin-bottom: 1rem;">📝 Deliverables</h3>
+        <p style="font-size: 1.05rem; color: #f1f5f9; margin-bottom: 1rem;">
+            Create a brief <strong>Reconnaissance Report</strong> (Word Document or PDF). For each of the four tasks above, include:
+        </p>
+        <ol style="font-size: 1.05rem; color: #cbd5e1; padding-left: 1.5rem; margin-bottom: 1rem; line-height: 1.6;">
+            <li>A screenshot of your tool results from DNSChecker.</li>
+            <li>A 2-3 sentence explanation of what that specific information tells you about the target's network architecture or security posture.</li>
+        </ol>
+        <div style="background-color: #450a0a; padding: 1rem; border-radius: 0.5rem; border-left: 0.3rem solid #ef4444; font-size: 0.95rem; color: #fecaca;">
+            <strong>⚠️ Ethical Notice:</strong> White Hat rules apply. Only conduct reconnaissance on public-facing domains or your own hardware. Do not launch excessive repeated scans against any target.
+        </div>
+    </div>
+
+</div>

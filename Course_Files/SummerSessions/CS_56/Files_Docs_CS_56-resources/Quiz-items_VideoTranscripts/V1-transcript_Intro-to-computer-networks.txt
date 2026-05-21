@@ -1,0 +1,89 @@
+Introduction:
+This video series is perfect for anyone  who is completely new to networking.  
+Whether you're interested in a career  in it or you're just simply curious,  
+this is the right place for you. These videos can  also help you if you're struggling with a college  
+or university course and you just need a little  bit more understanding to get across the line.  
+Now throughout this series, I'm going to assume  that you have no networking experience at all. The  
+goal of my work here is to lay a solid foundation  that you can then build on throughout your career.  
+In this video, we're going to start  by understanding simply what a network  
+actually is. So if you're ready, let's now  consider this question, what is a network?  
+What is a Network
+A network may already be familiar to you. Maybe  you have your own network at home or perhaps  
+you've helped someone to run a network at a school  or at your job. But can you really tell me what a  
+network actually is? I would like to give you  this little challenge now. Please pause this  
+video and think to yourself, how can we define  what a network actually is? I would like you to  
+pretend that you need to explain this to someone  who knows absolutely nothing about networking.
+Okay, so how did you go? Did you get a  definition you're happy with? Well if you did,  
+congratulations! Well done! For those of you  who are completely new to networking, here is  
+a little definition that I came up with. I define  this as "a system that allows multiple devices to  
+communicate with one another". Let's take this  definition and build on this a little bit now.  
+At work or at home you will have a bunch of  devices. These are things like computers,  
+printers, TVs and so on. And you connect  all of these together by means of a network.  
+When the devices are connected, they're able to  share information between each other. This could  
+be something simple, like sending a document to  a printer, sending an email or streaming a video.  
+This can also be used for sharing access to  the internet. Now mostly users on a network are  
+unaware of the network they're using. As long  as they can browse the Net, or do their job,  
+access Instagram or whatever it is they like  to use, then they're usually happy. They don't  
+need to know the specifics of it. Now for all  these devices to communicate, they do need to  
+be connected together somehow. Now one way  is to plug cables into all these devices and  
+connect them to another special device, called a  switch. I will explains what is a switch later on,  
+for now just think of a switch as some networking  equipment that we use to connect things together.  
+How to Connect Devices
+Let's take a little time now to think about  how we connect our devices to this switch.  
+Think of a computer lab in a school. The switch  that these devices connect to, these computers,  
+will likely be in a different room or  maybe it's mounted up on a wall somewhere.  
+In either case, the computer in the lab will  connect to the network by using a wall socket.  
+Another cable from behind this wall socket,  will run through the wall to another location,  
+this then connects to something that we  call a patch panel. And you can see one  
+here on your screen right now. As I said  before, this may be in a cabinet somewhere  
+on the wall. It might be in the same room,  or it might be in another room entirely.  
+So each wall socket that we plug a computer  into, connects back to one of these ports on  
+the patch panel. We can then connect each  of these ports directly into the switch.  
+Now, that's one of the ways that we can keep  our cabling nice and tidy and organized.  
+Wireless Devices
+You might even have a switch at home. Most  homes don't have the luxury of wall sockets,  
+so often we have devices directly connected to  the switch. Remember of course though, there's  
+a lot more detail to switches. I will tell you a  bit more about those in future, as we get to that.  
+Devices can also be connected together  wirelessly. A common way to do this is  
+with a Wireless Access Point. A wireless  network like this is often called Wi-Fi.  
+An example of this is when you're using your  phone. It's really impractical and often  
+impossible to cable it into your network,  so wireless is by far your best option.  
+The access point, that is, the Wireless Access  Point, is basically the same thing as a switch,  
+but it doesn't use cables. More than one device  can connect to the access point at a time,  
+but we don't have all the messy cabling  that we get sometimes with a switch.  
+We can also connect a switch and an  access point together with a cable.  
+In this way, devices that use cables, which  are 'wired devices', can also be a part of  
+the same network, as devices that don't  use cables, which are 'wireless devices'.  
+So having both wired switches and Wireless  Access Points gives us more connection options.  
+For example, imagine that you have a  laptop and you're working in an office.  
+You may connect it to the network using a  cable when you're sitting down at your desk,  
+where you do most of your work. But  sometimes, you'll need to give a  
+presentation in the boardroom and for this,  when you have this meeting in the boardroom,  
+you remove the cable and you connect your laptop  to Wi-Fi. So you don't have cables connected  
+everywhere, which makes things a lot easier  for you as a user to connect to the network
+Protocols
+Whether our devices are wired or wireless, the  goal is still the same. We want to be able to have  
+one device send information to another device.  But for this to work properly, the sender and  
+the receiver both need to understand each other.  We could say that they both need to speak the same  
+language. Now in the network, speaking the same  language means that the devices need to agree  
+on how data is sent, how it is received, how it  is organized, and how it is handled. Basically,  
+they have a process on how to handle this  information and they have to agree on the  
+same process. Now this language that they speak  is called a Protocol, and there are a lot of  
+different protocols out there. The ones we use  will vary depending on what's needed at the time.  
+Network Software and Hardware are designed with  these protocols in mind. You will often hear of  
+protocols such as Ethernet and TCP. These ones are  used for sending information from one device to  
+another. But you may also hear of protocols like  HTTP, which is specifically used for accessing  
+websites. Or you might hear of SMTP, which is  specifically used for sending and receiving email.  
+The truth is, usually we have several protocols  working together to get a common task done.  
+We'll take a bit of a deeper look at this sometime  in a future video. I really want to help you to  
+Quiz
+understand networking, so throughout this video  series, I would like to offer the opportunity to  
+test your understanding, which will help you to  find areas that perhaps you haven't understood  
+as well as others. To do this, I have quiz  questions, like the ones you can see here.  
+These are intended, not to be simple multiple  choice questions ,but ones that are well,  
+they make you think! They make you really work  out if you've understood what you've learned.  
+The answer to these, as well as some  explanations of them are available  
+on my website - networkdirection.net and you  can see the link to that here on the screen.  
+So congratulations! You have made it  through the very first video in this  
+series and I really hope that you've enjoyed  this and I hope that you'll follow along  
+with me in my next video, where we will  investigate different types of Networks.

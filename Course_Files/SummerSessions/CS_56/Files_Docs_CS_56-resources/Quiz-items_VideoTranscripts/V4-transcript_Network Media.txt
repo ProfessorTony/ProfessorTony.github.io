@@ -1,0 +1,195 @@
+Transmission Media:
+Let's begin by exploring transmission
+media. Transmission media refers to the
+physical pathways that connect
+computers, other devices, and people on
+a network, enabling them to communicate
+and exchange data. There are primarily
+two types of transmission media, guided
+media and unguided media. Guided media
+uses physical cables to transmit signals
+through a solid medium, while unguided
+media employs wireless transmission
+methods that use air or space as the
+Guided Media Types
+medium. Let's dive into the world of
+guided media types. Guided media, also
+known as wired media, uses physical
+cables to transmit data signals. The
+most common types of guided media are
+twisted pair cable, coaxial cable, and
+fiber optic cable. Twisted pair cable
+consists of pairs of insulated copper
+wires twisted together commonly used in
+local area networks or LANs. Coaxial
+cable features a single copper conductor
+at the center surrounded by insulating
+material commonly used for cable
+television and internet
+connections. Fiber optic cable transmits
+data as light pulses through glass or
+plastic fibers providing the highest
+bandwidth capacity and immunity to
+electromagnetic interference.
+Twisted Pair Cable
+Here we will explore twisted pair cable
+in more detail. Twisted pair cable is a
+common type of guided media
+characterized by its unique
+construction. It consists of pairs of
+insulated copper wires twisted together
+which reduces electromagnetic
+interference or EMI and crosstock.
+Twisted pair cables are commonly used
+for local area networks and come in
+various categories such as category 5e,
+category 6, category 6A, category 7, and
+category 8. They use RJ45 connectors for
+termination and have a maximum distance
+of 100 m or 328 ft. There are two main
+types of twisted pair cables. unshielded
+twisted pair or UTP which has no
+additional shielding and is most common
+in office lands and shielded twisted
+pair or STP which includes additional
+metal shielding and is better suited for
+noisy
+Coaxial Cable
+environments. Now let's discuss coaxial
+cable. Coaxial cable is another type of
+guided media known for its distinctive
+design. It consists of a single copper
+conductor at the center surrounded by
+insulating material and an outer
+metallic shield that provides excellent
+noise immunity. Coaxial cable is
+commonly used for cable television,
+internet connections, and some network
+applications. It offers better shielding
+compared to twisted pair cables and
+supports longer distances of up to 500
+m. The bandwidth capacity of coaxial
+cable can reach up to 10 Gbits per
+second. Common types of coaxial cables
+include RG6, which is often used for
+cable television and internet, RG11, a
+thicker cable for longer runs, and RG58,
+a thinner cable used in legacy 10based 2
+Fiber Optic Cable
+networks. Let's explore fiber optic
+cable. Fiber optic cable is a
+cuttingedge type of guided media that
+transmits data as light pulses through
+glass or plastic fibers. It offers
+immunity to electromagnetic interference
+or EMI and provides the highest
+bandwidth capacity among all cable
+types. Fiber optic cables support
+extremely long distances up to 100 plus
+kilm and are more secure than copper
+cables due to the difficulty of tapping
+into them. The bandwidth capacity of
+fiber optic cables can theoretically
+reach 100 plus terabits per second.
+There are two main types of fiber optic
+cables. Single mode fiber which has a
+smaller core and allows light to travel
+in a single path for longer distances
+and multiode fiber which has a larger
+core and allows light to travel in
+multiple paths for shorter
+Unguided Media Types
+distances. Now let's shift our focus to
+unguided media types. Unguided media,
+also known as wireless media, transmits
+data signals through air or space
+without the use of physical cables. The
+primary types of unguided media are
+radio waves, microwave, and satellite
+communication. Radio waves are
+electromagnetic waves with frequencies
+between 3 kiloertz and 300 gigahertz.
+They offer omnidirectional transmission
+and can penetrate walls and buildings,
+making them suitable for Wi-Fi and
+cellular networks. Microwave
+communication uses highfrequency radio
+waves, typically between 1 ghahertz and
+300 ghahertz, for directional
+transmission and point-to-point
+communication. Satellite communication
+uses satellites as relay stations in
+Earth orbit to provide global coverage
+for television, internet, and phone
+services.
+Radio Waves and Wi-Fi
+Let's take a closer look at radio waves
+and their application in Wi-Fi networks.
+Radio waves are electromagnetic waves
+with frequencies ranging from 3 kohertz
+to 300
+ghahertz. They exhibit omnidirectional
+propagation spreading in all directions
+and can penetrate non-metallic objects
+like walls. However, radio waves are
+susceptible to interference from other
+devices and their signal strength
+decreases with distance. Wi-Fi, a
+popular wireless technology, utilizes
+radio waves to enable wireless
+communication between devices and
+networks. Various Wi-Fi standards such
+as
+802.11n,
+802.11ac and 802.11 ax, also known as
+Wi-Fi 6, operate at different
+frequencies and offer varying maximum
+Microwave and Satellite Communication
+speeds. Now let's explore microwave and
+satellite communication in more detail.
+Microwave communication utilizes
+highfrequency radio waves ranging from 1
+to 300 ghahertz for line of sight
+transmission between point-to-point
+links. It offers higher bandwidth
+compared to regular radio waves but is
+susceptible to weather
+conditions. Satellite communication on
+the other hand uses satellites as relay
+stations to provide global coverage for
+various services like television,
+internet and phone. However, satellite
+communication introduces higher latency
+or signal delay and is also sensitive to
+weather conditions. These wireless
+communication methods play a crucial
+role in connecting people and devices
+across vast
+Transmission Media Comparison
+distances. Let's compare the various
+transmission media based on different
+factors. Twisted pair cable offers
+bandwidth up to 10 Gbits per second and
+a distance of up to 100 m at a low cost.
+Coaxial cable also offers bandwidth up
+to 10 Gbits per second, but extends the
+distance to up to 500 meters at a medium
+cost. Fiber optic provides the highest
+bandwidth reaching up to 100 plus
+terabits per second and distances up to
+100 plus
+kilm. Radio waves offer bandwidth up to
+1 Gbit per second and cover distances
+from a few meters to kilome at a medium
+cost. Microwave communication provides
+bandwidth up to 10 Gbits per second and
+distances up to 50 plus
+kilm. Satellite communication offers
+bandwidth up to 1 Gbit per second. The
+choice of transmission media depends on
+specific requirements including
+distance, bandwidth needs, environmental
+conditions, budget constraints, and
+security
+Outro
+considerations. 

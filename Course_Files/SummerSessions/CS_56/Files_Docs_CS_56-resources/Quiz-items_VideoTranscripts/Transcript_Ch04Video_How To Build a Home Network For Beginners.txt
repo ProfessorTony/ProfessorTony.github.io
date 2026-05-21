@@ -1,0 +1,368 @@
+Video Transcript
+    https://www.youtube.com/watch?v=P_188oMgfuQ
+
+If you're looking to set up a home
+network for the first time or need help
+getting yours up and running, you've
+come to the right video. By the end of
+this guide, you'll have a clear
+step-by-step process to get you started
+and to get you finished. That way, you
+can build something like this. I'm
+Michael Scott, and this is the ultimate
+tech hub.
+Choosing Your ISP - Internet Service Provider
+The first and most important step when
+building any home network is choosing
+your ISP. And we have three factors to
+consider. The first factor is speed. How
+fast do you want your uploads and
+downloads? So when choosing your speed
+for your home network, take into
+consideration the size of your family,
+what you're doing at home, are you
+working from home? Are you a streamer,
+gamer, all the above. If you have a
+large family and maybe work from home,
+then you're probably going to need a one
+gig plan. A one gig plan should provide
+plenty of speed and bandwidth for
+multiple users, which includes streaming
+multiple devices, working from home,
+gaming, and web browsing. However, if
+you're single or maybe you have a small
+family and maybe only web browse, then a
+slower plan will be just fine. The
+second factor you want to consider when
+choosing an ISP is reliability. How
+reliable is the ISP? Does it have
+frequent outages? And are you getting
+the speeds that you're paying for? It
+can be a common issue when an ISP
+advertises one speed, but you're getting
+far less. So, make sure to do a speed
+test once a week to check those speeds.
+And before you sign up with any ISP,
+check the reviews. Okay. The third
+factor is your budget. How much are you
+willing to spend? It's 2025 and ISPs
+have now become pretty competitive. So,
+pricing is pretty good. When it comes to
+picking your ISP, it's all about
+location and available options. So, if
+you live in the city, you may have more
+options. However, if you live rural, you
+may have only one option, and that one
+option may be Starlink. And Starlink
+does have a high rating when it comes to
+speed and latency. However, when it
+comes to satellite, weather conditions
+can disrupt your service. So, keep that
+in mind. If at all possible, you want to
+opt for a fiber ISP. Unlike cable or
+DSL, fiber ISPs offer a faster, more
+reliable, and often cheaper connection.
+I've experienced this firsthand, and the
+difference is night and day. I made the
+switch from Cox cable to fiber and is
+cheaper, faster, and more reliable. So,
+it's a win-win. Okay. Now, you'll need a
+cable modem, DSL modem, or a fiber,
+Buying A Modem/ONT and How It Works
+depending on your ISP plan. A cable
+modem or DSL modem connects your home to
+the internet, acting as a gateway that
+allows your devices to connect to the
+online world. It translates digital
+signals from your devices into signals
+that can be transmitted over the
+internet and vice versa. And this is
+known as modulation and de modulation.
+However, if you have fiber internet like
+me, you'll need an
+which stands for optical network
+terminal. The translates light signals
+from the fiber cable into electrical
+signals that your router and devices can
+understand. While an is not a modem, it
+does serve a similar function. Most ISPs
+will provide a modem for free or for
+rent. In my experience, if the ISP wants
+to rent you a modem, go ahead and buy
+your own. It'll save you money in the
+long run. That being said, I have Centry
+Link Fiber and they provided my for
+free, so it's a win-win. However, this
+all depends upon the ISP that you
+choose. Okay, step number three,
+selecting the perfect wireless router.
+10 Step Guide To Choosing the Perfect Wireless Router
+Choosing the best wireless router is
+crucial as it serves as the brain for
+your home network. Here is a simplified
+guide to help you make an informed
+decision. First, you want to assess your
+needs and consider how your network will
+be used. more demanding activities will
+require a more advanced router. Step
+two, check the speed of the router to
+make sure it supports the speeds of your
+ISP plan. For instance, if you have a 2
+gig fiber plan, make sure that router
+supports 2 gig. And FYI, most basic
+routers or mesh systems only have 1 gig
+LAN ports. So, if you have a 2 gig
+connection, those routers will not work.
+Okay. The third step is determining will
+you need Wi-Fi 6, Wi-Fi 6E, or Wi-Fi 7.
+Once again, this will depend upon your
+home network needs. While most homes can
+get away with a Wi-Fi 6 router, many
+high demand users will require Wi-Fi 6E
+or Wi-Fi 7. So, for instance, if you buy
+the latest phones and laptops, you may
+want to consider Wi-Fi 6E or Wi-Fi 7.
+And those speeds are very fast. And this
+is due to the newer and faster 6 GHz
+band. And these newer routers also
+support MLO technology, which combines
+all the bands together to form a faster
+and more reliable connection.
+All right, number four is coverage area.
+You'll need to consider the size of your
+home. For small homes, apartments, or
+condos, a basic router will do just
+fine. With large homes, or two-story
+homes, or homes with basement, you'll
+need a router with extendable range or
+maybe a mesh system. You can also buy a
+router without wireless capabilities and
+just connect an AP somewhere in your
+home, but that's for a different video
+and that's a little bit more
+complicated. Okay, number five is number
+of devices. Think about how many devices
+will connect to your network. All
+wireless routers have connection limits,
+so check the box. Okay. Number six is
+security features. Ensure that your
+router supports the latest security
+protocol, WPA3, and older Wi-Fi 6
+routers only support WPA2. If security
+is a top priority for your home network,
+then consider getting a Wi-Fi 6E or
+Wi-Fi 7 router because these have WPA3
+encryption. And guys and gals, please
+consider subscribing to our channel
+because all the cool kids are doing it.
+Thanks. All right, number seven is ease
+of use or user-friendly apps or web
+interfaces. Look for easy setup and
+management and keep it simple,
+especially if you're a network beginner.
+Okay, number eight is futurep proofing.
+You may want to consider the latest
+technology like Wi-Fi 6E or Wi-Fi 7
+routers. This will ensure that your
+router stays relevant even as technology
+advances. If you tend to buy the latest
+iPhones or Samsung's or laptops, you may
+want to consider a Wi-Fi 6E or Wi-Fi 7
+router. Okay, number nine is your
+budget. How much are you willing to
+spend on your router? And this step is
+super easy. Just check in my description
+below for the best deals on all routers.
+And these are Amazon affiliate links
+where I get a small commission. And this
+small commission helps keep this channel
+alive. Thanks. All right, number 10 is
+reviews and ratings. Make sure to
+thoroughly check their reviews and
+ratings for the router you want to
+purchase. In many cases, you will see
+the same issue or problem in multiple
+reviews, and that's a huge red flag. All
+right, step number four. Let's connect
+your brand new wireless router. Okay,
+Connecting Your New Wireless Router
+now you want to plug your brand new
+router into your modem or using an
+Ethernet cable. And you can use Cat 5e,
+Cat 6, or Cat 6A. And just a heads up, I
+get all of my Ethernet cables at
+satmaxim.com. They have the best cables
+at the best pricing. And they carry Cat
+5e, Cat 6, Cat 7, and Cat 8. So make
+sure to check out satmaxim.com
+for all your cable needs. So connect one
+end of the cable to the modem or and the
+other end to the WAN port on the back of
+the router. Do not connect to the LAN
+port. Connect to the WAN port wide area
+network. Next, you want to make sure
+your router is centrally located in your
+home and smack dab in the middle of the
+house will be perfect to provide the
+best range everywhere. So depending on
+the distance from the modem to the
+router, you may need a longer cable. For
+example, in my network panel, there is
+no router. I placed my router in the
+center of the home for the best
+coverage. And I simply ran two cables
+from this panel up the wall through the
+attic down another wall into the room.
+And guys and gals, if you're liking this
+kind of content, please give a thumbs up
+and share it. High five. So, one cable
+will go from the fiber into that room
+and plugs into the WAN port on the
+router. And then another cable goes from
+the LAN port on the back of that router
+back into the panel into a switch. And
+this gives our panel internet
+connectivity. Okay, step number five.
+Configure Your New Router
+Let's configure the router. All right,
+there are two ways to configure your
+brand new router. It's either wired or
+wireless. For a wired connection,
+connect your PC to the LAN port on the
+back of the router. And then next, open
+any web browser and type in the address
+bar 1 192.168.1.1
+or 1 192.168.0.1.
+If those numbers don't work, look on the
+back of the router for the IP address.
+And then next, log into the router using
+the default name and password which can
+be found on the back of the router. And
+once you log in, you want to change the
+admin name and password. Now to connect
+to your router wirelessly, download the
+app for your specific brand like TPLink,
+Netgear or ASUS. And for instance, the
+ASUS app or TPLink app will
+automatically find the router in your
+network and then connect. And once
+again, once you're logged in, change the
+admin name and password. Okay, step
+number six. Let's configure your
+wireless network. So once you go into
+Configure Your Wireless Networks
+the admin screen, go into the wireless
+settings. And now it's time to set up a
+unique SSID, which is the network name.
+From here, we're going to make some
+changes. Depending on how many bands you
+have, you can have a 2.4 GHz band SSID,
+a 5 GHz band SSID, and even a 6 GHz band
+SSID. And with the newer Wi-Fi 7
+routers, there's MLO technology, which
+means you can create an MLO SSID. And
+when naming your SSID, don't make it too
+personal. Don't use your last name or
+your address. Next, you want to set a
+strong and unique password. 12 to 16
+characters or longer. And use a mix of
+uppercase, lowercase, numbers, and
+symbols. And just for context, it would
+take over 200 years to hack this type of
+password. So, the longer the better. All
+right, step number seven. Let's connect
+Connecting Your Devices
+all your devices. So, connecting your
+wireless devices to the network is super
+easy. Just find your SSID and put in
+your password and you're good to go.
+Then repeat this process for all your
+wireless devices. For wired devices like
+PCs and gaming consoles, simply plug
+them into the LAN port on the back of
+the router. If you have more wired
+devices than LAN ports on the back of
+the router, then you'll have to buy a
+switch. And you can see in my network
+panel, I have two switches. I have a 10-
+port switch and an eight port switch.
+And the great thing about network
+switches is they come in five port, 8
+port, 10 port, even 24 ports. And that's
+plenty of ports for all your wired
+devices. And to make it even easier,
+most switches are plug-and-play and
+require no configuration. Okay, step
+number eight. Let's test your network.
+And we're going to use an online speed
+Testing Your Network
+test for both wireless and wired. For
+wireless speeds, use your laptop or
+phone to perform the test. There are
+plenty of websites you can go to to
+perform this test. Now, your wireless
+speeds will not be as fast as your wired
+speeds, and it also depends what band
+you're connected to. The 2.4 GHz band is
+much slower. So, I recommend that you
+connect to the 5 GHz band when doing
+this test. It's much faster. And if you
+have the Wi-Fi 6E or Wi-Fi 7 router, you
+can choose the 6 GHz band as well. And
+since I have a Wi-Fi 7 router, I'm going
+to speed test both the MLO band as well
+as the 5 GHz band, and we'll see which
+one is faster. All right, now it's time
+for the allimp important speed test.
+Let's start with the MLLO
+and we'll hit go.
+Maybe 700 megabits per second. Download
+681
+and upload. Pretty impressive, too.
+761 upload.
+Wow, very impressive. Let's try the
+5 GHz band. Here we go. connect.
+If I was a betting man, I would say it's
+faster. Let's find out. Go.
+So, we got 601 download megabits per
+second and then we've got what for
+upload?
+We got 690 for upload. So, the MLO was
+faster, but not by a whole lot. So, my
+speed test proved that the ML low band
+was faster than the 5 GHz band. That's
+pretty impressive. And performing the
+wired speed test is exactly the same.
+Just go to your web browser and look for
+a speed test website and then hit go.
+And your wired speeds should be very
+close to your max ISP speeds. If they
+consistently fall way short of that,
+then call your ISP. All right, the last
+step is step number nine, securing your
+Securing Your Home Network
+home network. And this step is pretty
+easy, but it's very important. The first
+thing you want to do in your router is
+make sure all the firewalls are turned
+on. And like I said before, make sure
+all your passwords are long, strong, and
+unique. The longer the better. And if
+your router has VPN capabilities, I
+would definitely use it. And the last
+thing I would do in your router is
+change your DNS server. You have a
+primary and a secondary. And I use the
+family version of Cloudflare, which
+blocks adult websites and malware. So
+for your primary DNS, put 1.1.1.3.
+and secondary is 1.0.0.3.
+And just hit save. That's it. And now
+your network is protected against
+malware and adult websites. And there
+you have it, guys. A comprehensive guide
+to setting up your home network.
+Remember, there are more advanced topics
+like port forwarding, PoE connections,
+and VLANs. But this guide covers the
+basics.

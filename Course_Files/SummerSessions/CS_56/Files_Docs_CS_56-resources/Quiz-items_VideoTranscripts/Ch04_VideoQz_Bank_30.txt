@@ -1,0 +1,209 @@
+1. What is identified as the first and most important step when building any home network?
+a) Buying a router
+b) Running Ethernet cables
+*c) Choosing your ISP
+d) Setting up a firewall
+e) Changing your DNS settings
+
+2. According to the video, how many primary factors should be considered when choosing an ISP?
+a) One
+b) Two
+*c) Three
+d) Four
+e) Five
+
+3. Which of the following is NOT typically a primary factor to consider when choosing an ISP plan?
+a) Speed
+b) Reliability
+c) Cost and Equipment
+d) Bandwidth needs for the family
+*e) The brand of your computer monitor
+
+4. For a large family that streams, games, and works from home simultaneously, what ISP plan speed is recommended?
+a) A 10 Megabit plan
+b) A 50 Megabit plan
+c) A 100 Megabit plan
+*d) A 1 Gigabit plan
+e) A dial-up plan
+
+5. If you are single or have a small family and primarily just browse the web, what type of plan does the video suggest?
+*a) A slower, basic plan will be just fine
+b) You still need a 1 Gigabit plan
+c) A commercial enterprise plan
+d) A fiber-optic backbone
+e) A dedicated satellite link
+
+6. What is the second major factor to consider when choosing an ISP, which focuses on consistent uptime?
+a) Topography
+b) Latency
+*c) Reliability
+d) Aesthetics
+e) Cable length
+
+7. When setting up your network hardware, what is generally the most cost-effective choice regarding modems over the long term?
+a) Renting one from your ISP forever
+*b) Buying your own modem and router
+c) Building your own modem from scratch
+d) Using a neighbor's Wi-Fi
+e) Using a cellular hotspot for the whole house
+
+8. What piece of hardware acts as the primary bridge translating the incoming ISP signal into a usable network signal?
+*a) The modem
+b) The switch
+c) The access point
+d) The patch panel
+e) The Ethernet cable
+
+9. For high-speed Gigabit internet cable plans, which standard is highly recommended for modems?
+a) DOCSIS 1.0
+b) DOCSIS 2.0
+c) DOCSIS 3.0
+*d) DOCSIS 3.1
+e) DOCSIS 4.5
+
+10. What device is responsible for routing traffic between your local devices, assigning IP addresses, and broadcasting Wi-Fi?
+a) The modem
+*b) The router
+c) The unmanaged switch
+d) The Cat 6 cable
+e) The ISP node
+
+11. Which newer Wi-Fi standard introduces Multi-Link Operation (MLO) for faster speeds and lower latency?
+a) Wi-Fi 4
+b) Wi-Fi 5
+c) Wi-Fi 6
+d) Wi-Fi 6E
+*e) Wi-Fi 7
+
+12. If you have a very large home with multiple Wi-Fi "dead zones," what type of wireless setup is best suited for you?
+a) A single old router in the basement
+b) A mobile hotspot
+*c) A Mesh Wi-Fi system
+d) A wired-only switch
+e) A dial-up modem
+
+13. What is the primary purpose of adding a network switch to your home network?
+*a) To add more wired Ethernet ports to the network
+b) To boost the Wi-Fi signal
+c) To change your public IP address
+d) To pay your ISP bill
+e) To translate coaxial signals to Ethernet
+
+14. For a simple home network setup, which type of switch is easiest because it is simply "plug-and-play" with no configuration required?
+a) A Layer 3 switch
+*b) An unmanaged switch
+c) A managed switch
+d) A smart switch
+e) An enterprise core switch
+
+15. What does PoE stand for in the context of network switches?
+a) Port over Ethernet
+b) Protocol of Ethernet
+c) Path of Energy
+*d) Power over Ethernet
+e) Point of Entry
+
+16. What distinct advantage does a PoE switch provide for devices like security cameras or wireless access points?
+a) It makes them completely wireless
+b) It increases their megapixel count
+*c) It delivers both data and electrical power over a single Ethernet cable
+d) It changes their MAC address automatically
+e) It connects them directly to the ISP bypassing the router
+
+17. Which type of Ethernet cable is currently considered the standard for supporting 1 Gigabit and up to 10 Gigabit speeds over short distances in a home?
+*a) Cat 6
+b) Cat 3
+c) Cat 5 (non-e)
+d) Coaxial
+e) RJ-11
+
+18. Why is a wired Ethernet connection generally preferred over Wi-Fi for gaming consoles and desktop PCs?
+a) It is newer technology
+*b) It provides a more stable connection with lower latency and less interference
+c) It allows the devices to be moved around the house easily
+d) It uses less electricity
+e) It completely hides your IP address
+
+19. Where is the optimal physical placement for a wireless router in a typical home to ensure the best coverage?
+a) In the basement next to the breaker box
+b) Hidden inside a metal filing cabinet
+c) On the floor in the corner of the house
+*d) In a central, elevated location away from thick walls
+e) Inside a microwave oven
+
+20. What device can be hardwired back to the main router to project a strong, fresh Wi-Fi signal to a distant part of the house?
+a) A network switch
+b) A PoE injector
+*c) A Wireless Access Point (AP)
+d) A patch panel
+e) A fiber optic strand
+
+21. In the video's specific speed test results, which wireless band or feature proved to be the absolute fastest?
+a) The 2.4 GHz band
+b) The 5 GHz band
+c) The 6 GHz band
+*d) The MLO (Multi-Link Operation) band
+e) The Bluetooth band
+
+22. How does the speaker recommend testing your wired network speeds?
+a) By downloading a large video game
+b) By pinging the router continuously
+*c) By going to a speed test website on your web browser and hitting go
+d) By asking the ISP
+e) By measuring the cable length
+
+23. According to the video, what should your wired speed test results closely match?
+a) Half of your advertised speeds
+*b) Your maximum ISP advertised speeds
+c) Your Wi-Fi speeds
+d) Exactly 1000 Mbps regardless of your plan
+e) The speed of your computer's processor
+
+24. What should you do if your wired speed tests consistently fall way short of your ISP plan speeds?
+a) Buy a new computer
+b) Restart the test 50 times
+*c) Call your ISP
+d) Switch to Wi-Fi exclusively
+e) Unplug your router permanently
+
+25. What is identified as the final and very important step (step number nine) in building the home network?
+a) Painting the cables
+b) Paying the bill
+c) Turning off the modem
+*d) Securing your home network
+e) Buying a new phone
+
+26. What is the first thing you should ensure is turned on inside your router settings for security?
+*a) All the firewalls
+b) The guest network
+c) Port forwarding
+d) Remote management
+e) WPS (Wi-Fi Protected Setup)
+
+27. How does the video describe the ideal passwords for your home network to ensure security?
+a) Short and memorable
+*b) Long, strong, and unique
+c) Your phone number
+d) The word "password" with a number
+e) The default password on the sticker
+
+28. If your router has this specific capability built-in, the speaker highly recommends using it to encrypt your overall traffic. What is it?
+a) VLAN tagging
+b) QoS (Quality of Service)
+c) Port mirroring
+d) MAC filtering
+*e) VPN capabilities
+
+29. What specific family-friendly DNS service does the speaker recommend using to automatically block malware and adult websites?
+a) Google DNS
+b) OpenDNS
+*c) Cloudflare Family version
+d) Quad9
+e) Your ISP's default DNS
+
+30. According to the video, what should you enter as the primary and secondary DNS server addresses to use this specific family protection?
+*a) Primary 1.1.1.3 and Secondary 1.0.0.3
+b) Primary 8.8.8.8 and Secondary 8.8.4.4
+c) Primary 1.1.1.1 and Secondary 1.0.0.1
+d) Primary 192.168.1.1 and Secondary 192.168.1.2
+e) Primary 10.0.0.1 and Secondary 10.0.0.2

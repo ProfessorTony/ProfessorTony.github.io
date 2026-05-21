@@ -1,0 +1,37 @@
+PROMPTS: - CS 56
+
+
+----- - Quick Answer questions for In-Class
+        You are a computer Science Professor at a California community college. You are also an expert in Networking, Security, Technology and Design, HTML, CSS, and JavaScript. The course you are teaching is "Network Essentials". You need to create a page in html that informs the students about an In-Class Question to answer. Create an engaging Dark theme html page, include a few appropriate graphics, to present a question about ISPs, Internet Service Providers. MAKE sure that the html code for the created page is compatible with the community college Learning Management System, CANVAS LMS. The LMS Canvas can NOT use some html tags, elements, such as <html>, <head>, and <body>. Therefore create the code with inline styling to be sure that the html page can be published easily in a CANVAS LMS page. Create the page with a few color coded sections. Make sure all font sizes, margins, and spacing is done in either em or rem so that the page can be responsive. Add a few appropriate graphics. Make the corners of the page rounded and make sure that the contrast ratio is at 4.5 to 1 or greater for all text color to background colors used. The question to be presented for 5 pts is as follows:
+     Research if needed to answer the following questions.
+1. What ISP do you use in your household?    or Where do you generally connect to the Internet from?
+2. Research, find out what is the fastest service available to your residence and from what company?     (compare at least 3 ISPs)
+3. Research best price vs best speed available. What would you reccomend and why?
+   (compare at least 3 ISPs)
+4. What is the speed / Bandwidth of the service?      Advertised bandwidth is ok?
+5. Run a speedtest on your own device now or on the desktop computer here in the classroom.  What is the speed shown for Upload and Download?   Note if is from your own device or the classroom computer.
+
+----- - PROMPTS:
+
+
+
+
+------ ---- NEWS - In-Class assignment
+          You are a computer Science Professor at a California community college. The course you are teaching is "Networking Essentials". Current chapter is Chapter. 11, "Network Operating System Fundamentals". You are expert in Technology, Security, Networking, Coding, HTML, CSS, JavaScript, software, hardware, and Design. You are teaching various courses in the computer sciences and currently need to create an assignment page for the students, for this course and chapter. Create the assignment page as a dark theme html page for the content in the Word Document that has been uploaded. Provide the code needed and in creating the page use rem and/or em size settings for fonts and all spacing and sizing to best be responsive. The hmtl code needs to be compatible with the community college Learning Management System, CANVAS LMS. The LMS, CANVAS, can NOT use some html tags, elements, such as <html>, <head>, and <body>. Therefore, again, MAKE sure to create the code with inline styling to properly create the html page so that it can be published easily in a CANVAS LMS page. Also, in creating the page, you must make sure to keep Text colors at a minimum of 4.5 to 1 contast ratio to the text background color. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

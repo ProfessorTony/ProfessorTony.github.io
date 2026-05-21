@@ -1,0 +1,265 @@
+Networks Connect Us:
+
+    I am willing to bet that you have used
+your phone to get a decent cup of coffee
+before. You type cafe, a few places show
+up, and you pick one. When you get there
+and take your spotting line, you usually
+don't stop to wonder why this cafe, why
+not the one across the street? You just
+order and move on.
+We like to think that our choices are
+fully our own. But what if something was
+quietly steering us? What if there was
+already a probability that you will pick
+one cafe over another even before
+unlocking your phone?
+It turns out the networks we are all
+part of don't just shape our choices,
+they can even predict them.
+I will get back to the coffee shop in a
+minute, but first let's talk about what
+networks actually are. At their core,
+networks are just connections showing
+relationships between people, places,
+and many other things. When we draw a
+network, those things are shown as dots,
+but network scientists like me call them
+nodes. The connections that tie them
+together are called links.
+This might seem like a simple concept,
+yet it's incredible how complex these
+networks can get. Just think about the
+train and airplane systems connecting
+cities and countries, trading routes,
+delivering goods all around the globe,
+or the water and sewer infrastructure
+under our cities. We rarely think about
+these networks except when they break.
+One delayed flight can cause a ripple of
+misconnections. One ship stuck in the
+Suez Canal can block global trade for
+days. And the reality is that you rely
+on these networks in your daily life all
+the time, even if you don't see them.
+You turn on the lights in your home
+thanks to an electrical
+network. You drive to work on a
+network of roadways and you pay for your
+lunch by tapping into a financial
+network.
+Not to mention our digital networks. We
+would be truly lost without internet
+connection which in turn links us to
+loads of other networks from social
+media and dating apps to streaming
+services and right healing applications.
+When we join these platforms
+we become an active part of the network.
+One of the many dots or nodes in the
+global web of connections.
+As a network scientist, my job is to
+make these invisible networks visible.
+This usually means a mix of collecting
+data and writing computer code and
+sometimes even sketching formulas on a
+whiteboard.
+By mapping these hidden connections
+between people or things, I can reveal
+which links are strong, which links are
+weak, who sits at the center, and who is
+on the fringes.
+And if I have done my job really well, I
+can not only describe the network, but I
+can even predict what happens next.
+A few years ago, I used network science
+to predict which characters in Game of
+Thrones would survive to the end.
+For those of you who are not familiar
+with the show, Game of Thrones is famous
+for two things: dragons and surprise
+deaths. Actually, the author became
+infamous for ruthlessly killing off even
+the most beloved main characters. Just
+when you start to like someone, a few
+episodes later, they are gone.
+This unpredictability was precisely what
+got me curious.
+Under the excuse of scientific research,
+I set out to map the character network
+of the show and use it to predict the
+show's ending by following a few simple
+steps.
+Step one, data.
+I used scene by scene episode
+transcripts, essentially a character
+dialogue database.
+Step two, connections. If two characters
+appeared in the same scene, I counted
+that as a link. Step three, relationship
+strength. The more scenes they shared,
+the stronger the link.
+After carefully executing these steps,
+what I got looks like a colorful spider
+web where shared screen time turns into
+network connections.
+By taking a closer look,
+um um patterns begin to emerge. The main
+curts stand out as the largest nodes and
+plot lines cluster into different
+segments of the graph. Some characters
+are deeply connected
+and others bridge between story lines.
+[clears throat]
+When we turn these patterns into numbers
+and feed them into a simple machine
+learning model, the results are clear.
+The structure of the network, who
+connects to whom and how,
+predicts untimely deaths with surprising
+accuracy.
+For example,
+my model flagged about eight major
+characters as having an almost certain
+descendence
+and
+90% of them were dead by the end of the
+series.
+Ahead of the season finale, a former
+colleague actually used my findings to
+enter a bedding pool about the character
+survival.
+And while he didn't got me in, he still
+got me a pizza. So I'm pretty sure he
+made a decent profit on those bets.
+[laughter]
+But the bottom line is in Westeros,
+fate wasn't just about luck or bravery,
+it was about who you know.
+The thing is the methods I used to
+predict character killings in Game of
+Thrones also work in real life. not for
+dragons and queens, but for figuring out
+how successful a person or a business
+will be.
+Let's take a look at one industry as an
+example.
+I studied the world of DJs by mapping
+their collaborations, focusing on DJs
+who made it into an annual top 100
+ranking over a decade.
+I found that the electronic music
+industry is split into two by a glass
+ceiling at the 20th place. Oldtime
+legends like TSTO and Army Firan
+reliably holds spots in the top 20 year
+after year while the rest of the
+industry competes for a spot on the list
+somewhere below.
+It also turned out that for rising
+artists, connecting with big stars is a
+double-edged sword. On the one hand, it
+boosts their chances of becoming
+successful and making it to the top 100.
+On the other hand, it almost certainly
+guarantees they will never break the
+glass ceiling.
+This means that the people you choose to
+connect with can shape your path or
+block it.
+Your workplace may lack a proper sound
+system, yet it functions a lot like the
+world of DJs. In 1973,
+a sociologist by the name of Mark Greter
+published a famous paper called strength
+of weak ties. It showed that it's
+usually distant acquaintances, not close
+friends, who help us land jobs.
+Networks can open doors. Other work on
+organizational networks has shown that
+networks inside companies often form
+silos or bubbles which can become echo
+chambers.
+These workbased clusters are sometimes
+so removed from each other that for
+example IT and finance look like they
+are not even from the same firm. And
+such disconnected networks usually stop
+ideas from spreading and people from
+advancing in their careers.
+And here comes network science and
+visual maps like the one about Game of
+Thrones.
+Without such social maps, we can only
+guess where the roadblocks are or who
+may be the right connection to new
+doors. However, once we know the
+networks, we can gain the ability to
+consistently take steps forward
+and even drive what happens next.
+The methods that I've used in my
+projects may seem like isolated examples
+of using networks to predict outcomes,
+but actually this type of work is
+happening constantly and on a massive
+scale behind the curtains of every major
+app on your phone.
+Algorithms are tirelessly stitching
+together hidden networks of people who
+may never even know each other, but
+whose clicks and swipes and other
+digital breadcrumbs make them similar.
+In the end, the algorithms figure us out
+based on where we are in these networks.
+Netflix, for example, isn't just
+observing what we watch. It's learning.
+Every time you select a movie or rate
+the shows you like helps it adjust and
+adapt. Moreover, it's also influenced by
+the choices and preferences of many
+other Netflix users all around the globe
+with tastes similar to yours.
+Based on what they like, Netflix
+predicts what you will like. Which
+brings me back to that coffee place you
+searched for.
+Yes, you might think that you ended up
+there because it was conveniently
+located to your next destination or
+because it had a four and a half star
+rating. And these things probably played
+a role.
+But your search for a coffee shop also
+involved what's known as collaborative
+filtering. This is a system that
+compares your behavior to others and
+suggests places based on what people
+like you have enjoyed.
+For example, if you and I visited the
+same cafes before, the system quietly
+assumed that we shared taste and
+suddenly your choices influence mine.
+You open Google Maps, a few places show
+up first, others are highlighted, and
+some don't show up at all.
+And that's not random. That's networks
+at work.
+By now, we have seen how networks, most
+of them invisible, shape what we do.
+Once we see those networks, we can start
+using them and not just to predict what
+happens next, but to decide how we want
+to move forward.
+That's the moment we move from passenger
+to driver. Think of networks as maps.
+Every prediction is one route on the
+map, but the reality is that there are
+many others. Maps help you find the
+shortcuts and the roadblocks you didn't
+even know were there.
+Because every choice, every new
+connection adds to the map and steers
+your path from the small things like
+your morning coffee to the big things
+like your career success.
+Choose your next connections wisely.

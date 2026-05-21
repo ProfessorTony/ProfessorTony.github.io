@@ -1,0 +1,139 @@
+1. According to the text, what do network scientists call the "dots" in a network drawing?
+a) Links
+b) Points
+*c) Nodes
+d) Hubs
+e) Vertices
+
+2. What term is used to describe the connections that tie the dots together in a network?
+*a) Links
+b) Cables
+c) Bridges
+d) Paths
+e) Nodes
+
+3. According to the transcript, when do people usually stop to think about infrastructure networks?
+a) When they are first built
+b) When they are being upgraded
+*c) When they break
+d) When they are most efficient
+e) During holiday travel
+
+4. What example does the text use to illustrate a "ripple effect" in a network?
+a) A slow internet connection
+*b) One delayed flight or a ship stuck in a canal
+c) A broken water pipe
+d) A power outage in a small town
+e) A road closure during rush hour
+
+5. According to the video, what is the core purpose of a network?
+a) To predict weather patterns
+b) To create digital entertainment
+c) To control human behavior
+*d) To show relationships between people, places, and things
+e) To store large amounts of data
+
+6. How does the text describe the nature of most networks that shape our lives?
+a) They are highly visible and obvious.
+b) They are purely digital and virtual.
+c) They are mainly social and interpersonal.
+*d) They are mostly invisible.
+e) They are controlled by a single person.
+
+7. Which system is mentioned as an example of infrastructure under our cities?
+a) Public transportation
+b) Electrical grids
+*c) Water and sewer systems
+d) Gas lines
+e) Fiber optic cables
+
+8. According to the text, what can networks do besides shaping our choices?
+a) They can prevent all errors.
+*b) They can predict our choices.
+c) They can replace human logic.
+d) They can stop time.
+e) They can eliminate the need for coffee.
+
+9. What is "collaborative filtering" as described in the transcript?
+a) A way to filter pollutants from water
+b) A method for sorting emails
+*c) A system that compares your behavior to others to suggest choices
+d) A technique for cleaning network cables
+e) A collaborative way to write software code
+
+10. How does the text explain why you picked a specific cafe?
+a) It was purely a random choice.
+b) It was because of the price.
+c) It was due to the color of the sign.
+*d) A network quietly steered your probability of choice.
+e) You were following a friend.
+
+11. According to the transcript, what happens when you and another person visit the same cafes?
+a) You receive a discount.
+b) The system blocks the cafe for others.
+*c) The system assumes shared taste and your choices influence theirs.
+d) The network breaks.
+e) A physical link is created between your phones.
+
+12. In the context of Google Maps, what does the text say about which places show up first?
+a) It is completely random.
+b) It depends on who paid the most.
+c) It is based on the alphabet.
+*d) It is an example of networks at work, not a random occurrence.
+e) It is based on the age of the building.
+
+13. What does the speaker mean by moving from "passenger to driver" in a network?
+a) Learning how to drive a train
+*b) Moving from just having things happen to deciding how to move forward
+c) Quitting a job to become a network scientist
+d) Unlocking your phone faster
+e) Navigating a real map instead of a digital one
+
+14. How does the speaker suggest we should think about networks?
+a) As a trap
+*b) As maps
+c) As physical wires only
+d) As a nuisance
+e) As a mystery
+
+15. According to the speaker, what do "maps" help you find in a network?
+a) The cheapest coffee
+b) The location of your friends
+*c) Shortcuts and roadblocks you didn't know were there
+d) Lost items
+e) The nearest airport
+
+16. What is the effect of every new choice or connection we make on the "map"?
+*a) It adds to the map and steers your path.
+b) It deletes old information.
+c) It makes the network slower.
+d) It confuses the system.
+e) It has no effect at all.
+
+17. The transcript mentions that networks affect things ranging from:
+a) Only global travel
+b) Only digital searches
+*c) Small things like morning coffee to the big things in life
+d) Only sewer systems
+e) Only relationship statuses
+
+18. What does "shared taste" in the text refer to?
+a) Cooking the same meals
+b) Working at the same office
+*c) Patterns in consumer behavior that systems like Google Maps identify
+d) Having the same phone model
+e) Using the same Wi-Fi password
+
+19. Why does the author mention a ship stuck in a canal?
+a) To talk about maritime history
+b) To explain how water systems work
+*c) To show how a break in one link affects a global network
+d) To illustrate a weather event
+e) To show the importance of boat maintenance
+
+20. What is the final takeaway regarding the visibility of networks?
+a) They will eventually all become physical cables.
+*b) Once we see the invisible networks, we can use them to decide our path.
+c) Networks are best kept hidden.
+d) Only scientists should see networks.
+e) Visibility makes networks stop working.

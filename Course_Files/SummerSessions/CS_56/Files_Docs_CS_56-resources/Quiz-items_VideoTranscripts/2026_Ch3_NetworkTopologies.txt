@@ -1,0 +1,209 @@
+1. What does the term "network topology" refer to in the context of IT?
+a) The speed at which data travels
+b) The brand of routers used
+*c) The specific layout or structure of the network
+d) The type of software installed on nodes
+e) The number of users allowed on the internet
+
+2. What is a "node" in networking terminology?
+a) The central cable in a bus network
+*b) Any device on the network like a computer or router
+c) The speed of the connection
+d) A specific type of software virus
+e) The distance between two computers
+
+3. Which concept describes the actual physical layout of cables and devices?
+a) Logical topology
+b) Virtual topology
+*c) Physical topology
+d) Wireless topology
+e) Overlay topology
+
+4. What is the primary purpose of adding "redundancy" to a network?
+a) To decrease the cost of the network
+b) To increase the latency of data transfer
+c) To create a single point of failure
+*d) To provide backup paths to prevent network failure
+e) To reduce the number of cables needed
+
+5. In a Bus topology, what is the single central cable called?
+a) The Star
+b) The Ring
+*c) The Backbone
+d) The Root
+e) The Mesh
+
+6. What is the specific function of "terminators" in a Bus topology?
+*a) To keep signals from bouncing back and causing interference
+b) To boost the signal speed
+c) To connect the bus to the internet
+d) To encrypt the data packets
+e) To act as a central switch
+
+7. What is the major weakness of a Bus topology?
+a) It requires too many cables
+b) It is too expensive for small offices
+*c) A break in the backbone stops the entire network
+d) It uses tokens which slow down data
+e) It cannot support coaxial cables
+
+8. Which topology connects every device directly to a central hub or switch?
+a) Bus
+b) Ring
+*c) Star
+d) Mesh
+e) Daisy Chain
+
+9. What happens in a Star topology if one cable connecting a device breaks?
+a) The entire network goes down
+*b) Only that specific device is cut off
+c) The central switch shuts down
+d) Data starts traveling in a circle
+e) The network switches to a mesh layout
+
+10. Which topology is currently the most widely used design in modern LANs?
+a) Bus
+b) Ring
+*c) Star
+d) Point-to-Point
+e) Daisy Chain
+
+11. An "Extended Star" topology works by doing what?
+a) Connecting devices in a long line without switches
+b) Using a single cable to connect all buildings
+*c) Connecting a central switch to several other switches
+d) Connecting every device to every other device
+e) Removing the central switch entirely
+
+12. In a Ring topology, how does data typically travel?
+a) In both directions simultaneously
+*b) In one direction, passing through each device
+c) Directly from sender to receiver
+d) Through a central hub only
+e) Randomly to any available node
+
+13. What is a "Token Ring" network designed to prevent?
+a) Redundancy
+b) High costs
+*c) Data collisions
+d) Wireless interference
+e) Cable breakage
+
+14. Why are Ring networks considered difficult to scale?
+a) They require expensive routers
+b) They use too much electricity
+c) They are wireless only
+*d) Adding or removing a device means temporarily breaking the loop
+e) They cannot support more than 5 computers
+
+15. Which topology links devices one after another with no central switch, similar to chaining monitors?
+a) Star
+b) Mesh
+*c) Daisy Chain
+d) Tree
+e) Hybrid
+
+16. What is the main advantage of a Mesh topology?
+a) Low cost
+b) Simplicity of setup
+*c) Extreme resilience and redundancy
+d) It uses the least amount of cable
+e) It requires no configuration
+
+17. In a "Full Mesh" topology, how are devices connected?
+*a) Every device is connected to every other device
+b) Devices connect only to a central server
+c) Devices connect in a single straight line
+d) Devices connect to two neighbors only
+e) Devices connect wirelessly only
+
+18. Where are Mesh topologies most commonly used due to their reliability?
+a) Small home offices
+b) Temporary classrooms
+*c) Data centers and mission-critical environments
+d) Coffee shops
+e) Single-room LANs
+
+19. Which topology is also known as a hierarchical topology and resembles an upside-down tree?
+a) Star
+b) Ring
+*c) Tree
+d) Bus
+e) Point-to-Point
+
+20. A Hybrid topology is defined by what characteristic?
+a) It uses only wireless connections
+b) It uses only fiber optic cables
+c) It is the cheapest option available
+*d) It combines two or more different network structures
+e) It does not use routers
+
+21. Which topology represents the simplest possible network link, connecting just two devices?
+a) Star
+b) Mesh
+*c) Point-to-Point
+d) Tree
+e) Bus
+
+22. A Point-to-Multipoint topology is common in which scenario?
+a) Connecting a printer to a single PC
+*b) Wireless ISPs or campus networks
+c) Connecting two monitors together
+d) A token ring setup
+e) A full mesh data center
+
+23. If a physical Star network uses a Hub instead of a Switch, how does it behave logically?
+a) As a Logical Ring
+*b) As a Logical Bus
+c) As a Logical Mesh
+d) As a Logical Tree
+e) As a Point-to-Point
+
+24. What makes a Logical Switched Star topology faster and more efficient than a Hub-based one?
+a) It uses gold-plated cables
+b) It broadcasts every packet to every device
+*c) It forwards data only to the intended recipient device
+d) It uses a token to control data flow
+e) It relies on ring topology rules
+
+25. In wireless "Infrastructure Mode," what device acts as the bridge connecting all devices?
+a) The modem
+b) The firewall
+*c) The Access Point (AP)
+d) The token ring
+e) The terminator
+
+26. What is the key characteristic of a wireless "Ad Hoc" mode?
+a) It requires a central router
+*b) Devices connect directly to each other without a central point
+c) It is used only for internet access
+d) It requires fiber optic cables
+e) It is the most stable form of wireless
+
+27. What does a VLAN (Virtual Local Area Network) allow network administrators to do?
+a) Physically cut cables to separate networks
+b) Connect devices without electricity
+*c) Logically divide a single physical network into multiple networks
+d) Increase the speed of light in fibers
+e) Remove all switches from the building
+
+28. Which technology is an example of an Overlay Network?
+a) Ethernet cables
+b) Coaxial cables
+*c) VPN (Virtual Private Network)
+d) A physical hub
+e) A network terminator
+
+29. How does Software-Defined Networking (SDN) differ from traditional networking?
+a) It removes all software from the network
+*b) It separates the control plane from the data plane
+c) It requires manual configuration of every switch
+d) It only works on Bus topologies
+e) It uses tokens for every transmission
+
+30. In the video's conclusion, what is the general trend observed in modern networking?
+a) Moving back to physical Bus topologies
+b) Relying solely on hardware switches
+c) Using more cables and less software
+*d) Moving toward flexible, software-driven systems like VLANs and SDNs
+e) Abandoning the internet for local networks
