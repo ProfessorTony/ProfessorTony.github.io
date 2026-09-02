@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding the DOM and Canvas</title>
+    <!-- Linking our two CSS files -->
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Web Animation: DOM & Canvas Basics</h1>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#dom">The DOM</a></li>
+            <li><a href="#canvas">The Canvas</a></li>
+            <li><a href="#animation">Animation Demo</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Article 1: Introduction -->
+        <article id="intro">
+            <h2>Welcome to Web Animation</h2>
+            <p>
+                In this course, we bridge the gap between static web pages and interactive experiences. To do this effectively, we must understand how HTML, CSS, and JavaScript work together. 
+            </p>
+            <p>
+                HTML provides the structure, CSS provides the style, and JavaScript provides the logic and animation.
+            </p>
+            <!-- Using placeholder images for demonstration -->
+             <img src="https://placehold.co/600x200/1e293b/38bdf8?text=Structure+%2B+Style+%2B+Logic" alt="HTML CSS JS concept">
+        </article>
+
+        <!-- Article 2: The DOM -->
+        <article id="dom">
+            <h2>The Document Object Model (DOM)</h2>
+            <p>
+                Before we can animate an element, JavaScript needs a way to find it. The browser creates a representation of your HTML called the Document Object Model, or DOM. 
+            </p>
+            <p>
+                Think of the DOM as a tree structure where every HTML tag is a branch or a leaf. JavaScript can climb this tree to read, change, add, or delete elements.
+            </p>
+        </article>
+
+        <!-- Article 3: The Canvas -->
+        <article id="canvas">
+            <h2>The HTML5 Canvas</h2>
+            <p>
+                While we can animate standard HTML elements (like `div`s or `img`s) using CSS transitions or JavaScript, the HTML5 <code>&lt;canvas&gt;</code> element gives us a dedicated drawing surface.
+            </p>
+            <p>
+                It is essentially a blank bitmap area. We use JavaScript to draw shapes, lines, and images pixel by pixel.
+            </p>
+             <img src="https://placehold.co/600x200/1e293b/a855f7?text=Drawing+with+Pixels" alt="Canvas concept">
+        </article>
+
+        <!-- Article 4: The Animation Demo -->
+        <article id="animation">
+            <h2>Live Animation Demo</h2>
+            <p>
+                Below is a simple demonstration. We have a box structured with HTML and styled with our CSS files. When you click the button, JavaScript will manipulate its style properties to create an animation.
+            </p>
+            
+            <div class="demo-area">
+                <button id="animateBtn">Start Animation</button>
+                <div id="animatedBox"></div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>CSW 38: Web Animation &bull; California Community College System</p>
+    </footer>
+
+    <!-- JavaScript for the animation -->
+    <script>
+        // Wait for the HTML document to fully load
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // 1. Find the elements in the DOM
+            const btn = document.getElementById('animateBtn');
+            const box = document.getElementById('animatedBox');
+            
+            let isMovingRight = true;
+            let currentPosition = 0;
+            let animationId;
+
+            // 2. Define the animation function
+            function animate() {
+                // Determine direction and update position
+                if (isMovingRight) {
+                    currentPosition += 5;
+                    if (currentPosition > 300) isMovingRight = false; // Turn around
+                } else {
+                    currentPosition -= 5;
+                    if (currentPosition < 0) isMovingRight = true;  // Turn around
+                }
+
+                // Apply the new position to the box's CSS style
+                box.style.transform = `translateX(${currentPosition}px)`;
+
+                // Request the next frame
+                animationId = requestAnimationFrame(animate);
+            }
+
+            // 3. Add an event listener to the button
+            btn.addEventListener('click', () => {
+                // Toggle animation on/off
+                if (animationId) {
+                    cancelAnimationFrame(animationId);
+                    animationId = null;
+                    btn.textContent = "Start Animation";
+                } else {
+                    animate();
+                    btn.textContent = "Stop Animation";
+                }
+            });
+        });
+    </script>
+</body>
+</html>

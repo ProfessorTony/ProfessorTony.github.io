@@ -1,0 +1,78 @@
+
+@charset "utf-8";
+ 
+
+        /* styles.css - Handles typography, link colors, and animation box styles */
+        h1 {
+            color: #57B8E6;
+            margin: 0;
+        }
+
+        h2 {
+            color: #a855f7;
+            margin-top: 0;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 0.5rem;
+        }
+
+        nav {
+            background-color: #0b1120;
+            padding: 1rem;
+            border-bottom: 1px solid #334155;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        /* Standard link state */
+        a {
+            color: #9BD0FA; 
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        /* Clicked/Visited link effect */
+        a:visited {
+            color: #D590F5; 
+        }
+
+        /* Hover effect for links */
+        a:hover {
+            background-color: #1e293b;
+            color: #ffffff;
+        }
+
+        button {
+            background-color: #3b82f6;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            margin-bottom: 1rem;
+        }
+
+        button:hover {
+            background-color: #2563eb;
+        }
+
+        #animatedBox {
+            width: 50px;
+            height: 50px;
+            background-color: #f43f5e;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
