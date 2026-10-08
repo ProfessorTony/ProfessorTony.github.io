@@ -1,0 +1,116 @@
+<!-- 
+  CSW 38: Web Animation - Module Tutorial
+  Topic: CSS Keyframes, Transforms, and Hover States
+  Description: Canvas LMS compatible HTML page demonstrating spinning images that pause on hover, and links that grow/glow.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSW 38: Animated Spinning Images Tutorial</title>
+    <link rel="stylesheet" href="T5_animated_spins.css">
+</head>
+
+<!-- 
+  =============================================================================
+  MAIN HTML CONTENT AREA
+  =============================================================================
+-->
+<div style="background-color: #0f172a; color: #f8fafc; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 72rem; margin: 0 auto; padding: 1.5rem; border-radius: 1.4rem; line-height: 1.6; box-sizing: border-box;">
+
+    <!-- Header Section -->
+    <div style="background: linear-gradient(135deg, #1e293b, #0f172a); border: 0.0625rem solid #334155; border-radius: 1rem; padding: 1.5rem; margin-bottom: 1.25rem; text-align: center;">
+        <span style="font-size: 2.5rem; display: block; margin-bottom: 0.5rem;">🌀</span>
+        <h1 style="color: #38bdf8; font-size: 2.25rem; font-weight: 800; margin: 0 0 0.5rem 0;">Tutorial: Animated Spinning Images</h1>
+        <p style="color: #cbd5e1; font-size: 1.1rem; margin: 0; font-weight: 500;">
+            CSW 38 &bull; Mastering CSS Keyframes and Interactive Hover States
+        </p>
+    </div>
+
+    <!-- Section 1: External Tutorial Links (Growing/Glowing) -->
+    <div style="background-color: #1e293b; border: 0.0625rem solid #334155; border-radius: 1rem; padding: 1.5rem; margin-bottom: 1.25rem;">
+        <h2 style="color: #f8fafc; font-size: 1.35rem; font-weight: 700; margin: 0 0 1rem 0; display: flex; align-items: center; gap: 0.5rem;">
+            <span>🔗</span> 1. Recommended Online Resources
+        </h2>
+        <p style="color: #94a3b8; font-size: 1rem; margin: 0 0 1rem 0;">
+            Before we dive into the code, explore these excellent online resources. Notice how the links below react when you hover your mouse pointer over them? That "Grow and Glow" effect is powered by the CSS <code>transform: scale()</code> and <code>text-shadow</code> properties combined with a smooth <code>transition</code>.
+        </p>
+        
+        <!-- Flexbox container to align links neatly side-by-side on desktop, stacking on mobile -->
+        <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations" target="_blank" class="glow-link">MDN: Using CSS Animations</a>
+            <a href="https://www.w3schools.com/css/css3_animations.asp" target="_blank" class="glow-link">W3Schools: CSS Animations</a>
+            <a href="https://css-tricks.com/almanac/properties/a/animation/" target="_blank" class="glow-link">CSS-Tricks: The Animation Property</a>
+        </div>
+         <br />
+            <div style="font-size: 1.1rem;">1. View or download <a style="color: #75c6e6;" href="https://example.com">CSS stye sheet.</a></div>
+    </div>
+
+    <!-- Section 2: The Spinning Images Demo Area -->
+    <div style="background-color: #0b1120; border: 0.0625rem dashed #34d399; border-radius: 1rem; padding: 1.5rem; margin-bottom: 1.25rem;">
+        <h2 style="color: #34d399; font-size: 1.35rem; font-weight: 700; margin: 0 0 1rem 0; display: flex; align-items: center; gap: 0.5rem;">
+            <span>⚙️</span> 2. Interactive Spinning Demo
+        </h2>
+        <p style="color: #cbd5e1; font-size: 1rem; margin: 0 0 1rem 0;">
+            Below are two images driven by a single CSS <code>@keyframes</code> loop. Move your mouse pointer over either image. You will see that the spinning immediately <strong>pauses</strong> and the border turns red, allowing users to interact with or read content on the moving object.
+        </p>
+
+        <!-- 
+          Layout Container for the Images 
+          We use Flexbox here. We want Image 1 on the left, and Image 2 on the lower right.
+        -->
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; min-height: 20rem; position: relative; background-color: #1e293b; border-radius: 1rem; padding: 1.5rem;">
+            
+            <!-- Left Section: Image 1 (Larger) -->
+            <div style="margin: 1rem 0 0 0;">
+                <img src="https://placehold.co/200x200/0f172a/38bdf8?text=Image+1" alt="Spinning Placeholder 1" class="spinning-image" style="width: 12.5rem; height: 12.5rem;" />
+                <p style="color: #94a3b8; font-size: 0.9rem; text-align: center; margin-top: 0.5rem;">Left Section Image</p>
+            </div>
+
+            <!-- Lower Right Section: Image 2 (Smaller) -->
+            <!-- We use 'align-self: flex-end' to push this specific flex item to the bottom of the container -->
+            <div style="align-self: flex-end; margin: 0 0 1rem 0;">
+                <img src="https://placehold.co/120x120/0f172a/a855f7?text=Image+2" alt="Spinning Placeholder 2" class="spinning-image" style="width: 7.5rem; height: 7.5rem;" />
+                <p style="color: #94a3b8; font-size: 0.9rem; text-align: center; margin-top: 0.5rem;">Lower Right Image</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Section 3: Code Explainer -->
+    <div style="background-color: #1e293b; border: 0.0625rem solid #334155; border-radius: 1rem; padding: 1.5rem; margin-bottom: 1.25rem;">
+        <h2 style="color: #fcd34d; font-size: 1.35rem; font-weight: 700; margin: 0 0 1rem 0; display: flex; align-items: center; gap: 0.5rem;">
+            <span>💻</span> 3. How the Code Works
+        </h2>
+        <p style="color: #cbd5e1; font-size: 1rem; margin: 0 0 1rem 0;">
+            To achieve this, we do not need complex JavaScript intervals. Modern CSS handles this perfectly, utilizing hardware acceleration for smoother frame rates. Here is the core logic:
+        </p>
+
+        <div style="background-color: #0f172a; padding: 1.5rem; border-radius: 0.5rem; overflow-x: auto; border: 0.0625rem solid #475569;">
+            <pre style="margin: 0; font-family: 'Courier New', Courier, monospace; font-size: 0.9rem; color: #e2e8f0; line-height: 1.5;"><code style="white-space: pre;">/* Step 1: Create the animation timeline */
+@keyframes spin-continuous {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Step 2: Apply the timeline to the image */
+.spinning-image {
+    /* spin-continuous runs for 8 seconds, linearly (constant speed), forever */
+    animation: spin-continuous 8s linear infinite;
+}
+
+/* Step 3: Pause the animation when the user hovers over it */
+.spinning-image:hover {
+    /* This overrides the running state, freezing the image in place */
+    animation-play-state: paused;
+}</code></pre>
+        </div>
+    </div>
+
+    <!-- Instructor Footer Statement -->
+    <div style="text-align: center; border-top: 0.0625rem solid #334155; padding-top: 1.25rem; margin: 0;">
+        <p style="color: #38bdf8; font-size: 1.05rem; font-weight: 700; margin: 0;">
+            Any questions or concerns feel free to reach out anytime, via Canvas.
+        </p>
+    </div>
+
+</div>

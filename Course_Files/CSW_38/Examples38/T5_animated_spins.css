@@ -1,0 +1,87 @@
+
+<!-- 
+  CSW 38: Web Animation - Module Tutorial
+  Topic: CSS Keyframes, Transforms, and Hover States
+  Description: Canvas LMS compatible HTML page demonstrating spinning images that pause on hover, and links that grow/glow.
+-->
+
+
+    /* 
+     * 1. GROW & GLOW LINK ANIMATION
+     * This class applies a smooth transition to our tutorial links.
+     */
+    .glow-link {
+        /* The transition property tells the browser to smoothly animate any changes to the element's styling over 0.3 seconds. */
+        transition: all 0.3s ease-in-out;
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 400;
+        padding: 0.5rem 1rem;
+        background-color: #1e293b;
+        border-radius: 0.5rem;
+        border: 0.0625rem solid #334155;
+    }
+
+    /* Set the same initial color for links whether or not they have been visited. */
+    .glow-link:link,
+    .glow-link:visited {
+        color: #75C6E6;
+    }
+
+    /* The :hover pseudo-class triggers when the user's mouse pointer is over the element. */
+    .glow-link:hover {
+        /* scale(1.05) makes the link grow to 105% of its original size. */
+        transform: scale(1.05);
+        /* text-shadow creates the "glow" effect behind the text. */
+        text-shadow: 0 0 0.5rem #38bdf8;
+        /* box-shadow creates a subtle glow around the button itself. */
+        box-shadow: 0 0 0.75rem rgba(56, 189, 248, 0.4);
+        color: #ffffff; /* Brighten text on hover */
+    }
+
+    /* 
+     * 2. CONTINUOUS SPINNING ANIMATION (@keyframes)
+     * Here we define the actual timeline of the animation.
+     */
+    @keyframes spin-continuous {
+        0% {
+            /* Start of animation: 0 degrees of rotation */
+            transform: rotate(0deg);
+        }
+        100% {
+            /* End of animation: 360 degrees (a full circle). 
+               Because it loops, it immediately seamlessly restarts at 0. */
+            transform: rotate(360deg);
+        }
+    }
+
+    /* 
+     * 3. APPLYING THE SPIN TO THE IMAGES
+     * We create a class to attach the @keyframes timeline to our images.
+     */
+    .spinning-image {
+        /* 
+           Shorthand breakdown:
+           - spin-continuous: The name of our @keyframes rule above.
+           - 8s: The duration. It takes 8 seconds to complete one full 360-degree spin.
+           - linear: The timing function. 'linear' means constant speed (no slowing down/speeding up).
+           - infinite: The loop count. It spins forever.
+        */
+        animation: spin-continuous 8s linear infinite;
+        border-radius: 50%; /* Makes the placeholder image a perfect circle */
+        border: 0.25rem dashed #34d399; /* Dashed border helps visualize the spinning motion */
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.5);
+        /* We add a transition so the pause/resume action feels smooth, not jerky. */
+        transition: transform 0.3s ease;
+        cursor: pointer; /* Changes mouse to a hand to indicate interactivity */
+    }
+
+    /* 
+     * 4. PAUSING THE ANIMATION ON HOVER
+     * When the mouse hovers over the spinning image, we pause the timeline.
+     */
+    .spinning-image:hover {
+        /* This is the magic property! It freezes the @keyframes animation exactly where it is. */
+        animation-play-state: paused;
+        border-color: #f43f5e; /* Change border color to red to visually indicate it has stopped */
+    }
