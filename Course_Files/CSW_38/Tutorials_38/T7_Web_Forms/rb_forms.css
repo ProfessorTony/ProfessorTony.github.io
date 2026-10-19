@@ -1,0 +1,119 @@
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 7
+   Tutorial Case
+
+   Survey Forms Style Sheet
+   Author: Alice Nichols
+   Date:   2021-03-01  
+
+   Filename:         rb_forms.css
+
+*/
+
+/* Form Layout Styles
+   Flexbox lets the field groups share available horizontal space and wrap to
+   another line when the viewport or container is too narrow. This provides a
+   flexible layout without fixed columns or a separate mobile form. */
+
+form#survey {
+   display: flex;
+   /* Put direct children in rows and allow them to wrap. */
+   flex-flow: row wrap;
+}
+
+form#survey > fieldset {
+   background-color: rgb(241, 232, 181);
+   border-radius: 20px;
+   /* Each fieldset can grow or shrink, with 300px as its preferred basis.
+      The surrounding flex container moves it to a new row when needed. */
+   flex: 1 1 300px;
+   font-size: 0.85em;
+   padding: 10px;
+   margin: 10px;
+}
+
+div.formRow {
+   display: flex;
+   /* The label and its control can wrap on narrow screens. */
+   flex-flow: row wrap;
+   margin: 7px 0px;
+}
+
+div.formRow > * {
+   /* Give labels and controls equal flexible shares, starting near 150px.
+      The child combinator limits this rule to direct row contents. */
+   flex: 1 1 150px;
+}
+
+
+/* Legends name their fieldset group. Distinct color and padding help that
+   group title stand out from the controls inside the fieldset. */
+
+legend {
+   background-color: rgb(179, 20, 25);
+   color: white;
+   padding: 5px;
+}
+
+/* Text Area Styles
+   A textarea needs enough height for a useful multi-line response. Width is
+   kept slightly below 100% so it can fit within the fieldset's padding. */
+
+textarea {
+   margin-top: 10px;
+   height: 100px;
+   width: 95%;
+}
+
+/* Spinner Styles
+   Override the general flexible-row rule for this numeric spinner so it
+   remains compact rather than stretching across the row. */
+
+div.formRow > input#dineSpin {
+   flex: 0 0 50px;
+}
+
+/* Form Button Styles
+   The button wrapper spans the full form width and centers its controls.
+   Larger text, padding, and margins make the actions easier to find and use. */
+
+div#buttons {
+   text-align: center;
+   width: 100%;
+}
+
+input[type='submit'], input[type='reset'] {
+   font-size: 1.2em;
+   padding: 5px;
+   margin: 15px;
+}
+
+/* Validation Styles
+   :focus indicates which control receives keyboard input. A subtle background
+   change reinforces focus, but should not be the only focus indicator in a
+   production design.
+
+   :valid and :invalid reflect the browser's HTML constraint-validation state.
+   These selectors are limited to the named contact fields and only apply
+   while focused, avoiding permanent validation decoration before interaction.
+   The icons supplement the color change; don't rely on color alone to convey
+   an error or success. */
+
+input:focus, select:focus, textarea:focus {
+   background-color: rgb(220, 255, 220);
+}
+
+input#name:focus:valid,
+input#zip:focus:valid,
+input#phone:focus:valid,
+input#mail:focus:valid {
+   background: rgb(220, 255, 220) url(rb_valid.png) bottom right/contain no-repeat;
+}
+
+input#name:focus:invalid,
+input#zip:focus:invalid,
+input#phone:focus:invalid,
+input#mail:focus:invalid {
+   background: rgb(255, 232, 233) url(rb_invalid.png) bottom right/contain no-repeat;
+}
