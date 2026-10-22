@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-layout">
+        <aside class="team-image">
+            <img src="DeltaMustangs.PNG" alt="Delta Mustangs">
+        </aside>
+
+        <main class="game-container">
+        <!-- Header -->
+         <section class="game-header">
+            <p class="eyebrow">CLASSIC ARCADE</p>
+            <h1>
+                Number Guessing
+            </h1>
+            <p class="subtitle">Guess the secret number between 1 and 104</p>
+         </section>
+
+         <!-- Game card -->
+          <section class="game-card">
+            <!-- secret number -->
+             <div class="secret-number">
+                <span id="secretDisplay">?</span>
+             </div>
+
+
+             <!-- Hint -->
+              <p class="hint" id="hint">Make your first guess</p>
+
+
+              <!-- input area -->
+               <div class="input-section">
+                <label for="guessInput">Enter Your Guess</label>
+
+                <div class="input-row">
+                    <input type="number" id="guessInput" min="1" max="104" placeholder="1 - 104">
+
+                    <button type="button" id="guessButton">Guess</button>
+                </div>
+               </div>
+
+
+               <!-- Attempts -->
+                <div class="stats">
+                    <div class="stat-box">
+                        <span>ATTEMPTS</span>
+                        <strong id="attempts">0</strong>
+                    </div>
+
+                    <div class="stat-box">
+                        <span>BEST</span>
+                        <strong id="bestScore">-</strong>
+                    </div>
+                </div>
+
+
+                <!-- message -->
+                 <div class="message" id="message">Enter a number to begin</div>
+
+                 <!-- previous guess -->
+                  <div class="previous-section">
+                    <div class="section-title">PREVIOUS GUESSES</div>
+                    <div class="previous-guesses" id="previousGuesses">
+                        <span id="empty" class="empty">No guesses yet</span>
+                    </div>
+                  </div>
+
+                  <!-- restart -->
+                   <button id="restartButton" class="restart-button" type="button">New Game</button>
+
+
+          </section>
+
+          <!-- footer -->
+           <footer>
+            <span>01-Guess</span>
+            <span>02-Hint</span>
+            <span>03-Win</span>
+           </footer>
+        </main>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
