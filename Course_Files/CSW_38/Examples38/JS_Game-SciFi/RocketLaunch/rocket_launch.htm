@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rocket Launch Animation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet"/>
+  <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  background: radial-gradient(circle at center, #0f172a 0%, #020617 100%);
+  overflow: hidden;
+  user-select: none;
+}
+
+.launch-pad {
+  position: relative;
+  width: 320px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+  border-radius: 32px;
+  background: linear-gradient(180deg, #020617 0%, #0f172a 70%, #1e293b 100%);
+  border: 1.5px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+}
+
+.stars-bg {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(1px 1px at 25px 35px, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 80px 120px, #fff, transparent),
+    radial-gradient(1px 1px at 150px 60px, #38bdf8, transparent),
+    radial-gradient(1.5px 1.5px at 220px 180px, #fff, transparent),
+    radial-gradient(1px 1px at 270px 90px, #fff, transparent);
+  background-size: 300px 300px;
+  opacity: 0.5;
+}
+
+.rocket-assembly {
+  position: absolute;
+  bottom: 52px;
+  width: 90px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 5;
+}
+
+.rocket-svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.4));
+  z-index: 2;
+}
+
+.exhaust-flame {
+  position: absolute;
+  bottom: -45px;
+  width: 22px;
+  height: 55px;
+  background: linear-gradient(180deg, #ffffff 0%, #ffea00 30%, #ff3300 70%, transparent 100%);
+  border-radius: 50% 50% 20% 20%;
+  filter: blur(1px);
+  opacity: 0;
+  transform-origin: top center;
+  transition: opacity 0.2s ease;
+  z-index: 1;
+}
+
+.smoke-cloud {
+  position: absolute;
+  bottom: -35px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  filter: blur(8px);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.smoke-1 { width: 35px; height: 35px; left: 10px; }
+.smoke-2 { width: 45px; height: 45px; right: 8px; }
+.smoke-3 { width: 50px; height: 50px; left: 20px; }
+
+.pad-base {
+  position: relative;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 3;
+}
+
+.gantry-arm {
+  position: absolute;
+  bottom: 22px;
+  width: 18px;
+  height: 60px;
+  background: #334155;
+  border: 1.5px solid #475569;
+  border-radius: 4px;
+  transition: transform 0.5s ease;
+}
+
+.arm-left {
+  left: 18px;
+  transform-origin: bottom left;
+}
+
+.arm-right {
+  right: 18px;
+  transform-origin: bottom right;
+}
+
+.pad-platform {
+  width: 100%;
+  height: 24px;
+  background: #1e293b;
+  border-top: 3px solid #64748b;
+  border-radius: 6px 6px 0 0;
+}
+
+.launch-pad.active .arm-left {
+  transform: rotate(-35deg);
+}
+
+.launch-pad.active .arm-right {
+  transform: rotate(35deg);
+}
+
+.launch-pad.active .exhaust-flame {
+  opacity: 1;
+  animation: flameFlicker 0.08s infinite alternate;
+}
+
+.launch-pad.active .smoke-cloud {
+  opacity: 0.8;
+  animation: smokePuff 0.6s infinite ease-out;
+}
+
+.launch-pad.active .rocket-assembly {
+  animation: rocketFlight 3s infinite ease-in-out;
+}
+
+.launch-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 32px;
+  border-radius: 20px;
+  background: #0284c7;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 10px 25px rgba(2, 132, 199, 0.4);
+  transition: all 0.25s ease;
+}
+
+.launch-btn:hover {
+  background: #0369a1;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(2, 132, 199, 0.55);
+}
+
+.launch-btn:active {
+  transform: translateY(1px);
+}
+
+.launch-btn.abort {
+  background: #e11d48;
+  box-shadow: 0 10px 25px rgba(225, 29, 72, 0.4);
+}
+
+.launch-btn.abort:hover {
+  background: #be123c;
+  box-shadow: 0 12px 30px rgba(225, 29, 72, 0.55);
+}
+
+.btn-icon {
+  width: 18px;
+  height: 18px;
+}
+
+@keyframes flameFlicker {
+  0% { transform: scaleY(0.9) scaleX(0.95); }
+  100% { transform: scaleY(1.3) scaleX(1.1); }
+}
+
+@keyframes smokePuff {
+  0% { transform: translateY(0) scale(0.6); opacity: 0.8; }
+  100% { transform: translateY(35px) scale(1.6); opacity: 0; }
+}
+
+@keyframes rocketFlight {
+  0% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-160px) rotate(-1.5deg); }
+  50% { transform: translateY(-180px) rotate(1deg); }
+  75% { transform: translateY(-155px) rotate(-0.5deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="launch-pad" id="launchPad">
+    <div class="stars-bg"></div>
+
+    <div class="rocket-assembly" id="rocketAssembly">
+      <div class="exhaust-flame"></div>
+      <div class="smoke-cloud smoke-1"></div>
+      <div class="smoke-cloud smoke-2"></div>
+      <div class="smoke-cloud smoke-3"></div>
+
+      <svg class="rocket-svg" viewBox="0 0 100 160">
+        <path d="M50 10 C35 35 25 75 25 115 L75 115 C75 75 65 35 50 10 Z" fill="#ffffff" />
+        <path d="M50 10 C45 25 40 40 40 48 L60 48 C60 40 55 25 50 10 Z" fill="#ff3366" />
+        <circle cx="50" cy="70" r="12" fill="#0f172a" stroke="#cbd5e1" stroke-width="3" />
+        <circle cx="50" cy="70" r="8" fill="#38bdf8" />
+        <path d="M25 95 C10 105 5 125 5 135 L25 125 Z" fill="#ff3366" />
+        <path d="M75 95 C90 105 95 125 95 135 L75 125 Z" fill="#ff3366" />
+        <path d="M42 115 L58 115 L62 126 L38 126 Z" fill="#475569" />
+      </svg>
+    </div>
+
+    <div class="pad-base">
+      <div class="gantry-arm arm-left"></div>
+      <div class="gantry-arm arm-right"></div>
+      <div class="pad-platform"></div>
+    </div>
+  </div>
+
+  <button class="launch-btn" id="launchBtn">
+    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+    </svg>
+    <span id="btnLabel">Launch Rocket</span>
+  </button>
+
+  <script>
+const launchPad = document.getElementById('launchPad');
+const launchBtn = document.getElementById('launchBtn');
+const btnLabel = document.getElementById('btnLabel');
+
+let isLaunched = false;
+
+launchBtn.addEventListener('click', () => {
+  isLaunched = !isLaunched;
+
+  if (isLaunched) {
+    launchPad.classList.add('active');
+    launchBtn.classList.add('abort');
+    btnLabel.textContent = 'Reset Rocket';
+  } else {
+    launchPad.classList.remove('active');
+    launchBtn.classList.remove('abort');
+    btnLabel.textContent = 'Launch Rocket';
+  }
+});
+
+  </script>
+</body>
+</html>
