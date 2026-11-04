@@ -1,0 +1,93 @@
+/*
+ * This stylesheet controls the page's appearance. The dark background and
+ * light text make the content easy to read, while Flexbox centers the page.
+ */
+body {
+    /* Try each system font in order; the browser uses the first one available. */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    /* Remove the browser's default outer spacing, then add a small page gutter. */
+    margin: 0;
+    padding: 20px;
+    /* Flexbox makes it straightforward to center the container on the page. */
+    display: flex;
+    justify-content: center; /* Center the container horizontally. */
+    align-items: center;     /* Center it vertically when there is extra height. */
+    min-height: 100vh;       /* 100vh is the full height of the browser window. */
+}
+
+/* Keep the content readable on wide screens but allow it to shrink on phones. */
+.container {
+    max-width: 800px; /* Stop the content from becoming too wide to read. */
+    width: 100%;      /* Use available space up to max-width. */
+    text-align: center;
+}
+
+/* Use a bright accent color to make the main heading stand out. */
+h1 {
+    color: #4CAF50;
+}
+
+/*
+ * The canvas is the drawing surface for the JavaScript animations.
+ * CSS controls how large it looks on the page; its drawing buffer is sized
+ * separately in JavaScript.
+ */
+canvas {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    border: 1px solid #333;
+    
+    width: 100%;      /* Shrink to fit the container on narrow screens. */
+    max-width: 700px; /* Keep the drawing area from growing too large. */
+    /* Keep a widescreen shape as the width changes; height follows the ratio. */
+    aspect-ratio: 16 / 9;
+}
+
+/* Arrange the animation buttons in a centered row with space between them. */
+.controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Give buttons a consistent appearance and a clear clickable cursor. */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none; /* Remove the default browser border. */
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Animate color changes over 0.3 seconds instead of switching instantly. */
+    transition: background-color 0.3s;
+}
+
+/* Change the button color while the pointer is over it to show interactivity. */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Make inline code snippets visually different from regular paragraph text. */
+code {
+    background-color: #333;
+    padding: 2px 5px;
+    border-radius: 3px;
+    /* A monospace font gives code characters evenly spaced alignment. */
+    font-family: monospace;
+}
+
+/* Keep the numbered animation steps left-aligned while centered as a group. */
+ol {
+    text-align: left;
+    display: inline-block;
+    margin-top: 0;
+}
+
+/* Add breathing room between the individual instructions in the list. */
+li {
+    margin-bottom: 10px;
+}

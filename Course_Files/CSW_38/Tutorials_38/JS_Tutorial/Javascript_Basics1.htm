@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Animation Basics</title>
+    <link rel="stylesheet" href="js_styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Animation Basics (in Canvas)</h1>
+        
+        <p>
+            Welcome! Animation on a webpage seems complex, but it's just one simple trick repeated very fast: 
+            <strong>Clear, Update, and Draw.</strong> 
+            Imagine a flipbook. You draw a picture, then on the next page, you draw it in a slightly different spot. When you flip the pages, it looks like it's moving.
+        </p>
+
+        <p>
+            In JavaScript, we do this with an "animation loop." We'll use a special function called 
+            <code>requestAnimationFrame()</code>. This is the browser's optimized way to run animation code. 
+            It's much smoother and more efficient than using <code>setInterval</code> (like in our clock example).
+        </p>
+
+        <h2>The Animation Loop:</h2>
+        <ol>
+            <li><strong>Clear the Canvas:</strong> We wipe the canvas clean with <code>ctx.clearRect()</code>. This erases the last frame.</li>
+            <li><strong>Update Coordinates:</strong> We do some math to figure out the *new* position for our shape (e.g., <code>x = x + 1</code>).</li>
+            <li><strong>Draw the Shape:</strong> We draw the shape at its new position (e.g., <code>ctx.fillRect(...)</code>).</li>
+            <li><strong>Repeat:</strong> We tell the browser to run this loop again as soon as it's ready for the next frame using <code>requestAnimationFrame()</code>.</li>
+        </ol>
+
+        <!-- The canvas element where our animations will be drawn -->
+        <canvas id="animation-canvas"></canvas>
+
+        <div class="controls">
+            <!-- Buttons to start each example -->
+            <button id="start-anim-1">Start Example 1: Bouncing Ball</button>
+            <button id="start-anim-2">Start Example 2: Multiple Balls</button>
+            <button id="start-anim-3">Start Example 3: Animated Flowers</button>
+        </div>
+
+    </div>
+    <!-- Link to the JavaScript file -->
+    <script src="js_script.js" defer></script> <!-- defer makes sure the script loads after the HTML is parsed -->
+</body>
+</html>
