@@ -1,0 +1,408 @@
+/* -------------------------------------------------------------------
+           2A. GLOBAL RESET & BASE THEME
+           'box-sizing: border-box' ensures padding does not break 100% widths.
+           ------------------------------------------------------------------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #0f172a; /* Deep dark slate background */
+            color: #f8fafc;            /* High-contrast off-white text */
+            line-height: 1.6;
+            min-height: 100vh;
+            overflow-x: hidden;        /* Prevents accidental page-level side scroll */
+        }
+
+        /* -------------------------------------------------------------------
+           2B. HORIZONTAL NAVIGATION BAR ANIMATION (@keyframes)
+           This keyframe animation slides the entire horizontal nav bar down
+           and fades it in smoothly when the page first loads.
+           ------------------------------------------------------------------- */
+        @keyframes slideDownNav {
+            0% {
+                opacity: 0;
+                transform: translateY(-100%); /* Starts hidden above the screen */
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);     /* Settles into its normal position */
+            }
+        }
+
+        /* Subtle animated gradient line moving across the bottom of the nav bar */
+        @keyframes navBorderFlow {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: rgba(15, 23, 42, 0.95);
+            position: sticky;          /* Keeps nav bar pinned to the top */
+            top: 0;
+            z-index: 100;
+            padding: 1rem 2rem;
+            display: flex;             /* Horizontal layout using Flexbox */
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            /* Apply the entrance animation defined above */
+            animation: slideDownNav 0.7s ease-out forwards;
+        }
+
+        /* Animated glowing horizontal bar along the bottom edge of the navbar */
+        .navbar::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, #38bdf8, #a855f7, #34d399, #38bdf8);
+            background-size: 200% 200%;
+            animation: navBorderFlow 6s ease infinite;
+        }
+
+        .nav-brand {
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: #38bdf8;
+            letter-spacing: -0.02em;
+            text-decoration: none;
+        }
+
+        /* -------------------------------------------------------------------
+           2C. NAV MENU LINKS: GROW, GLOW & HORIZONTAL UNDERLINE EFFECTS
+           ------------------------------------------------------------------- */
+        .nav-links {
+            list-style: none;          /* Removes default bullet points */
+            display: flex;             /* Aligns Home, About, Cart horizontally */
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            position: relative;        /* Needed to position the animated underline */
+            display: inline-block;     /* Required so 'transform: scale()' works */
+            color: #e2e8f0;
+            text-decoration: none;
+            font-size: 1.05rem;
+            font-weight: 600;
+            padding: 0.4rem 0.6rem;
+            border-radius: 0.5rem;
+            /* Smoothly animates size, color, and text-shadow on hover & un-hover */
+            transition: transform 0.25s ease, color 0.25s ease, text-shadow 0.25s ease;
+        }
+
+        /* Horizontal expanding underline (hidden at width: 0 until hovered) */
+        .nav-links a::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 0%;
+            height: 2px;
+            background-color: #38bdf8;
+            box-shadow: 0 0 8px #38bdf8;
+            transform: translateX(-50%); /* Keeps the line centered as it expands */
+            transition: width 0.3s ease;
+        }
+
+        /* HOVER STATE: Text grows larger, glows brightly, and underline expands */
+        .nav-links a:hover,
+        .nav-links a:focus-visible {
+            color: #ffffff;
+            transform: scale(1.15);    /* Grows the link text by 15% */
+            /* Multi-layered text-shadow creates a neon glow effect */
+            text-shadow: 0 0 8px rgba(56, 189, 248, 0.9),
+                         0 0 18px rgba(56, 189, 248, 0.6);
+            outline: none;
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a:focus-visible::after {
+            width: 100%;               /* Expands underline horizontally to full width */
+        }
+
+        /* Cart item counter pill next to the "Cart" link */
+        .cart-badge {
+            display: inline-block;
+            background-color: #38bdf8;
+            color: #0f172a;
+            font-size: 0.75rem;
+            font-weight: 800;
+            padding: 0.1rem 0.45rem;
+            border-radius: 999px;
+            margin-left: 0.35rem;
+            vertical-align: middle;
+        }
+
+        /* -------------------------------------------------------------------
+           2D. PAGE HEADER / HERO SECTION
+           ------------------------------------------------------------------- */
+        .hero {
+            text-align: center;
+            padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+            max-width: 56rem;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: clamp(1.75rem, 4vw, 2.75rem);
+            font-weight: 800;
+            color: #f8fafc;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            color: #cbd5e1;
+            font-size: 1.05rem;
+        }
+
+        /* -------------------------------------------------------------------
+           2E. 100% WIDTH FLEXBOX CAROUSEL & SCROLL BUTTONS
+           ------------------------------------------------------------------- */
+        .carousel-section {
+            width: 100%;               /* Requirement: Carousel spans 100% width */
+            padding: 1.5rem 0 3rem 0;
+        }
+
+        .carousel-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem 1rem 2rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .carousel-header h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #f8fafc;
+        }
+
+        /* Container for the Left & Right Scroll Buttons */
+        .carousel-controls {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        /* Styling for the Scroll Buttons */
+        .scroll-btn {
+            background-color: #1e293b;
+            color: #38bdf8;
+            border: 2px solid #38bdf8;
+            border-radius: 999px;      /* Pill / circle shape */
+            padding: 0.6rem 1.15rem;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .scroll-btn:hover {
+            background-color: #38bdf8;
+            color: #0f172a;
+            transform: scale(1.06);    /* Subtle grow on hover */
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.6);
+        }
+
+        .scroll-btn:active {
+            transform: scale(0.96);    /* Tactile press-down effect on click */
+        }
+
+        /* THE FLEXBOX CAROUSEL TRACK
+           - width: 100% fills the entire horizontal viewport
+           - display: flex arranges all product cards in one horizontal row
+           - overflow-x: auto allows horizontal scrolling
+           - scroll-behavior: smooth animates the scroll when buttons are clicked
+           - scroll-snap-type: x mandatory snaps cards cleanly into alignment
+        */
+        .carousel-track {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 1.5rem;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            scroll-snap-type: x mandatory;
+            padding: 1rem 2rem 2rem 2rem;
+
+            /* Hide scrollbar for a cleaner UI (optional, still scrollable) */
+            scrollbar-width: thin;
+            scrollbar-color: #38bdf8 #1e293b;
+        }
+
+        /* -------------------------------------------------------------------
+           2F. PRODUCT CARDS & HOVER ANIMATION
+           ------------------------------------------------------------------- */
+        .product-card {
+            /* flex: 0 0 290px means:
+               0 = do not grow, 0 = do not shrink, 290px = fixed card width */
+            flex: 0 0 290px;
+            scroll-snap-align: start;  /* Snaps card to the left edge when scrolling */
+            background-color: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 1rem;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            /* Smoothly animate lift and glowing border on hover */
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px); /* Lifts the card upward */
+            border-color: #38bdf8;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.45),
+                        0 0 16px rgba(56, 189, 248, 0.25);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+            background-color: #0b1120;
+        }
+
+        .product-info {
+            padding: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .product-tag {
+            display: inline-block;
+            align-self: flex-start;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #34d399;
+            background-color: rgba(52, 211, 153, 0.12);
+            padding: 0.2rem 0.6rem;
+            border-radius: 0.5rem;
+            margin-bottom: 0.6rem;
+        }
+
+        .product-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #f8fafc;
+            margin-bottom: 0.4rem;
+        }
+
+        .product-desc {
+            font-size: 0.9rem;
+            color: #cbd5e1;
+            margin-bottom: 1.25rem;
+            flex-grow: 1;
+        }
+
+        .product-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 0.75rem;
+            border-top: 1px solid #334155;
+        }
+
+        .product-price {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: #38bdf8;
+        }
+
+        .add-btn {
+            background-color: #2563eb;
+            color: #ffffff;
+            border: none;
+            border-radius: 0.6rem;
+            padding: 0.55rem 1rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s ease, transform 0.2s ease;
+        }
+
+        .add-btn:hover {
+            background-color: #38bdf8;
+            color: #0f172a;
+            transform: scale(1.05);
+        }
+
+        /* -------------------------------------------------------------------
+           2G. CUSTOM TOAST NOTIFICATION (Replaces browser alert())
+           ------------------------------------------------------------------- */
+        .toast-box {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            background-color: #1e293b;
+            color: #f8fafc;
+            border: 2px solid #34d399;
+            border-radius: 0.75rem;
+            padding: 0.85rem 1.25rem;
+            font-weight: 600;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transform: translateY(20px);
+            pointer-events: none;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 200;
+        }
+
+        .toast-box.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* -------------------------------------------------------------------
+           2H. FOOTER & MOBILE RESPONSIVENESS
+           ------------------------------------------------------------------- */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            border-top: 1px solid #1e293b;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .navbar {
+                justify-content: center;
+                padding: 1rem;
+            }
+            .nav-links {
+                gap: 1.25rem;
+            }
+            .carousel-header {
+                padding: 0 1rem 1rem 1rem;
+            }
+            .carousel-track {
+                padding: 1rem 1rem 2rem 1rem;
+            }
+            .product-card {
+                flex: 0 0 260px; /* Slightly narrower cards on small phones */
+            }
+        }

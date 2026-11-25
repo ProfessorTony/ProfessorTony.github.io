@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- =====================================================================
+         STEP 1: DOCUMENT SETUP & RESPONSIVE VIEWPORT
+         The viewport meta tag ensures our 100% width carousel and nav bar
+         scale properly on phones, tablets, and desktop monitors.
+         ===================================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSW 38 Assignment: Animated Nav &amp; Flex Product Carousel</title>
+
+    <!-- Load Google Font "Inter" for clean, modern typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- =====================================================================
+         STEP 2: CSS STYLES & ANIMATIONS
+         (Able to copy everything inside <style> into
+         a separate "styles.css" file if practicing external stylesheets.)
+         ===================================================================== -->
+    <link rel="stylesheet" href="carousel.css">
+</head>
+<body>
+
+    <!-- =====================================================================
+         STEP 3: SEMANTIC HTML5 HORIZONTAL NAVIGATION BAR
+         Includes placeholders for Home, About, and Cart.
+         ===================================================================== -->
+    <header class="navbar">
+        <a href="#home" class="nav-brand">⚡ TechGear Studio</a>
+
+        <nav aria-label="Main Navigation">
+            <ul class="nav-links">
+                <li><a href="#home" data-nav="Home">Home</a></li>
+                <li><a href="#about" data-nav="About">About</a></li>
+                <li>
+                    <a href="#cart" data-nav="Cart">
+                        Cart <span id="cartCount" class="cart-badge">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- =====================================================================
+         STEP 4: MAIN CONTENT & 100% WIDTH FLEXBOX PRODUCT CAROUSEL
+         ===================================================================== -->
+    <main id="home">
+        <section class="hero">
+            <h1>Animated <span>Product Carousel</span></h1>
+            <p>
+                Hover over the navigation links above to test the grow &amp; glow effects, 
+                then use the scroll buttons below to browse our Flexbox product cards.
+            </p>
+        </section>
+
+        <!-- 100% Width Carousel Section -->
+        <section class="carousel-section" aria-label="Featured Products Carousel">
+            <div class="carousel-header">
+                <h2>Featured Gear</h2>
+                <!-- Scroll Buttons to slide the Flexbox track left and right -->
+                <div class="carousel-controls">
+                    <button type="button" id="scrollLeftBtn" class="scroll-btn" aria-label="Scroll carousel left">
+                        &#8592; Prev
+                    </button>
+                    <button type="button" id="scrollRightBtn" class="scroll-btn" aria-label="Scroll carousel right">
+                        Next &#8594;
+                    </button>
+                </div>
+            </div>
+
+            <!-- The Flexbox Track holding all Product Cards -->
+            <div id="carouselTrack" class="carousel-track">
+
+                <!-- Product Card 1 -->
+                <article class="product-card">
+                    <img 
+                        src="https://placehold.co/400x260/1e293b/38bdf8?text=Mechanical+Keyboard" 
+                        alt="RGB Mechanical Keyboard" 
+                        class="product-image"
+                        onerror="this.src='https://placehold.co/400x260/0f172a/ffffff?text=Product+1'"
+                    >
+                    <div class="product-info">
+                        <span class="product-tag">Best Seller</span>
+                        <h3 class="product-title">Pro Mechanical Keyboard</h3>
+                        <p class="product-desc">Tactile switches with customizable per-key RGB lighting for late-night coding.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$119.99</span>
+                            <button type="button" class="add-btn" data-product="Pro Mechanical Keyboard">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product Card 2 -->
+                <article class="product-card">
+                    <img 
+                        src="https://placehold.co/400x260/1e293b/a855f7?text=Wireless+Mouse" 
+                        alt="Ergonomic Wireless Mouse" 
+                        class="product-image"
+                        onerror="this.src='https://placehold.co/400x260/0f172a/ffffff?text=Product+2'"
+                    >
+                    <div class="product-info">
+                        <span class="product-tag">New Arrival</span>
+                        <h3 class="product-title">Precision Wireless Mouse</h3>
+                        <p class="product-desc">Ultra-lightweight sensor with programmable side buttons and 70-hour battery.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$69.50</span>
+                            <button type="button" class="add-btn" data-product="Precision Wireless Mouse">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product Card 3 -->
+                <article class="product-card">
+                    <img 
+                        src="https://placehold.co/400x260/1e293b/34d399?text=Studio+Headphones" 
+                        alt="Noise Canceling Studio Headphones" 
+                        class="product-image"
+                        onerror="this.src='https://placehold.co/400x260/0f172a/ffffff?text=Product+3'"
+                    >
+                    <div class="product-info">
+                        <span class="product-tag">Audio</span>
+                        <h3 class="product-title">Focus ANC Headphones</h3>
+                        <p class="product-desc">Active noise cancellation engineered for deep focus during web dev labs.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$189.00</span>
+                            <button type="button" class="add-btn" data-product="Focus ANC Headphones">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product Card 4 -->
+                <article class="product-card">
+                    <img 
+                        src="https://placehold.co/400x260/1e293b/f472b6?text=4K+Webcam" 
+                        alt="4K Streaming Webcam" 
+                        class="product-image"
+                        onerror="this.src='https://placehold.co/400x260/0f172a/ffffff?text=Product+4'"
+                    >
+                    <div class="product-info">
+                        <span class="product-tag">Creator</span>
+                        <h3 class="product-title">UltraHD 4K Webcam</h3>
+                        <p class="product-desc">Crisp low-light video capture with built-in privacy shutter and dual mics.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$94.99</span>
+                            <button type="button" class="add-btn" data-product="UltraHD 4K Webcam">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product Card 5 -->
+                <article class="product-card">
+                    <img 
+                        src="https://placehold.co/400x260/1e293b/fbbf24?text=USB-C+Dock" 
+                        alt="10-in-1 USB-C Docking Station" 
+                        class="product-image"
+                        onerror="this.src='https://placehold.co/400x260/0f172a/ffffff?text=Product+5'"
+                    >
+                    <div class="product-info">
+                        <span class="product-tag">Essentials</span>
+                        <h3 class="product-title">10-in-1 USB-C Hub</h3>
+                        <p class="product-desc">Dual HDMI output, Gigabit Ethernet, and 100W pass-through charging.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$54.00</span>
+                            <button type="button" class="add-btn" data-product="10-in-1 USB-C Hub">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product Card 6 -->
+                <article class="product-card">
+                    <img 
+                        src="https://placehold.co/400x260/1e293b/38bdf8?text=LED+Desk+Light" 
+                        alt="Monitor Light Bar" 
+                        class="product-image"
+                        onerror="this.src='https://placehold.co/400x260/0f172a/ffffff?text=Product+6'"
+                    >
+                    <div class="product-info">
+                        <span class="product-tag">Workspace</span>
+                        <h3 class="product-title">LED Monitor Light Bar</h3>
+                        <p class="product-desc">Asymmetric optical design illuminates your desk without screen glare.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$42.99</span>
+                            <button type="button" class="add-btn" data-product="LED Monitor Light Bar">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Custom Toast Notification Element -->
+    <div id="toast" class="toast-box" role="status" aria-live="polite"></div>
+
+    <footer id="about">
+        <p>CSW 38: Web Animation &amp; HTML5 &bull; Beginner Flexbox Carousel &amp; Nav Animation Demo</p>
+    </footer>
+
+    <!-- =====================================================================
+         STEP 5: JAVASCRIPT FOR CAROUSEL SCROLL BUTTONS & INTERACTIVITY
+         (Able to place this in a separate "script.js" file.)
+         ===================================================================== -->
+    <script src="C_script.js" defer></script>
+
+</body>
+</html>
